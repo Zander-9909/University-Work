@@ -12,3 +12,9 @@ Second Year (2020-2021)
 - SEG2105 - Intro. to Software Engineering (Java)
 - SEG2106 - Intro. to Software Construction (Java)
 - CEG3185 - Data Communications and Networking (Java)
+
+Third Year (2021-2022)
+- CEG3155 - Digital Systems II (VHDL)*
+- CEG3136 - Computer Architecture II (C and ARM Assembly)
+
+*some files used are not owned by me. They belong to Dr. Rami Abielmona. They are uploaded for the labratories, and so are uploaded for functionality in that.
