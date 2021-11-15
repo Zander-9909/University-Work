@@ -1,0 +1,27 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity fsmController is
+	port(
+	MST, SST, : in STD_LOGIC_VECTOR(3 downto 0);
+	SSCS : in STD_LOGIC;-- 0 = no car, 1 = at least 1 car
+	Sum : out STD_LOGIC_VECTOR(3 downto 0);
+	MSTL, SSTL: out STD_LOGIC_VECTOR (2 downto 0));
+end fsmController;
+
+architecture rtl of addSub4bit is
+	SIGNAL inv : STD_LOGIC_VECTOR (3 downto 0);
+	SIGNAL carries : STD_LOGIC_VECTOR (3 downto 0);
+
+	COMPONENT xor2bit -- 2 bit xor gate
+		port(
+			a,b : in STD_LOGIC;
+			y   : out STD_LOGIC);
+	END COMPONENT;
+	
+	COMPONENT fullAdder 
+		port(
+			A,B,Cin : in STD_LOGIC;
+			Sum,Cout   : out STD_LOGIC);
+	END COMPONENT;
+

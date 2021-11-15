@@ -1,0 +1,25 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+ENTITY counter IS
+	PORT(
+		resetBar, count, load, clk	: IN	STD_LOGIC;
+		dataValue : IN STD_LOGIC_VECTOR(3 downto 0);
+		outValue	 : OUT	STD_LOGIC_VECTOR(3 downto 0));
+END counter;
+
+ARCHITECTURE rtl OF counter IS
+	SIGNAL notLoad : STD_LOGIC := not Load;
+	SIGNAL int_a, int_na, int_b, int_nb : STD_LOGIC;
+	SIGNAL int_notA, int_notB : STD_LOGIC;
+
+	COMPONENT enARdFF_2
+		PORT(
+			i_resetBar	: IN	STD_LOGIC;
+			i_d		: IN	STD_LOGIC;
+			i_enable	: IN	STD_LOGIC;
+			i_clock		: IN	STD_LOGIC;
+			o_q, o_qBar	: OUT	STD_LOGIC);
+	END COMPONENT;
+
+BEGIN
