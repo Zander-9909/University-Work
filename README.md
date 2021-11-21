@@ -11,7 +11,6 @@ Second Year (2020-2021)
 - CSI2110 - Data Structures and Algorithms (Java)
 - SEG2105 - Intro. to Software Engineering (Java)
 - SEG2106 - Intro. to Software Construction (Java)
-- CEG3185 - Data Communications and Networking (Java)
 
 Third Year (2021-2022)
 - CEG3155 - Digital Systems II (VHDL)*
