@@ -1,0 +1,115 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         
+    2 00000000                 AREA             |.text|, CODE, READONLY
+    3 00000000                 PRESERVE8                    ;
+    4 00000000                 THUMB                        ;
+    5 00000000         
+    6 00000000         
+    7 00000000                 EXPORT           player_check_move_s
+    8 00000000         
+    9 00000000         player_check_move_s
+                               FUNCTION                     ; char player_check
+                                                            _move_s(player_t *p
+                                                            layer, int row, int
+                                                             col);
+   10 00000000         ; r0 *player
+   11 00000000         ; r1 row
+   12 00000000         ; r2 col
+   13 00000000 F04F 0000       MOV              R0, #0      ; 
+   14 00000004 4770            BX               LR          ; return
+   15 00000006                 ENDFUNC
+   16 00000006         
+   17 00000006         
+   18 00000006                 EXPORT           player_make_move_s
+   19 00000006         
+   20 00000006         player_make_move_s
+                               FUNCTION                     ; char player_make_
+                                                            move_s(player_t *pl
+                                                            ayer, int row, int 
+                                                            col);
+   21 00000006         ; r0 *player
+   22 00000006         ; r1 row
+   23 00000006         ; r2 col
+   24 00000006 F04F 0000       MOV              R0, #0      ; 
+   25 0000000A 4770            BX               LR          ; return
+   26 0000000C                 ENDFUNC
+   27 0000000C         
+   28 0000000C                 EXPORT           player_won_s
+   29 0000000C         
+   30 0000000C         player_won_s
+                               FUNCTION                     ; char player_won_s
+                                                            (player_t * player)
+                                                            ;
+   31 0000000C         ; r0 *player
+   32 0000000C 4601            MOV              R1,R0       ; copy the player t
+                                                            o R1
+   33 0000000E 2000            MOVS             R0, #0x00   ;initialize R0 to H
+                                                            EX0
+   34 00000010 780A            LDRB             R2,[R1,#0x00] ;Loads the value 
+                                                            of R1 into R2
+   35 00000012 F002 0207       AND              R2,R2,#0x07 ;ANDs R2 and HEX7 t
+                                                            ogether and stores 
+                                                            it in R2
+   36 00000016 2A07            CMP              R2, #0x07
+   37 00000018 4770            BX               LR          ; return
+   38 0000001A                 ENDFUNC
+   39 0000001A         
+   40 0000001A                 END
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp.sp --apcs=
+interwork --depend=.\objects\player_1.d -o.\objects\player_1.o -I.\RTE\_Target_
+1 -I"E:\Program Files\ARMPACKS\ARM\CMSIS\5.8.0\CMSIS\Core\Include" -I"E:\Progra
+
+
+
+ARM Macro Assembler    Page 2 
+
+
+m Files\ARMPACKS\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\In
+clude" --predefine="__EVAL SETA 1" --predefine="__UVISION_VERSION SETA 533" --p
+redefine="_RTE_ SETA 1" --predefine="STM32F417xx SETA 1" --predefine="_RTE_ SET
+A 1" --list=.\listings\player.lst player.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 2 in file player.s
+   Uses
+      None
+Comment: .text unused
+player_check_move_s 00000000
+
+Symbol: player_check_move_s
+   Definitions
+      At line 9 in file player.s
+   Uses
+      At line 7 in file player.s
+Comment: player_check_move_s used once
+player_make_move_s 00000006
+
+Symbol: player_make_move_s
+   Definitions
+      At line 20 in file player.s
+   Uses
+      At line 18 in file player.s
+Comment: player_make_move_s used once
+player_won_s 0000000C
+
+Symbol: player_won_s
+   Definitions
+      At line 30 in file player.s
+   Uses
+      At line 28 in file player.s
+Comment: player_won_s used once
+4 symbols
+339 symbols in table

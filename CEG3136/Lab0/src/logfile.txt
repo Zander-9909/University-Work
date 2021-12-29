@@ -1,0 +1,12 @@
+
+Hello world!
+textbuffer address = 0x2000000c 
+Please enter text:f
+
+You entered :f
+
+Please enter text:q
+
+You entered :q
+
+

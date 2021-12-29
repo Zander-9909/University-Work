@@ -1,0 +1,56 @@
+
+Welcome to the Tic-Tac-Tow game!
+The game struct address is 0x2000000c 
+  0  1  2 , turn = 0, player's turn O
+a - - - 
+b - - - 
+c - - - 
+Play O enter move, e.g. b1: b1
+  0  1  2 , turn = 1, player's turn X
+a - - - 
+b - O - 
+c - - - 
+Play X enter move, e.g. b1: a1
+Illegal move, moves must be row,col (e.g. b2), your move: a1
+  0  1  2 , turn = 2, player's turn O
+a - X - 
+b - O - 
+c - - - 
+Play O enter move, e.g. b1: a0
+  0  1  2 , turn = 3, player's turn X
+a O X - 
+b - O - 
+c - - - 
+Play X enter move, e.g. b1: c2
+  0  1  2 , turn = 4, player's turn O
+a O X - 
+b - O - 
+c - - X 
+Play O enter move, e.g. b1: c1
+Illegal move, moves must be row,col (e.g. b2), your move: c1
+  0  1  2 , turn = 5, player's turn X
+a O X - 
+b - O - 
+c - O X 
+Play X enter move, e.g. b1: a2
+  0  1  2 , turn = 6, player's turn O
+a O X X 
+b - O - 
+c - O X 
+Play O enter move, e.g. b1: b0
+  0  1  2 , turn = 7, player's turn X
+a O X X 
+b O O - 
+c - O X 
+Play X enter move, e.g. b1: c0
+  0  1  2 , turn = 8, player's turn O
+a O X X 
+b O O - 
+c X O X 
+Play O enter move, e.g. b1: b2
+  0  1  2 , turn = 9, player's turn X
+a O X X 
+b O O O 
+c X O X 
+Game finished, result: O 
+
