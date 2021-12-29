@@ -1,0 +1,13 @@
+--cpu=Cortex-M4.fp.sp
+".\objects\retarget.o"
+".\objects\sensor.o"
+".\objects\alarm.o"
+".\objects\super_user.o"
+".\objects\user.o"
+".\objects\alarm_system.o"
+".\objects\lab3.o"
+".\objects\startup_stm32f417xx.o"
+".\objects\system_stm32f4xx.o"
+--ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\lab1_hello_world.map" -o .\Objects\lab1_hello_world.axf
