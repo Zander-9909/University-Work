@@ -1,0 +1,2057 @@
+
+Hello world!
+textbuffer address = 0x2000002c 
+Press Enter to initialize Stock Exchange:+
+stock0000: price     61
+stock0001: price     87
+stock0002: price     31
+stock0003: price     99
+stock0004: price    103
+stock0005: price    104
+stock0006: price     83
+stock0007: price     30
+stock0008: price     10
+stock0009: price     81
+stock0010: price    101
+stock0011: price     79
+stock0012: price     27
+stock0013: price     70
+stock0014: price    108
+stock0015: price     94
+stock0016: price     25
+stock0017: price     57
+stock0018: price    101
+stock0019: price     67
+stock0020: price     58
+stock0021: price     90
+stock0022: price     51
+stock0023: price     30
+stock0024: price     28
+stock0025: price     80
+stock0026: price     11
+stock0027: price     14
+stock0028: price     40
+stock0029: price     67
+stock0030: price     84
+stock0031: price     72
+stock0032: price     13
+stock0033: price     21
+stock0034: price    106
+stock0035: price     15
+stock0036: price     11
+stock0037: price     67
+stock0038: price     91
+stock0039: price     53
+stock0040: price     38
+stock0041: price     14
+stock0042: price     25
+stock0043: price     23
+stock0044: price     10
+stock0045: price     51
+stock0046: price     46
+stock0047: price    107
+stock0048: price     12
+stock0049: price     17
+stock0050: price    105
+stock0051: price     68
+stock0052: price     90
+stock0053: price    102
+stock0054: price    100
+stock0055: price     86
+stock0056: price     11
+stock0057: price     50
+stock0058: price     37
+stock0059: price     41
+stock0060: price     45
+stock0061: price     94
+stock0062: price     72
+stock0063: price     90
+stock0064: price    107
+stock0065: price    105
+stock0066: price     90
+stock0067: price     60
+stock0068: price     37
+stock0069: price     25
+stock0070: price     47
+stock0071: price     35
+stock0072: price     49
+stock0073: price     74
+stock0074: price     21
+stock0075: price     73
+stock0076: price     45
+stock0077: price     37
+stock0078: price     45
+stock0079: price     40
+stock0080: price    106
+stock0081: price     58
+stock0082: price     34
+stock0083: price     10
+stock0084: price     26
+stock0085: price    104
+stock0086: price     28
+stock0087: price    107
+stock0088: price     90
+stock0089: price     53
+stock0090: price     36
+stock0091: price     74
+stock0092: price     40
+stock0093: price    108
+stock0094: price     40
+stock0095: price     65
+stock0096: price    106
+stock0097: price     75
+stock0098: price     40
+stock0099: price     64
+stock0100: price     27
+stock0101: price     85
+stock0102: price     79
+stock0103: price     18
+stock0104: price     61
+stock0105: price     18
+stock0106: price    104
+stock0107: price     62
+stock0108: price     81
+stock0109: price     26
+stock0110: price     21
+stock0111: price     65
+stock0112: price     95
+stock0113: price     11
+stock0114: price     59
+stock0115: price    103
+stock0116: price     86
+stock0117: price     94
+stock0118: price     47
+stock0119: price    105
+stock0120: price    105
+stock0121: price     33
+stock0122: price     56
+stock0123: price     14
+stock0124: price     57
+stock0125: price     26
+stock0126: price     81
+stock0127: price     77
+stock0128: price     55
+stock0129: price     97
+stock0130: price     57
+stock0131: price     31
+stock0132: price     24
+stock0133: price     57
+stock0134: price     55
+stock0135: price     77
+stock0136: price     94
+stock0137: price     26
+stock0138: price     63
+stock0139: price     71
+stock0140: price     80
+stock0141: price    106
+stock0142: price     65
+stock0143: price     85
+stock0144: price     66
+stock0145: price     49
+stock0146: price     39
+stock0147: price     63
+stock0148: price     24
+stock0149: price    104
+stock0150: price     68
+stock0151: price     97
+stock0152: price     36
+stock0153: price     94
+stock0154: price     39
+stock0155: price     27
+stock0156: price     33
+stock0157: price     20
+stock0158: price     71
+stock0159: price     65
+stock0160: price     13
+stock0161: price     59
+stock0162: price     16
+stock0163: price     33
+stock0164: price     22
+stock0165: price     66
+stock0166: price     31
+stock0167: price     74
+stock0168: price     98
+stock0169: price     91
+stock0170: price     62
+stock0171: price     58
+stock0172: price     76
+stock0173: price     79
+stock0174: price     41
+stock0175: price     20
+stock0176: price     14
+stock0177: price     38
+stock0178: price     82
+stock0179: price     49
+stock0180: price     11
+stock0181: price     30
+stock0182: price     71
+stock0183: price     49
+stock0184: price     49
+stock0185: price     47
+stock0186: price     99
+stock0187: price     20
+stock0188: price     75
+stock0189: price     65
+stock0190: price     86
+stock0191: price     45
+stock0192: price     20
+stock0193: price     71
+stock0194: price     73
+stock0195: price     42
+stock0196: price     65
+stock0197: price     40
+stock0198: price     63
+stock0199: price     66
+stock0200: price     65
+stock0201: price     41
+stock0202: price     59
+stock0203: price     30
+stock0204: price     75
+stock0205: price     12
+stock0206: price     89
+stock0207: price     39
+stock0208: price     71
+stock0209: price     87
+stock0210: price     73
+stock0211: price    106
+stock0212: price     15
+stock0213: price     43
+stock0214: price     20
+stock0215: price     66
+stock0216: price     85
+stock0217: price     12
+stock0218: price     39
+stock0219: price     84
+stock0220: price     41
+stock0221: price     55
+stock0222: price     20
+stock0223: price     37
+stock0224: price     89
+stock0225: price     72
+stock0226: price    105
+stock0227: price     31
+stock0228: price     23
+stock0229: price     79
+stock0230: price    101
+stock0231: price     54
+stock0232: price     12
+stock0233: price     37
+stock0234: price     11
+stock0235: price     47
+stock0236: price     82
+stock0237: price     77
+stock0238: price     99
+stock0239: price     58
+stock0240: price     91
+stock0241: price     98
+stock0242: price     68
+stock0243: price     98
+stock0244: price     72
+stock0245: price     25
+stock0246: price     53
+stock0247: price     58
+stock0248: price     87
+stock0249: price     18
+stock0250: price    107
+stock0251: price     39
+stock0252: price     26
+stock0253: price     77
+stock0254: price     18
+stock0255: price     11
+investor0000: cashe 23900 ----- total  23900 
+investor0001: cashe 86200 ----- total  86200 
+investor0002: cashe 50900 ----- total  50900 
+investor0003: cashe 37800 ----- total  37800 
+investor0004: cashe 18900 ----- total  18900 
+investor0005: cashe 63400 ----- total  63400 
+investor0006: cashe 40300 ----- total  40300 
+investor0007: cashe 53400 ----- total  53400 
+investor0008: cashe 33500 ----- total  33500 
+investor0009: cashe 27700 ----- total  27700 
+investor0010: cashe 8000 ----- total   8000 
+investor0011: cashe 30300 ----- total  30300 
+investor0012: cashe 35700 ----- total  35700 
+investor0013: cashe 57800 ----- total  57800 
+investor0014: cashe 24700 ----- total  24700 
+investor0015: cashe 3000 ----- total   3000 
+investor0016: cashe 21700 ----- total  21700 
+investor0017: cashe 94400 ----- total  94400 
+investor0018: cashe 15500 ----- total  15500 
+investor0019: cashe 41600 ----- total  41600 
+investor0020: cashe 98500 ----- total  98500 
+investor0021: cashe 69100 ----- total  69100 
+investor0022: cashe 98100 ----- total  98100 
+investor0023: cashe 12700 ----- total  12700 
+investor0024: cashe 96100 ----- total  96100 
+investor0025: cashe 29600 ----- total  29600 
+investor0026: cashe 56800 ----- total  56800 
+investor0027: cashe 38100 ----- total  38100 
+investor0028: cashe 67800 ----- total  67800 
+investor0029: cashe 77700 ----- total  77700 
+investor0030: cashe 81800 ----- total  81800 
+investor0031: cashe 30700 ----- total  30700 
+investor0032: cashe 28900 ----- total  28900 
+investor0033: cashe 85500 ----- total  85500 
+investor0034: cashe 16200 ----- total  16200 
+investor0035: cashe 99900 ----- total  99900 
+investor0036: cashe 53500 ----- total  53500 
+investor0037: cashe 55200 ----- total  55200 
+investor0038: cashe 96000 ----- total  96000 
+investor0039: cashe 31300 ----- total  31300 
+investor0040: cashe 51400 ----- total  51400 
+investor0041: cashe 13500 ----- total  13500 
+investor0042: cashe 19700 ----- total  19700 
+investor0043: cashe 57700 ----- total  57700 
+investor0044: cashe 97000 ----- total  97000 
+investor0045: cashe 24400 ----- total  24400 
+investor0046: cashe 65400 ----- total  65400 
+investor0047: cashe 45400 ----- total  45400 
+investor0048: cashe 97900 ----- total  97900 
+investor0049: cashe 38100 ----- total  38100 
+investor0050: cashe 34700 ----- total  34700 
+investor0051: cashe 39100 ----- total  39100 
+investor0052: cashe 69600 ----- total  69600 
+investor0053: cashe 59300 ----- total  59300 
+investor0054: cashe 97900 ----- total  97900 
+investor0055: cashe 53700 ----- total  53700 
+investor0056: cashe 14200 ----- total  14200 
+investor0057: cashe 35400 ----- total  35400 
+investor0058: cashe 53100 ----- total  53100 
+investor0059: cashe 17900 ----- total  17900 
+investor0060: cashe 16000 ----- total  16000 
+investor0061: cashe 94500 ----- total  94500 
+investor0062: cashe 48400 ----- total  48400 
+investor0063: cashe 63900 ----- total  63900 
+Stock Exchange is now open
+svc_number = 0
+BUY: stock0050: price     90
+BUY: investor0063: cashe 5400 (stock0050 58500) ----- total  63900 
+svc_number = 0
+BUY: stock0167: price     81
+BUY: investor0002: cashe 24575 (stock0167 26325) ----- total  50900 
+svc_number = 0
+BUY: stock0091: price     46
+BUY: investor0003: cashe 16824 (stock0091 20976) ----- total  37800 
+svc_number = 0
+BUY: stock0228: price     13
+BUY: investor0007: cashe 4377 (stock0228 49023) ----- total  53400 
+svc_number = 0
+BUY: stock0197: price     43
+BUY: investor0008: cashe 12774 (stock0197 20726) ----- total  33500 
+svc_number = 0
+BUY: stock0040: price     20
+BUY: investor0013: cashe 17060 (stock0040 40740) ----- total  57800 
+svc_number = 0
+BUY: stock0051: price     45
+BUY: investor0015: cashe 1650 (stock0051 1350) ----- total   3000 
+svc_number = 0
+BUY: stock0061: price     73
+BUY: investor0016: cashe 10312 (stock0061 11388) ----- total  21700 
+svc_number = 0
+BUY: stock0076: price     24
+BUY: investor0017: cashe 3536 (stock0076 90864) ----- total  94400 
+svc_number = 0
+BUY: stock0163: price     33
+BUY: investor0018: cashe 15401 (stock0163 99) ----- total  15500 
+svc_number = 0
+BUY: stock0153: price    129
+BUY: investor0019: cashe 32183 (stock0153 9417) ----- total  41600 
+svc_number = 0
+BUY: stock0018: price     84
+BUY: investor0022: cashe 79956 (stock0018 18144) ----- total  98100 
+svc_number = 0
+BUY: stock0161: price     31
+BUY: investor0024: cashe 90582 (stock0161 5518) ----- total  96100 
+svc_number = 0
+BUY: stock0199: price     37
+BUY: investor0025: cashe 3959 (stock0199 25641) ----- total  29600 
+svc_number = 0
+BUY: stock0122: price     33
+BUY: investor0026: cashe 14197 (stock0122 42603) ----- total  56800 
+svc_number = 0
+BUY: stock0129: price     84
+BUY: investor0028: cashe 28824 (stock0129 38976) ----- total  67800 
+svc_number = 0
+BUY: stock0170: price     77
+BUY: investor0029: cashe 39123 (stock0170 38577) ----- total  77700 
+svc_number = 0
+BUY: stock0087: price     72
+BUY: investor0030: cashe 80720 (stock0087 1080) ----- total  81800 
+svc_number = 0
+BUY: stock0126: price     47
+BUY: investor0033: cashe 57112 (stock0126 28388) ----- total  85500 
+svc_number = 0
+BUY: stock0140: price     74
+BUY: investor0039: cashe 17388 (stock0140 13912) ----- total  31300 
+svc_number = 0
+BUY: stock0100: price     17
+BUY: investor0041: cashe 9828 (stock0100 3672) ----- total  13500 
+svc_number = 0
+BUY: stock0050: price     94
+BUY: investor0042: cashe 4096 (stock0050 15604) ----- total  19700 
+svc_number = 0
+BUY: stock0229: price     42
+BUY: investor0047: cashe 33430 (stock0229 11970) ----- total  45400 
+svc_number = 0
+BUY: stock0002: price     25
+BUY: investor0049: cashe 30150 (stock0002 7950) ----- total  38100 
+svc_number = 0
+BUY: stock0196: price     60
+BUY: investor0050: cashe 32480 (stock0196 2220) ----- total  34700 
+svc_number = 0
+BUY: stock0209: price     47
+BUY: investor0051: cashe 5730 (stock0209 33370) ----- total  39100 
+svc_number = 0
+BUY: stock0016: price     21
+BUY: investor0054: cashe 13879 (stock0016 84021) ----- total  97900 
+svc_number = 0
+BUY: stock0146: price     29
+BUY: investor0055: cashe 20582 (stock0146 33118) ----- total  53700 
+svc_number = 0
+BUY: stock0066: price     57
+BUY: investor0060: cashe 12067 (stock0066 3933) ----- total  16000 
+svc_number = 0
+BUY: stock0199: price     35
+BUY: investor0061: cashe 91280 (stock0199 3220) ----- total  94500 
+svc_number = 1
+SELL: stock0050: price     65
+SELL: investor0063: cashe 47650 ----- total  47650 
+svc_number = 0
+BUY: stock0117: price     74
+BUY: investor0001: cashe 75026 (stock0117 11174) ----- total  86200 
+svc_number = 1
+SELL: stock0167: price     81
+SELL: investor0002: cashe 50900 ----- total  50900 
+svc_number = 0
+BUY: stock0114: price     33
+BUY: investor0004: cashe 8340 (stock0114 10560) ----- total  18900 
+svc_number = 0
+BUY: stock0147: price     79
+BUY: investor0006: cashe 13045 (stock0147 27255) ----- total  40300 
+svc_number = 0
+BUY: stock0102: price     66
+BUY: investor0007: cashe 2199 (stock0228 49023) (stock0102 2178) ----- total  53400 
+svc_number = 0
+BUY: stock0214: price     16
+BUY: investor0008: cashe 9958 (stock0197 20726) (stock0214 2816) ----- total  33500 
+svc_number = 0
+BUY: stock0193: price     42
+BUY: investor0012: cashe 31752 (stock0193 3948) ----- total  35700 
+svc_number = 1
+SELL: stock0040: price     29
+SELL: investor0013: cashe 76133 ----- total  76133 
+svc_number = 0
+BUY: stock0134: price     35
+BUY: investor0015: cashe 40 (stock0051 1350) (stock0134 1610) ----- total   3000 
+svc_number = 1
+SELL: stock0061: price     64
+SELL: investor0016: cashe 20296 ----- total  20296 
+svc_number = 0
+BUY: stock0194: price     68
+BUY: investor0018: cashe 12545 (stock0163 99) (stock0194 2856) ----- total  15500 
+svc_number = 1
+SELL: stock0153: price    135
+SELL: investor0019: cashe 42038 ----- total  42038 
+svc_number = 1
+SELL: stock0018: price     62
+SELL: investor0022: cashe 93348 ----- total  93348 
+svc_number = 0
+BUY: stock0143: price     44
+BUY: investor0024: cashe 46582 (stock0161 5518) (stock0143 44000) ----- total  96100 
+svc_number = 0
+BUY: stock0025: price     42
+BUY: investor0025: cashe 3329 (stock0199 24255) (stock0025 630) ----- total  28214 
+svc_number = 0
+BUY: stock0241: price     52
+BUY: investor0027: cashe 14440 (stock0241 23660) ----- total  38100 
+svc_number = 1
+SELL: stock0129: price     85
+SELL: investor0028: cashe 68264 ----- total  68264 
+svc_number = 0
+BUY: stock0254: price     15
+BUY: investor0030: cashe 12305 (stock0087 1080) (stock0254 68415) ----- total  81800 
+svc_number = 0
+BUY: stock0087: price     69
+BUY: investor0031: cashe 754 (stock0087 29946) ----- total  30700 
+svc_number = 0
+BUY: stock0200: price     34
+BUY: investor0032: cashe 28628 (stock0200 272) ----- total  28900 
+svc_number = 0
+BUY: stock0199: price     41
+BUY: investor0036: cashe 50097 (stock0199 3403) ----- total  53500 
+svc_number = 1
+SELL: stock0140: price    103
+SELL: investor0039: cashe 36752 ----- total  36752 
+svc_number = 0
+BUY: stock0134: price     36
+BUY: investor0041: cashe 9612 (stock0100 3672) (stock0134 216) ----- total  13500 
+svc_number = 0
+BUY: stock0025: price     42
+BUY: investor0042: cashe 3424 (stock0050 10790) (stock0025 672) ----- total  14886 
+svc_number = 0
+BUY: stock0127: price     43
+BUY: investor0044: cashe 6657 (stock0127 90343) ----- total  97000 
+svc_number = 1
+SELL: stock0229: price     67
+SELL: investor0047: cashe 52525 ----- total  52525 
+svc_number = 0
+BUY: stock0044: price     13
+BUY: investor0049: cashe 26718 (stock0002 7950) (stock0044 3432) ----- total  38100 
+svc_number = 0
+BUY: stock0119: price     66
+BUY: investor0050: cashe 11624 (stock0196 2220) (stock0119 20856) ----- total  34700 
+svc_number = 0
+BUY: stock0107: price     31
+BUY: investor0052: cashe 5461 (stock0107 64139) ----- total  69600 
+svc_number = 0
+BUY: stock0161: price     30
+BUY: investor0054: cashe 1309 (stock0016 84021) (stock0161 12570) ----- total  97900 
+svc_number = 1
+SELL: stock0146: price     30
+SELL: investor0055: cashe 54842 ----- total  54842 
+svc_number = 0
+BUY: stock0140: price    101
+BUY: investor0058: cashe 41283 (stock0140 11817) ----- total  53100 
+svc_number = 0
+BUY: stock0228: price     13
+BUY: investor0059: cashe 8397 (stock0228 9503) ----- total  17900 
+svc_number = 1
+SELL: stock0066: price     46
+SELL: investor0060: cashe 15241 ----- total  15241 
+svc_number = 1
+SELL: stock0199: price     39
+SELL: investor0061: cashe 94868 ----- total  94868 
+svc_number = 0
+BUY: stock0060: price     37
+BUY: investor0063: cashe 39473 (stock0060 8177) ----- total  47650 
+svc_number = 1
+SELL: stock0117: price     99
+SELL: investor0001: cashe 89975 ----- total  89975 
+svc_number = 0
+BUY: stock0030: price     46
+BUY: investor0002: cashe 45012 (stock0030 5888) ----- total  50900 
+svc_number = 0
+BUY: stock0138: price     32
+BUY: investor0003: cashe 9368 (stock0091 20976) (stock0138 7456) ----- total  37800 
+svc_number = 1
+SELL: stock0114: price     32
+SELL: investor0004: cashe 18580 ----- total  18580 
+svc_number = 1
+SELL: stock0147: price     43
+SELL: investor0006: cashe 27880 ----- total  27880 
+svc_number = 0
+BUY: stock0065: price     76
+BUY: investor0007: cashe 679 (stock0228 49023) (stock0102 2178) (stock0065 1520) ----- total  53400 
+svc_number = 1
+SELL: stock0197: price     32
+SELL: investor0008: cashe 25382 (stock0214 2816) ----- total  28198 
+svc_number = 0
+BUY: stock0097: price     40
+BUY: investor0010: cashe 4440 (stock0097 3560) ----- total   8000 
+svc_number = 0
+BUY: stock0182: price     36
+BUY: investor0011: cashe 27132 (stock0182 3168) ----- total  30300 
+svc_number = 0
+BUY: stock0127: price     44
+BUY: investor0012: cashe 16132 (stock0193 3948) (stock0127 15620) ----- total  35700 
+svc_number = 0
+BUY: stock0105: price     12
+BUY: investor0014: cashe 24544 (stock0105 156) ----- total  24700 
+svc_number = 1
+SELL: stock0134: price     42
+SELL: investor0015: cashe 1972 (stock0051 1350) ----- total   3322 
+svc_number = 1
+SELL: stock0076: price     25
+SELL: investor0017: cashe 98186 ----- total  98186 
+svc_number = 0
+BUY: stock0135: price     40
+BUY: investor0019: cashe 4798 (stock0135 37240) ----- total  42038 
+svc_number = 0
+BUY: stock0102: price     69
+BUY: investor0021: cashe 67030 (stock0102 2070) ----- total  69100 
+svc_number = 1
+SELL: stock0143: price     44
+SELL: investor0024: cashe 90582 (stock0161 5340) ----- total  95922 
+svc_number = 0
+BUY: stock0070: price     62
+BUY: investor0026: cashe 13515 (stock0122 42603) (stock0070 682) ----- total  56800 
+svc_number = 1
+SELL: stock0241: price     66
+SELL: investor0027: cashe 44470 ----- total  44470 
+svc_number = 1
+SELL: stock0170: price     48
+SELL: investor0029: cashe 63171 ----- total  63171 
+svc_number = 0
+BUY: stock0060: price     29
+BUY: investor0030: cashe 10101 (stock0087 1035) (stock0254 68415) (stock0060 2204) ----- total  81755 
+svc_number = 1
+SELL: stock0087: price    100
+SELL: investor0031: cashe 44154 ----- total  44154 
+svc_number = 1
+SELL: stock0126: price     56
+SELL: investor0033: cashe 90936 ----- total  90936 
+svc_number = 0
+BUY: stock0092: price     23
+BUY: investor0036: cashe 12216 (stock0199 3237) (stock0092 37881) ----- total  53334 
+svc_number = 0
+BUY: stock0139: price     62
+BUY: investor0038: cashe 47950 (stock0139 48050) ----- total  96000 
+svc_number = 0
+BUY: stock0216: price     52
+BUY: investor0040: cashe 4652 (stock0216 46748) ----- total  51400 
+svc_number = 0
+BUY: stock0034: price     54
+BUY: investor0041: cashe 3510 (stock0100 3672) (stock0134 252) (stock0034 6102) ----- total  13536 
+svc_number = 0
+BUY: stock0031: price     45
+BUY: investor0042: cashe 409 (stock0050 10790) (stock0025 672) (stock0031 3015) ----- total  14886 
+svc_number = 0
+BUY: stock0053: price     79
+BUY: investor0043: cashe 13855 (stock0053 43845) ----- total  57700 
+svc_number = 1
+SELL: stock0127: price     45
+SELL: investor0044: cashe 101202 ----- total 101202 
+svc_number = 0
+BUY: stock0021: price     50
+BUY: investor0046: cashe 650 (stock0021 64750) ----- total  65400 
+svc_number = 0
+BUY: stock0030: price     49
+BUY: investor0048: cashe 4555 (stock0030 93345) ----- total  97900 
+svc_number = 0
+BUY: stock0037: price     35
+BUY: investor0049: cashe 1448 (stock0002 7950) (stock0044 3432) (stock0037 25270) ----- total  38100 
+svc_number = 1
+SELL: stock0196: price     35
+SELL: investor0050: cashe 12919 (stock0119 20856) ----- total  33775 
+svc_number = 1
+SELL: stock0209: price     51
+SELL: investor0051: cashe 41940 ----- total  41940 
+svc_number = 0
+BUY: stock0115: price     66
+BUY: investor0053: cashe 44846 (stock0115 14454) ----- total  59300 
+svc_number = 1
+SELL: stock0161: price     30
+SELL: investor0054: cashe 13879 (stock0016 84021) ----- total  97900 
+svc_number = 0
+BUY: stock0120: price     59
+BUY: investor0056: cashe 8182 (stock0120 6018) ----- total  14200 
+svc_number = 1
+SELL: stock0140: price     73
+SELL: investor0058: cashe 49824 ----- total  49824 
+svc_number = 0
+BUY: stock0165: price     69
+BUY: investor0060: cashe 1855 (stock0165 13386) ----- total  15241 
+svc_number = 0
+BUY: stock0045: price     68
+BUY: investor0061: cashe 5176 (stock0045 89692) ----- total  94868 
+svc_number = 1
+SELL: stock0060: price     30
+SELL: investor0063: cashe 46103 ----- total  46103 
+svc_number = 1
+SELL: stock0030: price     46
+SELL: investor0002: cashe 50900 ----- total  50900 
+svc_number = 1
+SELL: stock0102: price     50
+SELL: investor0007: cashe 2329 (stock0228 49023) (stock0065 1520) ----- total  52872 
+svc_number = 0
+BUY: stock0193: price     41
+BUY: investor0009: cashe 12571 (stock0193 15129) ----- total  27700 
+svc_number = 1
+SELL: stock0097: price     64
+SELL: investor0010: cashe 10136 ----- total  10136 
+svc_number = 0
+BUY: stock0067: price     42
+BUY: investor0012: cashe 9076 (stock0193 3854) (stock0127 15975) (stock0067 7056) ----- total  35961 
+svc_number = 0
+BUY: stock0115: price     62
+BUY: investor0014: cashe 13260 (stock0105 156) (stock0115 11284) ----- total  24700 
+svc_number = 0
+BUY: stock0051: price     48
+BUY: investor0015: cashe 628 (stock0051 1440) (stock0051 1344) ----- total   3412 
+svc_number = 1
+SELL: stock0163: price     33
+SELL: investor0018: cashe 12644 (stock0194 2856) ----- total  15500 
+svc_number = 0
+BUY: stock0247: price     53
+BUY: investor0021: cashe 43286 (stock0102 1500) (stock0247 23744) ----- total  68530 
+svc_number = 0
+BUY: stock0034: price     54
+BUY: investor0024: cashe 80592 (stock0161 5340) (stock0034 9990) ----- total  95922 
+svc_number = 0
+BUY: stock0107: price     31
+BUY: investor0025: cashe 1376 (stock0199 27027) (stock0025 630) (stock0107 1953) ----- total  30986 
+svc_number = 0
+BUY: stock0198: price     48
+BUY: investor0028: cashe 10280 (stock0198 57984) ----- total  68264 
+svc_number = 0
+BUY: stock0197: price     43
+BUY: investor0030: cashe 5500 (stock0087 1500) (stock0254 68415) (stock0060 2280) (stock0197 4601) ----- total  82296 
+svc_number = 0
+BUY: stock0238: price     99
+BUY: investor0032: cashe 25361 (stock0200 272) (stock0238 3267) ----- total  28900 
+svc_number = 0
+BUY: stock0177: price     51
+BUY: investor0033: cashe 76503 (stock0177 14433) ----- total  90936 
+svc_number = 0
+BUY: stock0086: price     18
+BUY: investor0034: cashe 2502 (stock0086 13698) ----- total  16200 
+svc_number = 0
+BUY: stock0032: price      7
+BUY: investor0035: cashe 27709 (stock0032 72191) ----- total  99900 
+svc_number = 1
+SELL: stock0092: price     23
+SELL: investor0036: cashe 50097 (stock0199 3237) ----- total  53334 
+svc_number = 1
+SELL: stock0139: price     41
+SELL: investor0038: cashe 79725 ----- total  79725 
+svc_number = 1
+SELL: stock0216: price     46
+SELL: investor0040: cashe 46006 ----- total  46006 
+svc_number = 1
+SELL: stock0100: price     19
+SELL: investor0041: cashe 7614 (stock0134 252) (stock0034 6102) ----- total  13968 
+svc_number = 0
+BUY: stock0139: price     66
+BUY: investor0043: cashe 4087 (stock0053 43845) (stock0139 9768) ----- total  57700 
+svc_number = 0
+BUY: stock0078: price     27
+BUY: investor0046: cashe 110 (stock0021 64750) (stock0078 540) ----- total  65400 
+svc_number = 1
+SELL: stock0030: price     49
+SELL: investor0048: cashe 97900 ----- total  97900 
+svc_number = 0
+BUY: stock0220: price     28
+BUY: investor0049: cashe 300 (stock0002 7950) (stock0044 3432) (stock0037 25270) (stock0220 1148) ----- total  38100 
+svc_number = 0
+BUY: stock0251: price     31
+BUY: investor0050: cashe 4394 (stock0251 8525) (stock0119 20856) ----- total  33775 
+svc_number = 0
+BUY: stock0148: price     15
+BUY: investor0051: cashe 4830 (stock0148 37110) ----- total  41940 
+svc_number = 1
+SELL: stock0115: price     58
+SELL: investor0053: cashe 57548 ----- total  57548 
+svc_number = 1
+SELL: stock0120: price     63
+SELL: investor0056: cashe 14608 ----- total  14608 
+svc_number = 1
+SELL: stock0228: price     12
+SELL: investor0059: cashe 17169 ----- total  17169 
+svc_number = 1
+SELL: stock0045: price     40
+SELL: investor0061: cashe 57936 ----- total  57936 
+svc_number = 0
+BUY: stock0221: price     52
+BUY: investor0062: cashe 10648 (stock0221 37752) ----- total  48400 
+svc_number = 0
+BUY: stock0121: price     35
+BUY: investor0002: cashe 18630 (stock0121 32270) ----- total  50900 
+svc_number = 0
+BUY: stock0093: price     90
+BUY: investor0003: cashe 8378 (stock0091 20976) (stock0138 7456) (stock0093 990) ----- total  37800 
+svc_number = 0
+BUY: stock0150: price     50
+BUY: investor0007: cashe 479 (stock0228 45252) (stock0150 1850) (stock0065 1520) ----- total  49101 
+svc_number = 1
+SELL: stock0214: price     13
+SELL: investor0008: cashe 27670 ----- total  27670 
+svc_number = 0
+BUY: stock0090: price     32
+BUY: investor0010: cashe 2008 (stock0090 8128) ----- total  10136 
+svc_number = 1
+SELL: stock0182: price     39
+SELL: investor0011: cashe 30564 ----- total  30564 
+svc_number = 1
+SELL: stock0067: price     33
+SELL: investor0012: cashe 14620 (stock0193 3854) (stock0127 15975) ----- total  34449 
+svc_number = 1
+SELL: stock0105: price     13
+SELL: investor0014: cashe 13429 (stock0115 10556) ----- total  23985 
+svc_number = 0
+BUY: stock0166: price     18
+BUY: investor0016: cashe 17596 (stock0166 2700) ----- total  20296 
+svc_number = 0
+BUY: stock0072: price     28
+BUY: investor0017: cashe 11666 (stock0072 86520) ----- total  98186 
+svc_number = 0
+BUY: stock0170: price     40
+BUY: investor0018: cashe 2564 (stock0170 10080) (stock0194 2856) ----- total  15500 
+svc_number = 1
+SELL: stock0135: price     73
+SELL: investor0019: cashe 72761 ----- total  72761 
+svc_number = 1
+SELL: stock0102: price     48
+SELL: investor0021: cashe 44726 (stock0247 23744) ----- total  68470 
+svc_number = 0
+BUY: stock0161: price     31
+BUY: investor0024: cashe 2317 (stock0161 5518) (stock0034 9990) (stock0161 78275) ----- total  96100 
+svc_number = 1
+SELL: stock0199: price     40
+SELL: investor0025: cashe 29096 (stock0025 630) (stock0107 1953) ----- total  31679 
+svc_number = 0
+BUY: stock0059: price     22
+BUY: investor0027: cashe 4254 (stock0059 40216) ----- total  44470 
+svc_number = 1
+SELL: stock0198: price     43
+SELL: investor0028: cashe 62224 ----- total  62224 
+svc_number = 0
+BUY: stock0022: price     35
+BUY: investor0030: cashe 3470 (stock0087 1500) (stock0254 68415) (stock0060 2280) (stock0197 4601) (stock0022 2030) ----- total  82296 
+svc_number = 1
+SELL: stock0200: price     40
+SELL: investor0032: cashe 25681 (stock0238 3267) ----- total  28948 
+svc_number = 1
+SELL: stock0177: price     34
+SELL: investor0033: cashe 86125 ----- total  86125 
+svc_number = 1
+SELL: stock0032: price      7
+SELL: investor0035: cashe 99900 ----- total  99900 
+svc_number = 0
+BUY: stock0130: price     29
+BUY: investor0037: cashe 6741 (stock0130 48459) ----- total  55200 
+svc_number = 0
+BUY: stock0129: price     78
+BUY: investor0038: cashe 165 (stock0129 79560) ----- total  79725 
+svc_number = 0
+BUY: stock0162: price     10
+BUY: investor0039: cashe 16542 (stock0162 20210) ----- total  36752 
+svc_number = 0
+BUY: stock0077: price     27
+BUY: investor0040: cashe 40525 (stock0077 5481) ----- total  46006 
+svc_number = 1
+SELL: stock0134: price     41
+SELL: investor0041: cashe 7860 (stock0034 6102) ----- total  13962 
+svc_number = 0
+BUY: stock0184: price     26
+BUY: investor0043: cashe 2553 (stock0053 43845) (stock0139 9768) (stock0184 1534) ----- total  57700 
+svc_number = 0
+BUY: stock0073: price     80
+BUY: investor0046: cashe 30 (stock0021 64750) (stock0078 540) (stock0073 80) ----- total  65400 
+svc_number = 1
+SELL: stock0044: price     13
+SELL: investor0049: cashe 3732 (stock0002 7950) (stock0037 25270) (stock0220 1148) ----- total  38100 
+svc_number = 1
+SELL: stock0119: price     74
+SELL: investor0050: cashe 27778 (stock0251 8525) ----- total  36303 
+svc_number = 1
+SELL: stock0107: price     31
+SELL: investor0052: cashe 69600 ----- total  69600 
+svc_number = 0
+BUY: stock0060: price     32
+BUY: investor0054: cashe 12343 (stock0016 84021) (stock0060 1536) ----- total  97900 
+svc_number = 0
+BUY: stock0127: price     45
+BUY: investor0056: cashe 14068 (stock0127 540) ----- total  14608 
+svc_number = 0
+BUY: stock0055: price     51
+BUY: investor0057: cashe 9798 (stock0055 25602) ----- total  35400 
+svc_number = 1
+SELL: stock0165: price     69
+SELL: investor0060: cashe 15241 ----- total  15241 
+svc_number = 1
+SELL: stock0221: price     28
+SELL: investor0062: cashe 30976 ----- total  30976 
+svc_number = 0
+BUY: stock0085: price     77
+BUY: investor0000: cashe 19973 (stock0085 3927) ----- total  23900 
+svc_number = 0
+BUY: stock0042: price     16
+BUY: investor0002: cashe 16582 (stock0121 32270) (stock0042 2048) ----- total  50900 
+svc_number = 0
+BUY: stock0248: price     59
+BUY: investor0003: cashe 5959 (stock0091 20976) (stock0138 7456) (stock0093 990) (stock0248 2419) ----- total  37800 
+svc_number = 0
+BUY: stock0027: price      9
+BUY: investor0004: cashe 8203 (stock0027 10377) ----- total  18580 
+svc_number = 0
+BUY: stock0123: price      8
+BUY: investor0005: cashe 33984 (stock0123 29416) ----- total  63400 
+svc_number = 0
+BUY: stock0247: price     48
+BUY: investor0007: cashe 47 (stock0228 45252) (stock0150 1850) (stock0065 1520) (stock0247 432) ----- total  49101 
+svc_number = 0
+BUY: stock0219: price     46
+BUY: investor0009: cashe 9351 (stock0193 15129) (stock0219 3220) ----- total  27700 
+svc_number = 1
+SELL: stock0090: price     27
+SELL: investor0010: cashe 8866 ----- total   8866 
+svc_number = 0
+BUY: stock0182: price     41
+BUY: investor0011: cashe 28965 (stock0182 1599) ----- total  30564 
+svc_number = 1
+SELL: stock0193: price     37
+SELL: investor0012: cashe 18098 (stock0127 15975) ----- total  34073 
+svc_number = 0
+BUY: stock0132: price     14
+BUY: investor0013: cashe 24291 (stock0132 51842) ----- total  76133 
+svc_number = 1
+SELL: stock0115: price     87
+SELL: investor0014: cashe 29263 ----- total  29263 
+svc_number = 0
+BUY: stock0052: price     98
+BUY: investor0015: cashe 530 (stock0051 1440) (stock0051 1344) (stock0052 98) ----- total   3412 
+svc_number = 1
+SELL: stock0166: price     18
+SELL: investor0016: cashe 20296 ----- total  20296 
+svc_number = 1
+SELL: stock0170: price     62
+SELL: investor0018: cashe 18188 (stock0194 2856) ----- total  21044 
+svc_number = 0
+BUY: stock0179: price     25
+BUY: investor0021: cashe 27501 (stock0179 17225) (stock0247 21504) ----- total  66230 
+svc_number = 0
+BUY: stock0163: price     44
+BUY: investor0023: cashe 6760 (stock0163 5940) ----- total  12700 
+svc_number = 0
+BUY: stock0156: price     20
+BUY: investor0024: cashe 2297 (stock0161 5518) (stock0034 9990) (stock0161 78275) (stock0156 20) ----- total  96100 
+svc_number = 0
+BUY: stock0175: price     11
+BUY: investor0025: cashe 12717 (stock0175 16379) (stock0025 630) (stock0107 1953) ----- total  31679 
+svc_number = 0
+BUY: stock0240: price     97
+BUY: investor0026: cashe 808 (stock0122 42603) (stock0070 682) (stock0240 12707) ----- total  56800 
+svc_number = 0
+BUY: stock0040: price     37
+BUY: investor0029: cashe 33682 (stock0040 29489) ----- total  63171 
+svc_number = 1
+SELL: stock0022: price     28
+SELL: investor0030: cashe 5094 (stock0087 1500) (stock0254 68415) (stock0060 2432) (stock0197 4601) ----- total  82042 
+svc_number = 1
+SELL: stock0238: price     99
+SELL: investor0032: cashe 28948 ----- total  28948 
+svc_number = 0
+BUY: stock0008: price      7
+BUY: investor0034: cashe 2341 (stock0086 13698) (stock0008 161) ----- total  16200 
+svc_number = 1
+SELL: stock0199: price     36
+SELL: investor0036: cashe 53085 ----- total  53085 
+svc_number = 1
+SELL: stock0129: price     66
+SELL: investor0038: cashe 67485 ----- total  67485 
+svc_number = 0
+BUY: stock0136: price     61
+BUY: investor0040: cashe 30094 (stock0077 5481) (stock0136 10431) ----- total  46006 
+svc_number = 1
+SELL: stock0034: price     54
+SELL: investor0041: cashe 13962 ----- total  13962 
+svc_number = 1
+SELL: stock0025: price     53
+SELL: investor0042: cashe 1257 (stock0050 10790) (stock0031 3015) ----- total  15062 
+svc_number = 0
+BUY: stock0149: price    105
+BUY: investor0044: cashe 10902 (stock0149 90300) ----- total 101202 
+svc_number = 1
+SELL: stock0078: price     27
+SELL: investor0046: cashe 570 (stock0021 64750) (stock0073 80) ----- total  65400 
+svc_number = 0
+BUY: stock0051: price     48
+BUY: investor0048: cashe 13036 (stock0051 84864) ----- total  97900 
+svc_number = 0
+BUY: stock0075: price     55
+BUY: investor0049: cashe 1917 (stock0002 7950) (stock0075 1815) (stock0037 25270) (stock0220 1148) ----- total  38100 
+svc_number = 1
+SELL: stock0251: price     39
+SELL: investor0050: cashe 38503 ----- total  38503 
+svc_number = 0
+BUY: stock0156: price     18
+BUY: investor0052: cashe 44670 (stock0156 24930) ----- total  69600 
+svc_number = 0
+BUY: stock0181: price     23
+BUY: investor0053: cashe 39493 (stock0181 18055) ----- total  57548 
+svc_number = 1
+SELL: stock0016: price     16
+SELL: investor0054: cashe 76359 (stock0060 1536) ----- total  77895 
+svc_number = 0
+BUY: stock0018: price     66
+BUY: investor0056: cashe 1264 (stock0127 540) (stock0018 12804) ----- total  14608 
+svc_number = 0
+BUY: stock0138: price     35
+BUY: investor0057: cashe 5388 (stock0055 25602) (stock0138 4410) ----- total  35400 
+svc_number = 0
+BUY: stock0108: price     45
+BUY: investor0059: cashe 16044 (stock0108 1125) ----- total  17169 
+svc_number = 1
+SELL: stock0085: price     78
+SELL: investor0000: cashe 23951 ----- total  23951 
+svc_number = 1
+SELL: stock0042: price     16
+SELL: investor0002: cashe 18630 (stock0121 32270) ----- total  50900 
+svc_number = 1
+SELL: stock0248: price     46
+SELL: investor0003: cashe 7845 (stock0091 20976) (stock0138 8155) (stock0093 990) ----- total  37966 
+svc_number = 1
+SELL: stock0123: price      8
+SELL: investor0005: cashe 63400 ----- total  63400 
+svc_number = 0
+svc_number = 0
+BUY: stock0143: price     44
+BUY: investor0007: cashe 3 (stock0228 45252) (stock0150 1850) (stock0065 1520) (stock0247 432) (stock0143 44) ----- total  49101 
+svc_number = 1
+SELL: stock0219: price     45
+SELL: investor0009: cashe 12501 (stock0193 13653) ----- total  26154 
+svc_number = 1
+SELL: stock0182: price     42
+SELL: investor0011: cashe 30603 ----- total  30603 
+svc_number = 1
+SELL: stock0132: price     17
+SELL: investor0013: cashe 87242 ----- total  87242 
+svc_number = 1
+SELL: stock0052: price     84
+SELL: investor0015: cashe 614 (stock0051 1440) (stock0051 1344) ----- total   3398 
+svc_number = 0
+BUY: stock0206: price     46
+BUY: investor0017: cashe 2328 (stock0072 86520) (stock0206 9338) ----- total  98186 
+svc_number = 0
+BUY: stock0144: price     36
+BUY: investor0018: cashe 14480 (stock0144 3708) (stock0194 2856) ----- total  21044 
+svc_number = 0
+BUY: stock0192: price     11
+BUY: investor0021: cashe 14631 (stock0179 17225) (stock0247 21504) (stock0192 12870) ----- total  66230 
+svc_number = 0
+BUY: stock0009: price    106
+BUY: investor0022: cashe 38016 (stock0009 55332) ----- total  93348 
+svc_number = 0
+BUY: stock0064: price     81
+BUY: investor0023: cashe 6031 (stock0163 5940) (stock0064 729) ----- total  12700 
+svc_number = 0
+BUY: stock0244: price     37
+BUY: investor0024: cashe 2038 (stock0161 5518) (stock0034 9990) (stock0161 78275) (stock0156 18) (stock0244 259) ----- total  96098 
+svc_number = 1
+SELL: stock0025: price     50
+SELL: investor0025: cashe 13467 (stock0175 16379) (stock0107 1953) ----- total  31799 
+svc_number = 1
+SELL: stock0059: price     21
+SELL: investor0027: cashe 42642 ----- total  42642 
+svc_number = 1
+SELL: stock0040: price     27
+SELL: investor0029: cashe 55201 ----- total  55201 
+svc_number = 0
+BUY: stock0073: price     53
+BUY: investor0030: cashe 2179 (stock0087 1500) (stock0254 68415) (stock0060 2432) (stock0197 4601) (stock0073 2915) ----- total  82042 
+svc_number = 0
+BUY: stock0170: price     78
+BUY: investor0032: cashe 1726 (stock0170 27222) ----- total  28948 
+svc_number = 0
+BUY: stock0158: price     36
+BUY: investor0033: cashe 12901 (stock0158 73224) ----- total  86125 
+svc_number = 0
+BUY: stock0192: price     15
+BUY: investor0035: cashe 52875 (stock0192 47025) ----- total  99900 
+svc_number = 0
+BUY: stock0036: price      8
+BUY: investor0037: cashe 5293 (stock0130 48459) (stock0036 1448) ----- total  55200 
+svc_number = 0
+BUY: stock0245: price     15
+BUY: investor0038: cashe 25620 (stock0245 41865) ----- total  67485 
+svc_number = 1
+SELL: stock0162: price     10
+SELL: investor0039: cashe 36752 ----- total  36752 
+svc_number = 0
+BUY: stock0179: price     26
+BUY: investor0042: cashe 789 (stock0050 10790) (stock0179 468) (stock0031 3015) ----- total  15062 
+svc_number = 1
+SELL: stock0053: price     99
+SELL: investor0043: cashe 57498 (stock0139 9768) (stock0184 1534) ----- total  68800 
+svc_number = 1
+SELL: stock0073: price     78
+SELL: investor0046: cashe 648 (stock0021 64750) ----- total  65398 
+svc_number = 1
+SELL: stock0051: price     37
+SELL: investor0048: cashe 78452 ----- total  78452 
+svc_number = 1
+SELL: stock0075: price     50
+SELL: investor0049: cashe 3567 (stock0002 7950) (stock0037 25270) (stock0220 1148) ----- total  37935 
+svc_number = 1
+SELL: stock0148: price     18
+SELL: investor0051: cashe 49362 ----- total  49362 
+svc_number = 0
+BUY: stock0031: price     44
+BUY: investor0052: cashe 32658 (stock0156 24930) (stock0031 12012) ----- total  69600 
+svc_number = 0
+BUY: stock0105: price     11
+BUY: investor0053: cashe 14325 (stock0181 18055) (stock0105 25168) ----- total  57548 
+svc_number = 1
+SELL: stock0060: price     38
+SELL: investor0054: cashe 78183 ----- total  78183 
+svc_number = 0
+BUY: stock0089: price     27
+BUY: investor0056: cashe 481 (stock0127 540) (stock0018 12804) (stock0089 783) ----- total  14608 
+svc_number = 1
+SELL: stock0138: price     35
+SELL: investor0057: cashe 9798 (stock0055 25602) ----- total  35400 
+svc_number = 0
+BUY: stock0020: price     50
+BUY: investor0058: cashe 9474 (stock0020 40350) ----- total  49824 
+svc_number = 1
+SELL: stock0108: price     45
+SELL: investor0059: cashe 17169 ----- total  17169 
+svc_number = 0
+BUY: stock0088: price    101
+BUY: investor0061: cashe 4204 (stock0088 53732) ----- total  57936 
+svc_number = 0
+BUY: stock0224: price     52
+BUY: investor0062: cashe 24164 (stock0224 6812) ----- total  30976 
+svc_number = 0
+BUY: stock0014: price     82
+BUY: investor0063: cashe 43807 (stock0014 2296) ----- total  46103 
+svc_number = 0
+BUY: stock0175: price     28
+BUY: investor0001: cashe 21795 (stock0175 68180) ----- total  89975 
+svc_number = 1
+SELL: stock0121: price     20
+SELL: investor0002: cashe 37070 ----- total  37070 
+svc_number = 1
+SELL: stock0027: price      8
+SELL: investor0004: cashe 17427 ----- total  17427 
+svc_number = 0
+BUY: stock0018: price     77
+BUY: investor0006: cashe 22875 (stock0018 5005) ----- total  27880 
+svc_number = 1
+SELL: stock0065: price    105
+SELL: investor0007: cashe 2103 (stock0228 45252) (stock0150 1850) (stock0247 432) (stock0143 44) ----- total  49681 
+svc_number = 0
+BUY: stock0087: price     94
+BUY: investor0008: cashe 18646 (stock0087 9024) ----- total  27670 
+svc_number = 0
+BUY: stock0161: price     31
+BUY: investor0012: cashe 5016 (stock0161 13082) (stock0127 15975) ----- total  34073 
+svc_number = 0
+BUY: stock0211: price     85
+BUY: investor0014: cashe 24503 (stock0211 4760) ----- total  29263 
+svc_number = 0
+BUY: stock0031: price     87
+BUY: investor0015: cashe 5 (stock0051 1110) (stock0051 1036) (stock0031 609) ----- total   2760 
+svc_number = 0
+BUY: stock0181: price     16
+BUY: investor0016: cashe 2680 (stock0181 17616) ----- total  20296 
+svc_number = 1
+SELL: stock0206: price     48
+SELL: investor0017: cashe 12072 (stock0072 86520) ----- total  98592 
+svc_number = 1
+SELL: stock0247: price     61
+SELL: investor0021: cashe 41959 (stock0179 17914) (stock0192 17550) ----- total  77423 
+svc_number = 1
+SELL: stock0163: price     31
+SELL: investor0023: cashe 10216 (stock0064 729) ----- total  10945 
+svc_number = 1
+SELL: stock0107: price     31
+SELL: investor0025: cashe 15420 (stock0175 41692) ----- total  57112 
+svc_number = 0
+BUY: stock0026: price      6
+BUY: investor0027: cashe 3834 (stock0026 38808) ----- total  42642 
+svc_number = 0
+BUY: stock0156: price     19
+BUY: investor0029: cashe 26093 (stock0156 29108) ----- total  55201 
+svc_number = 0
+BUY: stock0095: price     89
+BUY: investor0030: cashe 1111 (stock0087 1410) (stock0254 68415) (stock0060 2888) (stock0197 4601) (stock0073 4290) (stock0095 1068) ----- total  83783 
+svc_number = 0
+BUY: stock0186: price     69
+BUY: investor0032: cashe 691 (stock0170 27222) (stock0186 1035) ----- total  28948 
+svc_number = 1
+SELL: stock0158: price     37
+SELL: investor0033: cashe 88159 ----- total  88159 
+svc_number = 1
+SELL: stock0086: price     18
+SELL: investor0034: cashe 16039 (stock0008 161) ----- total  16200 
+svc_number = 0
+BUY: stock0109: price     28
+BUY: investor0036: cashe 45693 (stock0109 7392) ----- total  53085 
+svc_number = 0
+BUY: stock0013: price     51
+BUY: investor0037: cashe 1213 (stock0130 48459) (stock0036 1448) (stock0013 4080) ----- total  55200 
+svc_number = 0
+BUY: stock0166: price     18
+BUY: investor0038: cashe 19698 (stock0245 41865) (stock0166 5922) ----- total  67485 
+svc_number = 0
+BUY: stock0048: price     12
+BUY: investor0039: cashe 14768 (stock0048 21984) ----- total  36752 
+svc_number = 1
+SELL: stock0077: price     35
+SELL: investor0040: cashe 37199 (stock0136 10431) ----- total  47630 
+svc_number = 1
+SELL: stock0050: price     99
+SELL: investor0042: cashe 17223 (stock0179 468) (stock0031 5829) ----- total  23520 
+svc_number = 1
+SELL: stock0139: price     55
+SELL: investor0043: cashe 65638 (stock0184 1534) ----- total  67172 
+svc_number = 0
+BUY: stock0119: price     78
+BUY: investor0046: cashe 258 (stock0021 64750) (stock0119 390) ----- total  65398 
+svc_number = 0
+BUY: stock0057: price     41
+BUY: investor0047: cashe 36248 (stock0057 16277) ----- total  52525 
+svc_number = 0
+BUY: stock0002: price     26
+BUY: investor0048: cashe 57262 (stock0002 21190) ----- total  78452 
+svc_number = 1
+SELL: stock0156: price     19
+SELL: investor0052: cashe 58973 (stock0031 23751) ----- total  82724 
+svc_number = 1
+SELL: stock0181: price     22
+SELL: investor0053: cashe 31595 (stock0105 25168) ----- total  56763 
+svc_number = 0
+BUY: stock0160: price      8
+BUY: investor0056: cashe 193 (stock0127 540) (stock0018 14938) (stock0089 783) (stock0160 288) ----- total  16742 
+svc_number = 1
+SELL: stock0055: price     75
+SELL: investor0057: cashe 47448 ----- total  47448 
+svc_number = 0
+BUY: stock0148: price     15
+BUY: investor0059: cashe 16539 (stock0148 630) ----- total  17169 
+svc_number = 0
+BUY: stock0120: price     57
+BUY: investor0060: cashe 1903 (stock0120 13338) ----- total  15241 
+svc_number = 0
+BUY: stock0160: price      7
+BUY: investor0061: cashe 3861 (stock0088 53732) (stock0160 343) ----- total  57936 
+svc_number = 0
+BUY: stock0043: price     19
+BUY: investor0062: cashe 16070 (stock0224 6812) (stock0043 8094) ----- total  30976 
+svc_number = 1
+SELL: stock0014: price     63
+SELL: investor0063: cashe 45571 ----- total  45571 
+svc_number = 0
+BUY: stock0050: price    110
+BUY: investor0001: cashe 1225 (stock0175 68180) (stock0050 20570) ----- total  89975 
+svc_number = 1
+SELL: stock0093: price     60
+SELL: investor0003: cashe 8505 (stock0091 20976) (stock0138 8155) ----- total  37636 
+svc_number = 0
+BUY: stock0013: price     40
+BUY: investor0006: cashe 20515 (stock0018 5005) (stock0013 2360) ----- total  27880 
+svc_number = 1
+SELL: stock0143: price     43
+SELL: investor0007: cashe 2146 (stock0228 45252) (stock0150 1850) (stock0247 549) ----- total  49797 
+svc_number = 0
+BUY: stock0209: price     55
+BUY: investor0009: cashe 11346 (stock0193 13653) (stock0209 1155) ----- total  26154 
+svc_number = 0
+BUY: stock0062: price     62
+BUY: investor0012: cashe 118 (stock0161 13082) (stock0127 15975) (stock0062 4898) ----- total  34073 
+svc_number = 0
+BUY: stock0091: price     58
+BUY: investor0013: cashe 43684 (stock0091 43558) ----- total  87242 
+svc_number = 1
+SELL: stock0211: price     59
+SELL: investor0014: cashe 27807 ----- total  27807 
+svc_number = 1
+SELL: stock0181: price     22
+SELL: investor0016: cashe 26902 ----- total  26902 
+svc_number = 1
+SELL: stock0144: price     36
+SELL: investor0018: cashe 18188 (stock0194 2856) ----- total  21044 
+svc_number = 0
+BUY: stock0073: price     82
+BUY: investor0020: cashe 3298 (stock0073 95202) ----- total  98500 
+svc_number = 1
+SELL: stock0179: price     26
+SELL: investor0021: cashe 59873 (stock0192 17550) ----- total  77423 
+svc_number = 0
+BUY: stock0013: price     59
+BUY: investor0023: cashe 2015 (stock0013 8201) (stock0064 729) ----- total  10945 
+svc_number = 1
+SELL: stock0156: price     18
+SELL: investor0024: cashe 2056 (stock0161 5518) (stock0034 9990) (stock0161 78275) (stock0244 259) ----- total  96098 
+svc_number = 0
+BUY: stock0055: price     56
+BUY: investor0025: cashe 1980 (stock0175 41692) (stock0055 13440) ----- total  57112 
+svc_number = 1
+SELL: stock0122: price     35
+SELL: investor0026: cashe 45993 (stock0070 682) (stock0240 12707) ----- total  59382 
+svc_number = 0
+BUY: stock0124: price     79
+BUY: investor0028: cashe 17826 (stock0124 44398) ----- total  62224 
+svc_number = 1
+SELL: stock0156: price     17
+SELL: investor0029: cashe 52137 ----- total  52137 
+svc_number = 0
+BUY: stock0251: price     26
+BUY: investor0031: cashe 15424 (stock0251 28730) ----- total  44154 
+svc_number = 0
+BUY: stock0081: price     57
+BUY: investor0032: cashe 349 (stock0170 27222) (stock0186 1035) (stock0081 342) ----- total  28948 
+svc_number = 0
+BUY: stock0077: price     30
+BUY: investor0034: cashe 2599 (stock0077 13440) (stock0008 161) ----- total  16200 
+svc_number = 0
+BUY: stock0045: price     46
+BUY: investor0035: cashe 10555 (stock0192 47025) (stock0045 42320) ----- total  99900 
+svc_number = 1
+SELL: stock0109: price     15
+SELL: investor0036: cashe 49653 ----- total  49653 
+svc_number = 0
+BUY: stock0215: price     35
+BUY: investor0038: cashe 3458 (stock0245 41865) (stock0166 5922) (stock0215 16240) ----- total  67485 
+svc_number = 0
+BUY: stock0094: price     45
+BUY: investor0039: cashe 7118 (stock0048 21984) (stock0094 7650) ----- total  36752 
+svc_number = 1
+SELL: stock0136: price     64
+SELL: investor0040: cashe 48143 ----- total  48143 
+svc_number = 1
+SELL: stock0179: price     26
+SELL: investor0042: cashe 17691 (stock0031 5829) ----- total  23520 
+svc_number = 1
+SELL: stock0149: price     86
+SELL: investor0044: cashe 84862 ----- total  84862 
+svc_number = 0
+BUY: stock0063: price     54
+BUY: investor0046: cashe 204 (stock0021 64750) (stock0119 390) (stock0063 54) ----- total  65398 
+svc_number = 1
+SELL: stock0002: price     24
+SELL: investor0048: cashe 76822 ----- total  76822 
+svc_number = 0
+BUY: stock0073: price     87
+BUY: investor0050: cashe 11968 (stock0073 26535) ----- total  38503 
+svc_number = 0
+BUY: stock0166: price     17
+BUY: investor0052: cashe 29597 (stock0166 29376) (stock0031 23751) ----- total  82724 
+svc_number = 1
+SELL: stock0105: price     11
+SELL: investor0053: cashe 56763 ----- total  56763 
+svc_number = 1
+SELL: stock0089: price     27
+SELL: investor0056: cashe 976 (stock0127 540) (stock0018 14938) (stock0160 252) ----- total  16706 
+svc_number = 0
+BUY: stock0139: price     62
+BUY: investor0058: cashe 5630 (stock0020 40350) (stock0139 3844) ----- total  49824 
+svc_number = 1
+SELL: stock0148: price     17
+SELL: investor0059: cashe 17253 ----- total  17253 
+svc_number = 1
+SELL: stock0160: price      8
+SELL: investor0061: cashe 4253 (stock0088 53732) ----- total  57985 
+svc_number = 1
+SELL: stock0224: price     46
+SELL: investor0062: cashe 22096 (stock0043 8094) ----- total  30190 
+svc_number = 0
+BUY: stock0180: price      7
+BUY: investor0000: cashe 15768 (stock0180 8183) ----- total  23951 
+svc_number = 0
+BUY: stock0192: price     21
+BUY: investor0002: cashe 15461 (stock0192 21609) ----- total  37070 
+svc_number = 0
+BUY: stock0044: price     10
+BUY: investor0003: cashe 75 (stock0091 26448) (stock0138 8155) (stock0044 8430) ----- total  43108 
+svc_number = 0
+BUY: stock0001: price     57
+BUY: investor0005: cashe 46357 (stock0001 17043) ----- total  63400 
+svc_number = 0
+BUY: stock0051: price     49
+BUY: investor0006: cashe 9294 (stock0018 5005) (stock0013 3481) (stock0051 11221) ----- total  29001 
+svc_number = 0
+BUY: stock0030: price     45
+BUY: investor0007: cashe 2011 (stock0228 45252) (stock0150 1850) (stock0030 135) (stock0247 549) ----- total  49797 
+svc_number = 0
+BUY: stock0161: price     31
+BUY: investor0008: cashe 10400 (stock0087 9024) (stock0161 8246) ----- total  27670 
+svc_number = 1
+SELL: stock0193: price     40
+SELL: investor0009: cashe 26106 (stock0209 1155) ----- total  27261 
+svc_number = 1
+SELL: stock0161: price     31
+SELL: investor0012: cashe 13200 (stock0127 15975) (stock0062 4898) ----- total  34073 
+svc_number = 0
+BUY: stock0011: price     40
+BUY: investor0013: cashe 15044 (stock0091 43558) (stock0011 28640) ----- total  87242 
+svc_number = 0
+BUY: stock0191: price     33
+BUY: investor0014: cashe 1308 (stock0191 26499) ----- total  27807 
+svc_number = 0
+svc_number = 1
+SELL: stock0051: price     37
+SELL: investor0015: cashe 1115 (stock0051 1036) (stock0031 609) ----- total   2760 
+svc_number = 1
+SELL: stock0072: price     31
+SELL: investor0017: cashe 107862 ----- total 107862 
+svc_number = 1
+SELL: stock0073: price     87
+SELL: investor0020: cashe 104305 ----- total 104305 
+svc_number = 1
+SELL: stock0009: price     72
+SELL: investor0022: cashe 75600 ----- total  75600 
+svc_number = 0
+BUY: stock0062: price     46
+BUY: investor0023: cashe 819 (stock0013 8201) (stock0064 729) (stock0062 1196) ----- total  10945 
+svc_number = 1
+SELL: stock0244: price     38
+SELL: investor0024: cashe 2322 (stock0161 5518) (stock0034 9990) (stock0161 78275) ----- total  96105 
+svc_number = 0
+BUY: stock0240: price     62
+BUY: investor0026: cashe 1229 (stock0240 44764) (stock0070 682) (stock0240 8122) ----- total  54797 
+svc_number = 1
+SELL: stock0026: price      6
+SELL: investor0027: cashe 42642 ----- total  42642 
+svc_number = 0
+BUY: stock0145: price     37
+BUY: investor0029: cashe 44848 (stock0145 7289) ----- total  52137 
+svc_number = 1
+SELL: stock0087: price     82
+SELL: investor0030: cashe 2341 (stock0254 68415) (stock0060 2888) (stock0197 4601) (stock0073 4785) (stock0095 1068) ----- total  84098 
+svc_number = 1
+SELL: stock0081: price     56
+SELL: investor0032: cashe 685 (stock0170 27222) (stock0186 1035) ----- total  28942 
+svc_number = 1
+SELL: stock0008: price      7
+SELL: investor0034: cashe 2760 (stock0077 13440) ----- total  16200 
+svc_number = 0
+BUY: stock0124: price     43
+BUY: investor0035: cashe 5825 (stock0192 65835) (stock0045 42320) (stock0124 4730) ----- total 118710 
+svc_number = 0
+BUY: stock0002: price     36
+BUY: investor0036: cashe 20817 (stock0002 28836) ----- total  49653 
+svc_number = 1
+SELL: stock0130: price     29
+SELL: investor0037: cashe 49672 (stock0036 1448) (stock0013 4720) ----- total  55840 
+svc_number = 1
+SELL: stock0245: price     17
+SELL: investor0038: cashe 50905 (stock0166 5593) (stock0215 16240) ----- total  72738 
+svc_number = 0
+BUY: stock0116: price     53
+BUY: investor0042: cashe 13451 (stock0116 4240) (stock0031 5829) ----- total  23520 
+svc_number = 1
+SELL: stock0184: price     32
+SELL: investor0043: cashe 67526 ----- total  67526 
+svc_number = 1
+SELL: stock0119: price     77
+SELL: investor0046: cashe 589 (stock0021 64750) (stock0063 54) ----- total  65393 
+svc_number = 0
+BUY: stock0065: price     61
+BUY: investor0048: cashe 63097 (stock0065 13725) ----- total  76822 
+svc_number = 1
+SELL: stock0073: price     46
+SELL: investor0050: cashe 25998 ----- total  25998 
+svc_number = 1
+SELL: stock0166: price     18
+SELL: investor0052: cashe 60701 (stock0031 23751) ----- total  84452 
+svc_number = 0
+BUY: stock0065: price     62
+BUY: investor0055: cashe 9334 (stock0065 45508) ----- total  54842 
+svc_number = 0
+BUY: stock0097: price     47
+BUY: investor0056: cashe 365 (stock0127 540) (stock0018 14938) (stock0097 611) (stock0160 288) ----- total  16742 
+svc_number = 1
+SELL: stock0020: price     58
+SELL: investor0058: cashe 52436 (stock0139 3844) ----- total  56280 
+svc_number = 0
+BUY: stock0230: price     70
+BUY: investor0060: cashe 293 (stock0120 13338) (stock0230 1610) ----- total  15241 
+svc_number = 0
+BUY: stock0069: price     21
+BUY: investor0061: cashe 2090 (stock0088 53732) (stock0069 2163) ----- total  57985 
+svc_number = 1
+SELL: stock0043: price     20
+SELL: investor0062: cashe 30616 ----- total  30616 
+svc_number = 1
+SELL: stock0180: price     12
+SELL: investor0000: cashe 29796 ----- total  29796 
+svc_number = 0
+BUY: stock0236: price     69
+BUY: investor0002: cashe 3731 (stock0192 21609) (stock0236 11730) ----- total  37070 
+svc_number = 0
+BUY: stock0192: price     20
+BUY: investor0003: cashe 35 (stock0091 26448) (stock0138 8155) (stock0044 8430) (stock0192 40) ----- total  43108 
+svc_number = 0
+BUY: stock0254: price     12
+BUY: investor0004: cashe 17211 (stock0254 216) ----- total  17427 
+svc_number = 0
+BUY: stock0093: price     81
+BUY: investor0005: cashe 3994 (stock0001 17043) (stock0093 42363) ----- total  63400 
+svc_number = 1
+SELL: stock0018: price     63
+SELL: investor0006: cashe 13389 (stock0013 3481) (stock0051 8473) ----- total  25343 
+svc_number = 0
+BUY: stock0027: price     10
+BUY: investor0007: cashe 1661 (stock0228 45252) (stock0150 1850) (stock0030 135) (stock0247 549) (stock0027 350) ----- total  49797 
+svc_number = 0
+BUY: stock0056: price      6
+BUY: investor0008: cashe 8456 (stock0087 7872) (stock0161 8246) (stock0056 1944) ----- total  26518 
+svc_number = 1
+SELL: stock0209: price     56
+SELL: investor0009: cashe 27282 ----- total  27282 
+svc_number = 0
+BUY: stock0139: price     65
+BUY: investor0012: cashe 6180 (stock0139 7020) (stock0127 15975) (stock0062 3634) ----- total  32809 
+svc_number = 1
+SELL: stock0011: price     41
+SELL: investor0013: cashe 44400 (stock0091 43558) ----- total  87958 
+svc_number = 1
+SELL: stock0051: price     39
+SELL: investor0015: cashe 2207 (stock0031 609) ----- total   2816 
+svc_number = 1
+SELL: stock0194: price     74
+SELL: investor0018: cashe 21296 ----- total  21296 
+svc_number = 1
+SELL: stock0192: price     20
+SELL: investor0021: cashe 83273 ----- total  83273 
+svc_number = 1
+SELL: stock0062: price     38
+SELL: investor0023: cashe 1807 (stock0013 8201) (stock0064 729) ----- total  10737 
+svc_number = 1
+SELL: stock0055: price     81
+SELL: investor0025: cashe 21420 (stock0175 41692) ----- total  63112 
+svc_number = 1
+SELL: stock0070: price     32
+SELL: investor0026: cashe 1581 (stock0240 44764) (stock0240 8122) ----- total  54467 
+svc_number = 1
+SELL: stock0124: price     48
+SELL: investor0028: cashe 44802 ----- total  44802 
+svc_number = 1
+SELL: stock0145: price     27
+SELL: investor0029: cashe 50167 ----- total  50167 
+svc_number = 1
+SELL: stock0251: price     25
+SELL: investor0031: cashe 43049 ----- total  43049 
+svc_number = 1
+SELL: stock0077: price     28
+SELL: investor0034: cashe 15304 ----- total  15304 
+svc_number = 0
+BUY: stock0252: price     15
+BUY: investor0036: cashe 6642 (stock0002 28836) (stock0252 14175) ----- total  49653 
+svc_number = 1
+SELL: stock0215: price     34
+SELL: investor0038: cashe 66681 (stock0166 5922) ----- total  72603 
+svc_number = 0
+BUY: stock0147: price     55
+BUY: investor0040: cashe 29223 (stock0147 18920) ----- total  48143 
+svc_number = 1
+SELL: stock0116: price     59
+SELL: investor0042: cashe 18171 (stock0031 5829) ----- total  24000 
+svc_number = 0
+BUY: stock0161: price     30
+BUY: investor0044: cashe 13342 (stock0161 71520) ----- total  84862 
+svc_number = 0
+BUY: stock0210: price     81
+BUY: investor0046: cashe 103 (stock0021 64750) (stock0210 486) (stock0063 54) ----- total  65393 
+svc_number = 1
+SELL: stock0057: price     36
+SELL: investor0047: cashe 50540 ----- total  50540 
+svc_number = 0
+BUY: stock0020: price     47
+BUY: investor0049: cashe 1922 (stock0002 11448) (stock0020 1645) (stock0037 25270) (stock0220 1148) ----- total  41433 
+svc_number = 1
+SELL: stock0031: price     60
+SELL: investor0052: cashe 77081 ----- total  77081 
+svc_number = 0
+BUY: stock0071: price     23
+BUY: investor0055: cashe 8368 (stock0065 45508) (stock0071 966) ----- total  54842 
+svc_number = 1
+SELL: stock0127: price     44
+SELL: investor0056: cashe 893 (stock0018 12222) (stock0097 611) (stock0160 288) ----- total  14014 
+svc_number = 1
+SELL: stock0139: price     65
+SELL: investor0058: cashe 56466 ----- total  56466 
+svc_number = 1
+SELL: stock0120: price     68
+SELL: investor0060: cashe 16205 (stock0230 1610) ----- total  17815 
+svc_number = 0
+BUY: stock0097: price     53
+BUY: investor0062: cashe 5494 (stock0097 25122) ----- total  30616 
+svc_number = 0
+BUY: stock0245: price     17
+BUY: investor0001: cashe 1072 (stock0175 68180) (stock0050 20570) (stock0245 153) ----- total  89975 
+svc_number = 0
+BUY: stock0024: price     23
+BUY: investor0002: cashe 1730 (stock0192 20580) (stock0236 11730) (stock0024 2001) ----- total  36041 
+svc_number = 0
+BUY: stock0132: price     17
+BUY: investor0003: cashe 18 (stock0091 26448) (stock0138 8155) (stock0044 8430) (stock0192 40) (stock0132 17) ----- total  43108 
+svc_number = 1
+SELL: stock0254: price     16
+SELL: investor0004: cashe 17499 ----- total  17499 
+svc_number = 1
+SELL: stock0013: price     45
+SELL: investor0006: cashe 16044 (stock0051 8931) ----- total  24975 
+svc_number = 0
+BUY: stock0051: price     38
+BUY: investor0008: cashe 3820 (stock0087 7872) (stock0161 7980) (stock0056 1944) (stock0051 4636) ----- total  26252 
+svc_number = 0
+BUY: stock0166: price     17
+BUY: investor0011: cashe 19077 (stock0166 11526) ----- total  30603 
+svc_number = 1
+SELL: stock0139: price     71
+SELL: investor0012: cashe 13848 (stock0127 15620) (stock0062 3002) ----- total  32470 
+svc_number = 0
+BUY: stock0241: price     56
+BUY: investor0013: cashe 160 (stock0091 43558) (stock0241 44240) ----- total  87958 
+svc_number = 0
+BUY: stock0164: price     12
+BUY: investor0014: cashe 360 (stock0191 26499) (stock0164 948) ----- total  27807 
+svc_number = 1
+SELL: stock0031: price     74
+SELL: investor0015: cashe 2725 ----- total   2725 
+svc_number = 0
+BUY: stock0091: price     59
+BUY: investor0018: cashe 1826 (stock0091 19470) ----- total  21296 
+svc_number = 0
+BUY: stock0008: price      6
+BUY: investor0020: cashe 83689 (stock0008 20616) ----- total 104305 
+svc_number = 0
+BUY: stock0077: price     37
+BUY: investor0021: cashe 10383 (stock0077 72890) ----- total  83273 
+svc_number = 0
+BUY: stock0239: price     40
+BUY: investor0023: cashe 1647 (stock0013 6255) (stock0064 729) (stock0239 160) ----- total   8791 
+svc_number = 1
+SELL: stock0161: price     31
+SELL: investor0024: cashe 80597 (stock0161 5518) (stock0034 9990) ----- total  96105 
+svc_number = 0
+BUY: stock0234: price      8
+BUY: investor0026: cashe 325 (stock0240 44764) (stock0234 1256) (stock0240 8122) ----- total  54467 
+svc_number = 1
+SELL: stock0060: price     39
+SELL: investor0030: cashe 5305 (stock0254 72976) (stock0197 4601) (stock0073 2530) (stock0095 1068) ----- total  86480 
+svc_number = 1
+SELL: stock0186: price     51
+SELL: investor0032: cashe 1450 (stock0170 27222) ----- total  28672 
+svc_number = 0
+BUY: stock0042: price     16
+BUY: investor0034: cashe 10936 (stock0042 4368) ----- total  15304 
+svc_number = 1
+SELL: stock0045: price     29
+SELL: investor0035: cashe 32505 (stock0192 62700) (stock0124 5280) ----- total 100485 
+svc_number = 1
+SELL: stock0252: price     18
+SELL: investor0036: cashe 23652 (stock0002 28836) ----- total  52488 
+svc_number = 0
+BUY: stock0193: price     37
+BUY: investor0038: cashe 44074 (stock0193 22607) (stock0166 5593) ----- total  72274 
+svc_number = 1
+SELL: stock0147: price     50
+SELL: investor0040: cashe 46423 ----- total  46423 
+svc_number = 1
+SELL: stock0031: price     47
+SELL: investor0042: cashe 21320 ----- total  21320 
+svc_number = 1
+SELL: stock0161: price     30
+SELL: investor0044: cashe 84862 ----- total  84862 
+svc_number = 1
+SELL: stock0063: price     63
+SELL: investor0046: cashe 166 (stock0021 64750) (stock0210 486) ----- total  65402 
+svc_number = 1
+SELL: stock0065: price    114
+SELL: investor0048: cashe 88747 ----- total  88747 
+svc_number = 0
+BUY: stock0177: price     35
+BUY: investor0052: cashe 45021 (stock0177 32060) ----- total  77081 
+svc_number = 0
+BUY: stock0054: price     65
+BUY: investor0053: cashe 27838 (stock0054 28925) ----- total  56763 
+svc_number = 0
+BUY: stock0200: price     41
+BUY: investor0055: cashe 5662 (stock0065 83676) (stock0071 966) (stock0200 2706) ----- total  93010 
+svc_number = 0
+BUY: stock0110: price     11
+BUY: investor0056: cashe 684 (stock0110 209) (stock0018 12222) (stock0097 689) (stock0160 288) ----- total  14092 
+svc_number = 0
+BUY: stock0204: price     54
+BUY: investor0058: cashe 5220 (stock0204 51246) ----- total  56466 
+svc_number = 0
+BUY: stock0018: price     80
+BUY: investor0059: cashe 9093 (stock0018 8160) ----- total  17253 
+svc_number = 0
+BUY: stock0132: price     13
+BUY: investor0060: cashe 6169 (stock0132 10036) (stock0230 1610) ----- total  17815 
+svc_number = 1
+SELL: stock0069: price     16
+SELL: investor0061: cashe 3738 (stock0088 53732) ----- total  57470 
+svc_number = 0
+BUY: stock0141: price     76
+BUY: investor0063: cashe 14563 (stock0141 31008) ----- total  45571 
+svc_number = 1
+SELL: stock0175: price     25
+SELL: investor0001: cashe 61947 (stock0050 20570) (stock0245 153) ----- total  82670 
+svc_number = 1
+SELL: stock0132: price     13
+SELL: investor0003: cashe 31 (stock0091 26904) (stock0138 8155) (stock0044 8430) (stock0192 40) ----- total  43560 
+svc_number = 0
+BUY: stock0207: price     25
+BUY: investor0005: cashe 3094 (stock0001 17043) (stock0093 42363) (stock0207 900) ----- total  63400 
+svc_number = 1
+SELL: stock0051: price     54
+SELL: investor0006: cashe 28410 ----- total  28410 
+svc_number = 0
+BUY: stock0071: price     29
+BUY: investor0008: cashe 166 (stock0087 7872) (stock0161 7980) (stock0056 1944) (stock0051 6588) (stock0071 3654) ----- total  28204 
+svc_number = 0
+BUY: stock0128: price     30
+BUY: investor0010: cashe 1096 (stock0128 7770) ----- total   8866 
+svc_number = 1
+SELL: stock0166: price     18
+SELL: investor0011: cashe 31281 ----- total  31281 
+svc_number = 1
+SELL: stock0241: price    138
+SELL: investor0013: cashe 109180 (stock0091 44309) ----- total 153489 
+svc_number = 1
+SELL: stock0164: price     12
+SELL: investor0014: cashe 1308 (stock0191 26499) ----- total  27807 
+svc_number = 0
+BUY: stock0179: price     26
+BUY: investor0016: cashe 4230 (stock0179 22672) ----- total  26902 
+svc_number = 1
+SELL: stock0091: price     48
+SELL: investor0018: cashe 17666 ----- total  17666 
+svc_number = 1
+SELL: stock0008: price      6
+SELL: investor0020: cashe 104305 ----- total 104305 
+svc_number = 0
+BUY: stock0031: price     54
+BUY: investor0022: cashe 23382 (stock0031 52218) ----- total  75600 
+svc_number = 1
+SELL: stock0013: price     61
+SELL: investor0023: cashe 10126 (stock0064 729) (stock0239 160) ----- total  11015 
+svc_number = 0
+BUY: stock0118: price     34
+BUY: investor0025: cashe 10336 (stock0175 37225) (stock0118 11084) ----- total  58645 
+svc_number = 0
+BUY: stock0125: price     16
+BUY: investor0026: cashe 197 (stock0240 44764) (stock0234 1256) (stock0240 8122) (stock0125 128) ----- total  54467 
+svc_number = 0
+BUY: stock0227: price     33
+BUY: investor0028: cashe 32823 (stock0227 11979) ----- total  44802 
+svc_number = 0
+BUY: stock0204: price     45
+BUY: investor0029: cashe 37477 (stock0204 12690) ----- total  50167 
+svc_number = 1
+SELL: stock0197: price     37
+SELL: investor0030: cashe 9264 (stock0254 72976) (stock0073 2530) (stock0095 1068) ----- total  85838 
+svc_number = 1
+SELL: stock0170: price     64
+SELL: investor0032: cashe 23786 ----- total  23786 
+svc_number = 1
+SELL: stock0042: price     15
+SELL: investor0034: cashe 15031 ----- total  15031 
+svc_number = 0
+BUY: stock0253: price     50
+BUY: investor0036: cashe 16102 (stock0002 28836) (stock0253 7550) ----- total  52488 
+svc_number = 1
+SELL: stock0036: price      8
+SELL: investor0037: cashe 51120 (stock0013 4880) ----- total  56000 
+svc_number = 1
+SELL: stock0094: price     38
+SELL: investor0039: cashe 13578 (stock0048 21984) ----- total  35562 
+svc_number = 0
+BUY: stock0128: price     41
+BUY: investor0041: cashe 12609 (stock0128 1353) ----- total  13962 
+svc_number = 0
+BUY: stock0202: price     53
+BUY: investor0045: cashe 18570 (stock0202 5830) ----- total  24400 
+svc_number = 1
+SELL: stock0021: price     73
+SELL: investor0046: cashe 94701 (stock0210 486) ----- total  95187 
+svc_number = 0
+BUY: stock0183: price     30
+BUY: investor0049: cashe 1142 (stock0002 11448) (stock0020 1645) (stock0037 25270) (stock0220 1148) (stock0183 780) ----- total  41433 
+svc_number = 0
+BUY: stock0052: price     92
+BUY: investor0050: cashe 16982 (stock0052 9016) ----- total  25998 
+svc_number = 1
+SELL: stock0177: price     32
+SELL: investor0052: cashe 74333 ----- total  74333 
+svc_number = 0
+BUY: stock0097: price     52
+BUY: investor0054: cashe 33775 (stock0097 44408) ----- total  78183 
+svc_number = 1
+SELL: stock0200: price     39
+SELL: investor0055: cashe 8236 (stock0065 83676) (stock0071 1218) ----- total  93130 
+svc_number = 0
+BUY: stock0254: price     10
+BUY: investor0057: cashe 20958 (stock0254 26490) ----- total  47448 
+svc_number = 1
+SELL: stock0204: price     60
+SELL: investor0058: cashe 62160 ----- total  62160 
+svc_number = 0
+BUY: stock0021: price     65
+BUY: investor0060: cashe 4934 (stock0132 10036) (stock0230 1610) (stock0021 1235) ----- total  17815 
+svc_number = 1
+SELL: stock0088: price     90
+SELL: investor0061: cashe 51618 ----- total  51618 
+svc_number = 1
+SELL: stock0097: price     49
+SELL: investor0062: cashe 28720 ----- total  28720 
+svc_number = 0
+BUY: stock0217: price      7
+BUY: investor0000: cashe 27745 (stock0217 2051) ----- total  29796 
+svc_number = 1
+SELL: stock0245: price     14
+SELL: investor0001: cashe 62073 (stock0050 20570) ----- total  82643 
+svc_number = 0
+BUY: stock0027: price      9
+BUY: investor0003: cashe 22 (stock0091 21888) (stock0138 8155) (stock0044 8430) (stock0192 40) (stock0027 9) ----- total  38544 
+svc_number = 1
+SELL: stock0001: price     47
+SELL: investor0005: cashe 17147 (stock0093 42363) (stock0207 900) ----- total  60410 
+svc_number = 1
+SELL: stock0150: price     41
+SELL: investor0007: cashe 3178 (stock0228 45252) (stock0030 135) (stock0247 549) (stock0027 315) ----- total  49429 
+svc_number = 1
+SELL: stock0056: price      6
+SELL: investor0008: cashe 2110 (stock0087 7872) (stock0161 7980) (stock0051 6588) (stock0071 3654) ----- total  28204 
+svc_number = 1
+SELL: stock0128: price     31
+SELL: investor0010: cashe 9125 ----- total   9125 
+svc_number = 0
+BUY: stock0138: price     34
+BUY: investor0012: cashe 5518 (stock0138 8330) (stock0127 15620) (stock0062 3002) ----- total  32470 
+svc_number = 1
+SELL: stock0191: price     33
+SELL: investor0014: cashe 27807 ----- total  27807 
+svc_number = 0
+BUY: stock0124: price     29
+BUY: investor0016: cashe 460 (stock0179 22672) (stock0124 3770) ----- total  26902 
+svc_number = 0
+BUY: stock0178: price     56
+BUY: investor0018: cashe 9546 (stock0178 8120) ----- total  17666 
+svc_number = 0
+BUY: stock0083: price      6
+BUY: investor0020: cashe 69211 (stock0083 35094) ----- total 104305 
+svc_number = 0
+BUY: stock0093: price     97
+BUY: investor0021: cashe 9704 (stock0077 72890) (stock0093 679) ----- total  83273 
+svc_number = 0
+BUY: stock0126: price     49
+BUY: investor0022: cashe 20834 (stock0031 52218) (stock0126 2548) ----- total  75600 
+svc_number = 0
+BUY: stock0203: price     17
+BUY: investor0023: cashe 6743 (stock0203 3383) (stock0064 729) (stock0239 160) ----- total  11015 
+svc_number = 1
+SELL: stock0034: price     54
+SELL: investor0024: cashe 90587 (stock0161 5340) ----- total  95927 
+svc_number = 0
+BUY: stock0199: price     37
+BUY: investor0026: cashe 86 (stock0240 44764) (stock0234 1256) (stock0240 8122) (stock0125 128) (stock0199 111) ----- total  54467 
+svc_number = 0
+BUY: stock0049: price     12
+BUY: investor0027: cashe 31314 (stock0049 11328) ----- total  42642 
+svc_number = 1
+SELL: stock0227: price     32
+SELL: investor0028: cashe 44439 ----- total  44439 
+svc_number = 0
+BUY: stock0094: price     21
+BUY: investor0030: cashe 8466 (stock0094 798) (stock0254 45610) (stock0073 2530) (stock0095 1068) ----- total  58472 
+svc_number = 0
+BUY: stock0093: price     56
+BUY: investor0031: cashe 42713 (stock0093 336) ----- total  43049 
+svc_number = 0
+BUY: stock0079: price     35
+BUY: investor0033: cashe 27364 (stock0079 60795) ----- total  88159 
+svc_number = 1
+SELL: stock0192: price     11
+SELL: investor0035: cashe 66990 (stock0124 3190) ----- total  70180 
+svc_number = 0
+BUY: stock0023: price     21
+BUY: investor0037: cashe 46857 (stock0023 4263) (stock0013 4880) ----- total  56000 
+svc_number = 1
+SELL: stock0166: price     17
+SELL: investor0038: cashe 49667 (stock0193 22607) ----- total  72274 
+svc_number = 1
+SELL: stock0128: price     32
+SELL: investor0041: cashe 13665 ----- total  13665 
+svc_number = 0
+BUY: stock0051: price     52
+BUY: investor0044: cashe 16638 (stock0051 68224) ----- total  84862 
+svc_number = 0
+BUY: stock0204: price     44
+BUY: investor0045: cashe 18526 (stock0202 5830) (stock0204 44) ----- total  24400 
+svc_number = 1
+SELL: stock0210: price     56
+SELL: investor0046: cashe 95037 ----- total  95037 
+svc_number = 0
+BUY: stock0188: price    100
+BUY: investor0048: cashe 70547 (stock0188 18200) ----- total  88747 
+svc_number = 0
+BUY: stock0251: price     30
+BUY: investor0049: cashe 242 (stock0002 11448) (stock0020 1645) (stock0037 25270) (stock0220 1148) (stock0183 780) (stock0251 900) ----- total  41433 
+svc_number = 0
+BUY: stock0102: price     47
+BUY: investor0051: cashe 14441 (stock0102 34921) ----- total  49362 
+svc_number = 1
+SELL: stock0054: price     67
+SELL: investor0053: cashe 57653 ----- total  57653 
+svc_number = 0
+BUY: stock0041: price      8
+BUY: investor0055: cashe 8164 (stock0065 83676) (stock0071 1218) (stock0041 72) ----- total  93130 
+svc_number = 1
+SELL: stock0254: price     18
+SELL: investor0057: cashe 68640 ----- total  68640 
+svc_number = 0
+BUY: stock0117: price     64
+BUY: investor0059: cashe 8261 (stock0018 8160) (stock0117 832) ----- total  17253 
+svc_number = 1
+SELL: stock0021: price     74
+SELL: investor0060: cashe 6340 (stock0132 10036) (stock0230 1610) ----- total  17986 
+svc_number = 1
+SELL: stock0141: price     79
+SELL: investor0063: cashe 46795 ----- total  46795 
+svc_number = 1
+SELL: stock0217: price      8
+SELL: investor0000: cashe 30089 ----- total  30089 
+svc_number = 0
+BUY: stock0053: price     61
+BUY: investor0002: cashe 1608 (stock0192 11319) (stock0236 11730) (stock0024 2001) (stock0053 122) ----- total  26780 
+svc_number = 1
+SELL: stock0192: price     20
+SELL: investor0003: cashe 62 (stock0091 21888) (stock0138 7922) (stock0044 8430) (stock0027 9) ----- total  38311 
+svc_number = 0
+BUY: stock0034: price     54
+BUY: investor0005: cashe 7319 (stock0034 9828) (stock0093 29288) (stock0207 900) ----- total  47335 
+svc_number = 1
+SELL: stock0228: price     13
+SELL: investor0007: cashe 52201 (stock0030 135) (stock0247 549) (stock0027 315) ----- total  53200 
+svc_number = 1
+SELL: stock0127: price     44
+SELL: investor0012: cashe 21138 (stock0138 8330) (stock0062 3002) ----- total  32470 
+svc_number = 0
+BUY: stock0059: price     36
+BUY: investor0016: cashe 136 (stock0179 22672) (stock0124 3770) (stock0059 324) ----- total  26902 
+svc_number = 0
+BUY: stock0230: price     99
+BUY: investor0017: cashe 58758 (stock0230 49104) ----- total 107862 
+svc_number = 1
+SELL: stock0178: price     47
+SELL: investor0018: cashe 16361 ----- total  16361 
+svc_number = 1
+SELL: stock0083: price      6
+SELL: investor0020: cashe 104305 ----- total 104305 
+svc_number = 1
+SELL: stock0031: price     67
+SELL: investor0022: cashe 85623 (stock0126 2548) ----- total  88171 
+svc_number = 1
+SELL: stock0161: price     31
+SELL: investor0024: cashe 96105 ----- total  96105 
+svc_number = 1
+SELL: stock0125: price     21
+SELL: investor0026: cashe 254 (stock0240 44764) (stock0234 1256) (stock0240 8122) (stock0199 111) ----- total  54507 
+svc_number = 0
+BUY: stock0192: price     15
+BUY: investor0029: cashe 25387 (stock0204 12408) (stock0192 12090) ----- total  49885 
+svc_number = 1
+SELL: stock0094: price     33
+SELL: investor0030: cashe 9720 (stock0254 82098) (stock0073 2530) (stock0095 1068) ----- total  95416 
+svc_number = 1
+SELL: stock0079: price     33
+SELL: investor0033: cashe 84685 ----- total  84685 
+svc_number = 0
+BUY: stock0084: price     17
+BUY: investor0035: cashe 23368 (stock0084 43622) (stock0124 3190) ----- total  70180 
+svc_number = 0
+BUY: stock0239: price     52
+BUY: investor0036: cashe 2478 (stock0002 28836) (stock0253 7550) (stock0239 13624) ----- total  52488 
+svc_number = 1
+SELL: stock0013: price     42
+SELL: investor0037: cashe 50217 (stock0023 4263) ----- total  54480 
+svc_number = 1
+SELL: stock0048: price      9
+SELL: investor0039: cashe 30066 ----- total  30066 
+svc_number = 0
+BUY: stock0017: price     52
+BUY: investor0041: cashe 4097 (stock0017 9568) ----- total  13665 
+svc_number = 1
+SELL: stock0051: price     38
+SELL: investor0044: cashe 66494 ----- total  66494 
+svc_number = 0
+BUY: stock0043: price     15
+BUY: investor0046: cashe 12522 (stock0043 82515) ----- total  95037 
+svc_number = 0
+BUY: stock0050: price     68
+BUY: investor0047: cashe 37076 (stock0050 13464) ----- total  50540 
+svc_number = 0
+BUY: stock0232: price      7
+BUY: investor0048: cashe 62679 (stock0188 18200) (stock0232 7868) ----- total  88747 
+svc_number = 1
+SELL: stock0220: price     22
+SELL: investor0049: cashe 1144 (stock0002 11448) (stock0020 1645) (stock0037 25270) (stock0183 780) (stock0251 900) ----- total  41187 
+svc_number = 1
+SELL: stock0102: price     45
+SELL: investor0051: cashe 47876 ----- total  47876 
+svc_number = 0
+BUY: stock0242: price     35
+BUY: investor0053: cashe 27378 (stock0242 30275) ----- total  57653 
+svc_number = 1
+SELL: stock0097: price     64
+SELL: investor0054: cashe 88431 ----- total  88431 
+svc_number = 1
+SELL: stock0097: price     63
+SELL: investor0056: cashe 1503 (stock0110 209) (stock0018 15520) (stock0160 288) ----- total  17520 
+svc_number = 0
+BUY: stock0158: price     37
+BUY: investor0057: cashe 55764 (stock0158 12876) ----- total  68640 
+svc_number = 0
+BUY: stock0214: price     15
+BUY: investor0059: cashe 6851 (stock0018 8160) (stock0117 832) (stock0214 1410) ----- total  17253 
+svc_number = 0
+BUY: stock0080: price     56
+BUY: investor0061: cashe 35826 (stock0080 15792) ----- total  51618 
+Stock Exchange is now closed
+Number of BUY transactions: 316 
+Number of SELL transactions: 237 
+investor0000: GL 25
+investor0001: GL 49812
+investor0002: GL 84341
+investor0003: GL 1
+investor0004: GL 227239
+investor0005: GL 67718
+investor0006: GL 106545
+investor0007: GL 80429
+investor0008: GL 128187
+investor0009: GL 155051
+investor0010: GL 14
+investor0011: GL 3
+investor0012: GL 120298
+investor0013: GL 151
+investor0014: GL 12
+investor0015: GL 1431646
+investor0016: GL 23
+investor0017: GL 14
+investor0018: GL 5
+investor0019: GL 74
+investor0020: GL 5
+investor0021: GL 20
+investor0022: GL 43771
+investor0023: GL 338173
+investor0024: GL 0
+investor0025: GL 98
+investor0026: GL 75611
+investor0027: GL 11
+investor0028: GL 63313
+investor0029: GL 55240
+investor0030: GL 16
+investor0031: GL 40
+investor0032: GL 148597
+investor0033: GL 50232
+investor0034: GL 265114
+investor0035: GL 42962
+investor0036: GL 80277
+investor0037: GL 77806
+investor0038: GL 44714
+investor0039: GL 137215
+investor0040: GL 83549
+investor0041: GL 1
+investor0042: GL 8
+investor0043: GL 17
+investor0044: GL 44246
+investor0045: GL 0
+investor0046: GL 45
+investor0047: GL 11
+investor0048: GL 43861
+investor0049: GL 8
+investor0050: GL 123749
+investor0051: GL 22
+investor0052: GL 6
+investor0053: GL 72425
+investor0054: GL 43861
+investor0055: GL 73
+investor0056: GL 23
+investor0057: GL 93
+investor0058: GL 17
+investor0059: GL 239938
+investor0060: GL 16
+investor0061: GL 45404
+investor0062: GL 0
+: GL 0
+
+Best performer:  
+Worst performer:  
+
