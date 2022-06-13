@@ -6,7 +6,6 @@ First Year (2019-2020)
 - ITI1121 - Intro. to Computing II (Java)* [Marcel Turcotte]
 
 Second Year (2020-2021)
-- CSI2110 - Data Structures and Algorithms (Java) [Wonsook Lee]
 - SEG2105 - Intro. to Software Engineering (Java)* [Miguel Garzon]
 - SEG2106 - Intro. to Software Construction (Java)* [Shiva Nejati]
 
