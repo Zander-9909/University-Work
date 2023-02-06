@@ -1,0 +1,56 @@
+--32x8 bit register file
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+ENTITY RegisterFile IS
+	PORT(
+		i_resetBar, i_load	: IN	STD_LOGIC;
+		i_clock			: IN	STD_LOGIC;
+		i_Value			: IN	STD_LOGIC_VECTOR(7 downto 0);
+		o_Value			: OUT	STD_LOGIC_VECTOR(7 downto 0));
+END RegisterFile;
+
+ARCHITECTURE rtl OF RegisterFile IS
+   type RegArr is array (0 to 31) of std_LOGIC_VECTOR(7 downto 0);
+	Signal RegOuts : RegArr;
+
+	COMPONENT eightBitRegister
+		PORT(
+			i_resetBar, i_load	: IN	STD_LOGIC;
+			i_clock			: IN	STD_LOGIC;
+			i_Value			: IN	STD_LOGIC_VECTOR(7 downto 0);
+			o_Value			: OUT	STD_LOGIC_VECTOR(7 downto 0));
+	END component;
+
+BEGIN
+
+reg0: eightbitRegister
+	PORT MAP (i_resetBar => i_resetBar,
+			  i_Value => i_Value(7 downto 0), 
+			  i_load => i_load,
+			  i_clock => i_clock,
+			  o_Value => int_Value(7 downto 0));
+
+reg1: eightbitRegister
+	PORT MAP (i_resetBar => i_resetBar,
+			  i_Value => i_Value(7 downto 0), 
+			  i_load => i_load,
+			  i_clock => i_clock,
+			  o_Value => int_Value(7 downto 0));
+
+reg2: eightbitRegister
+	PORT MAP (i_resetBar => i_resetBar,
+			  i_Value => i_Value(7 downto 0), 
+			  i_load => i_load,
+			  i_clock => i_clock,
+			  o_Value => int_Value(7 downto 0));
+
+reg3: eightbitRegister
+	PORT MAP (i_resetBar => i_resetBar,
+			  i_Value => i_Value(7 downto 0), 
+			  i_load => i_load,
+			  i_clock => i_clock,
+			  o_Value => int_Value(7 downto 0));
+
+
+END rtl;

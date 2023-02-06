@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'GClock'
+Slack : -7.351
+TNS   : -464.873
+
+Type  : Slow 1200mV 85C Model Setup 'pipelineProc:inst|MEMWBReg:MEMWB|enARdFF_2:RWff|int_q'
+Slack : -0.982
+TNS   : -34.786
+
+Type  : Slow 1200mV 85C Model Hold 'pipelineProc:inst|MEMWBReg:MEMWB|enARdFF_2:RWff|int_q'
+Slack : -1.311
+TNS   : -53.324
+
+Type  : Slow 1200mV 85C Model Hold 'GClock'
+Slack : 0.349
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'GClock'
+Slack : -2.455
+TNS   : -63.489
+
+Type  : Slow 1200mV 85C Model Removal 'GClock'
+Slack : 1.276
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'GClock'
+Slack : -3.000
+TNS   : -277.197
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pipelineProc:inst|MEMWBReg:MEMWB|enARdFF_2:RWff|int_q'
+Slack : -1.285
+TNS   : -328.960
+
+Type  : Slow 1200mV 0C Model Setup 'GClock'
+Slack : -6.650
+TNS   : -411.117
+
+Type  : Slow 1200mV 0C Model Setup 'pipelineProc:inst|MEMWBReg:MEMWB|enARdFF_2:RWff|int_q'
+Slack : -0.722
+TNS   : -17.708
+
+Type  : Slow 1200mV 0C Model Hold 'pipelineProc:inst|MEMWBReg:MEMWB|enARdFF_2:RWff|int_q'
+Slack : -1.303
+TNS   : -60.084
+
+Type  : Slow 1200mV 0C Model Hold 'GClock'
+Slack : 0.302
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'GClock'
+Slack : -2.127
+TNS   : -54.419
+
+Type  : Slow 1200mV 0C Model Removal 'GClock'
+Slack : 1.150
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'GClock'
+Slack : -3.000
+TNS   : -277.021
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pipelineProc:inst|MEMWBReg:MEMWB|enARdFF_2:RWff|int_q'
+Slack : -1.285
+TNS   : -328.960
+
+Type  : Fast 1200mV 0C Model Setup 'GClock'
+Slack : -3.251
+TNS   : -157.986
+
+Type  : Fast 1200mV 0C Model Setup 'pipelineProc:inst|MEMWBReg:MEMWB|enARdFF_2:RWff|int_q'
+Slack : -0.283
+TNS   : -1.335
+
+Type  : Fast 1200mV 0C Model Hold 'pipelineProc:inst|MEMWBReg:MEMWB|enARdFF_2:RWff|int_q'
+Slack : -0.644
+TNS   : -24.359
+
+Type  : Fast 1200mV 0C Model Hold 'GClock'
+Slack : 0.033
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'GClock'
+Slack : -0.675
+TNS   : -14.732
+
+Type  : Fast 1200mV 0C Model Removal 'GClock'
+Slack : 0.614
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'GClock'
+Slack : -3.000
+TNS   : -226.357
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pipelineProc:inst|MEMWBReg:MEMWB|enARdFF_2:RWff|int_q'
+Slack : -1.000
+TNS   : -256.291
+
+------------------------------------------------------------

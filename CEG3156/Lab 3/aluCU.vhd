@@ -1,0 +1,20 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity aluCU is
+	port(
+		ALUOp : in std_logic_vector(1 downto 0); --Op bits
+		Funct : in std_logic_vector(5 downto 0); --Function bits
+		Operation : out std_logic_vector(2 downto 0)); --Out bit
+end aluCU;
+
+architecture rtl of aluCU is
+SIGNAL nextOP:std_logic_vector(2 downto 0);
+
+begin
+nextOP(2) <= ALUOp(0) OR (ALUOp(1)AND Funct(1));
+nextOP(1) <= NOT ALUOp(1)OR NOT Funct(2);
+nextOP(0) <= ALUOp(1)AND(Funct(0)OR Funct(3));
+
+Operation <= nextOP;
+end rtl;

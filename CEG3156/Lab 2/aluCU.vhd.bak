@@ -1,0 +1,13 @@
+entity aluCU is
+	port(ALUOp : in std_logic_vector(1 downto 0); --Op bits
+		  Funct : in std_logic_vector(7 downto 0); --Function bits
+		  Operation : out std_logic_vector(2 downto 0)); --Out bit
+end aluCU;
+
+architecture rtl of aluCU is
+
+
+end component;
+begin
+
+end rtl;

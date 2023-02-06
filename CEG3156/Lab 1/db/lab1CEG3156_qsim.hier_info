@@ -1,0 +1,2498 @@
+|lab1CEG3156
+SignOut <= DataPath:inst.SignOut
+GClock => DataPath:inst.GClock
+GClock => ControlPath:inst1.GClock
+MantissaOut[0] <= DataPath:inst.MantissaOut[0]
+MantissaOut[1] <= DataPath:inst.MantissaOut[1]
+MantissaOut[2] <= DataPath:inst.MantissaOut[2]
+MantissaOut[3] <= DataPath:inst.MantissaOut[3]
+MantissaOut[4] <= DataPath:inst.MantissaOut[4]
+MantissaOut[5] <= DataPath:inst.MantissaOut[5]
+MantissaOut[6] <= DataPath:inst.MantissaOut[6]
+MantissaOut[7] <= DataPath:inst.MantissaOut[7]
+GReset => ControlPath:inst1.GReset
+GReset => DataPath:inst.GReset
+SignA => DataPath:inst.SignA
+SignB => DataPath:inst.SignB
+ExponentA[0] => DataPath:inst.ExponentA[0]
+ExponentA[1] => DataPath:inst.ExponentA[1]
+ExponentA[2] => DataPath:inst.ExponentA[2]
+ExponentA[3] => DataPath:inst.ExponentA[3]
+ExponentA[4] => DataPath:inst.ExponentA[4]
+ExponentA[5] => DataPath:inst.ExponentA[5]
+ExponentA[6] => DataPath:inst.ExponentA[6]
+ExponentB[0] => DataPath:inst.ExponentB[0]
+ExponentB[1] => DataPath:inst.ExponentB[1]
+ExponentB[2] => DataPath:inst.ExponentB[2]
+ExponentB[3] => DataPath:inst.ExponentB[3]
+ExponentB[4] => DataPath:inst.ExponentB[4]
+ExponentB[5] => DataPath:inst.ExponentB[5]
+ExponentB[6] => DataPath:inst.ExponentB[6]
+MantissaA[0] => DataPath:inst.MantissaA[0]
+MantissaA[1] => DataPath:inst.MantissaA[1]
+MantissaA[2] => DataPath:inst.MantissaA[2]
+MantissaA[3] => DataPath:inst.MantissaA[3]
+MantissaA[4] => DataPath:inst.MantissaA[4]
+MantissaA[5] => DataPath:inst.MantissaA[5]
+MantissaA[6] => DataPath:inst.MantissaA[6]
+MantissaA[7] => DataPath:inst.MantissaA[7]
+MantissaB[0] => DataPath:inst.MantissaB[0]
+MantissaB[1] => DataPath:inst.MantissaB[1]
+MantissaB[2] => DataPath:inst.MantissaB[2]
+MantissaB[3] => DataPath:inst.MantissaB[3]
+MantissaB[4] => DataPath:inst.MantissaB[4]
+MantissaB[5] => DataPath:inst.MantissaB[5]
+MantissaB[6] => DataPath:inst.MantissaB[6]
+MantissaB[7] => DataPath:inst.MantissaB[7]
+ExponentOut[0] <= DataPath:inst.ExponentOut[0]
+ExponentOut[1] <= DataPath:inst.ExponentOut[1]
+ExponentOut[2] <= DataPath:inst.ExponentOut[2]
+ExponentOut[3] <= DataPath:inst.ExponentOut[3]
+ExponentOut[4] <= DataPath:inst.ExponentOut[4]
+ExponentOut[5] <= DataPath:inst.ExponentOut[5]
+ExponentOut[6] <= DataPath:inst.ExponentOut[6]
+
+
+|lab1CEG3156|DataPath:inst
+MAgtMB <= comparator8_bit:CompMantissa.AgtB
+GReset => LSPL8Reg:inst25.i_resetBar
+GReset => LSPL8Reg:inst26.i_resetBar
+GReset => loadableCounter:ExpA.resetBAR
+GReset => loadableCounter:ExpB.resetBAR
+GReset => enARdFF_2:SignOutReg.i_resetBar
+GReset => enARdFF_2:SnA.i_resetBar
+GReset => enARdFF_2:SnB.i_resetBar
+GReset => loadableCounter:ExponentOutReg.resetBAR
+GReset => LSPL8Reg:MantissaOutReg.i_resetBar
+loadMA => LSPL8Reg:inst25.i_load
+shiftMA => LSPL8Reg:inst25.shift
+GClock => LSPL8Reg:inst25.i_clock
+GClock => LSPL8Reg:inst26.i_clock
+GClock => loadableCounter:ExpA.clk
+GClock => loadableCounter:ExpB.clk
+GClock => enARdFF_2:SnA.i_clock
+GClock => enARdFF_2:SnB.i_clock
+GClock => enARdFF_2:SignOutReg.i_clock
+GClock => loadableCounter:ExponentOutReg.clk
+GClock => LSPL8Reg:MantissaOutReg.i_clock
+MantissaA[0] => LSPL8Reg:inst25.i_value[0]
+MantissaA[1] => LSPL8Reg:inst25.i_value[1]
+MantissaA[2] => LSPL8Reg:inst25.i_value[2]
+MantissaA[3] => LSPL8Reg:inst25.i_value[3]
+MantissaA[4] => LSPL8Reg:inst25.i_value[4]
+MantissaA[5] => LSPL8Reg:inst25.i_value[5]
+MantissaA[6] => LSPL8Reg:inst25.i_value[6]
+MantissaA[7] => LSPL8Reg:inst25.i_value[7]
+loadMB => LSPL8Reg:inst26.i_load
+shiftMB => LSPL8Reg:inst26.shift
+MantissaB[0] => LSPL8Reg:inst26.i_value[0]
+MantissaB[1] => LSPL8Reg:inst26.i_value[1]
+MantissaB[2] => LSPL8Reg:inst26.i_value[2]
+MantissaB[3] => LSPL8Reg:inst26.i_value[3]
+MantissaB[4] => LSPL8Reg:inst26.i_value[4]
+MantissaB[5] => LSPL8Reg:inst26.i_value[5]
+MantissaB[6] => LSPL8Reg:inst26.i_value[6]
+MantissaB[7] => LSPL8Reg:inst26.i_value[7]
+MBgtMA <= comparator8_bit:CompMantissa.BgtA
+MAeqMB <= comparator8_bit:CompMantissa.AeqB
+EAgtEB <= comparator8_bit:CompExponent.AgtB
+incEA => loadableCounter:ExpA.count
+loadEA => loadableCounter:ExpA.load
+ExponentA[0] => loadableCounter:ExpA.dataValue[0]
+ExponentA[1] => loadableCounter:ExpA.dataValue[1]
+ExponentA[2] => loadableCounter:ExpA.dataValue[2]
+ExponentA[3] => loadableCounter:ExpA.dataValue[3]
+ExponentA[4] => loadableCounter:ExpA.dataValue[4]
+ExponentA[5] => loadableCounter:ExpA.dataValue[5]
+ExponentA[6] => loadableCounter:ExpA.dataValue[6]
+incEB => loadableCounter:ExpB.count
+loadEB => loadableCounter:ExpB.load
+ExponentB[0] => loadableCounter:ExpB.dataValue[0]
+ExponentB[1] => loadableCounter:ExpB.dataValue[1]
+ExponentB[2] => loadableCounter:ExpB.dataValue[2]
+ExponentB[3] => loadableCounter:ExpB.dataValue[3]
+ExponentB[4] => loadableCounter:ExpB.dataValue[4]
+ExponentB[5] => loadableCounter:ExpB.dataValue[5]
+ExponentB[6] => loadableCounter:ExpB.dataValue[6]
+EBgtEA <= comparator8_bit:CompExponent.BgtA
+SignOut <= enARdFF_2:SignOutReg.o_q
+SMUX => MUX2_1bit:inst2898.s
+SA <= enARdFF_2:SnA.o_q
+SignA => enARdFF_2:SnA.i_d
+loadSA => enARdFF_2:SnA.i_enable
+SB <= enARdFF_2:SnB.o_q
+SignB => enARdFF_2:SnB.i_d
+loadSB => enARdFF_2:SnB.i_enable
+loadSO => enARdFF_2:SignOutReg.i_enable
+EAeqEB <= comparator8_bit:CompExponent.AeqB
+SAeqSB <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+ExponentOut[0] <= loadableCounter:ExponentOutReg.y[0]
+ExponentOut[1] <= loadableCounter:ExponentOutReg.y[1]
+ExponentOut[2] <= loadableCounter:ExponentOutReg.y[2]
+ExponentOut[3] <= loadableCounter:ExponentOutReg.y[3]
+ExponentOut[4] <= loadableCounter:ExponentOutReg.y[4]
+ExponentOut[5] <= loadableCounter:ExponentOutReg.y[5]
+ExponentOut[6] <= loadableCounter:ExponentOutReg.y[6]
+incEO => loadableCounter:ExponentOutReg.count
+loadEO => loadableCounter:ExponentOutReg.load
+MantissaOut[0] <= LSPL8Reg:MantissaOutReg.o_value[0]
+MantissaOut[1] <= LSPL8Reg:MantissaOutReg.o_value[1]
+MantissaOut[2] <= LSPL8Reg:MantissaOutReg.o_value[2]
+MantissaOut[3] <= LSPL8Reg:MantissaOutReg.o_value[3]
+MantissaOut[4] <= LSPL8Reg:MantissaOutReg.o_value[4]
+MantissaOut[5] <= LSPL8Reg:MantissaOutReg.o_value[5]
+MantissaOut[6] <= LSPL8Reg:MantissaOutReg.o_value[6]
+MantissaOut[7] <= LSPL8Reg:MantissaOutReg.o_value[7]
+loadMO => LSPL8Reg:MantissaOutReg.i_load
+shiftMO => LSPL8Reg:MantissaOutReg.shift
+invMO => MUX2_8bit:inst3.s
+invA => MUX2_8bit:compA.s
+invB => MUX2_8bit:compB.s
+
+
+|lab1CEG3156|DataPath:inst|comparator8_bit:CompMantissa
+A[0] => LessThan0.IN8
+A[0] => Equal0.IN7
+A[0] => LessThan1.IN8
+A[1] => LessThan0.IN7
+A[1] => Equal0.IN6
+A[1] => LessThan1.IN7
+A[2] => LessThan0.IN6
+A[2] => Equal0.IN5
+A[2] => LessThan1.IN6
+A[3] => LessThan0.IN5
+A[3] => Equal0.IN4
+A[3] => LessThan1.IN5
+A[4] => LessThan0.IN4
+A[4] => Equal0.IN3
+A[4] => LessThan1.IN4
+A[5] => LessThan0.IN3
+A[5] => Equal0.IN2
+A[5] => LessThan1.IN3
+A[6] => LessThan0.IN2
+A[6] => Equal0.IN1
+A[6] => LessThan1.IN2
+A[7] => LessThan0.IN1
+A[7] => Equal0.IN0
+A[7] => LessThan1.IN1
+B[0] => LessThan0.IN16
+B[0] => Equal0.IN15
+B[0] => LessThan1.IN16
+B[1] => LessThan0.IN15
+B[1] => Equal0.IN14
+B[1] => LessThan1.IN15
+B[2] => LessThan0.IN14
+B[2] => Equal0.IN13
+B[2] => LessThan1.IN14
+B[3] => LessThan0.IN13
+B[3] => Equal0.IN12
+B[3] => LessThan1.IN13
+B[4] => LessThan0.IN12
+B[4] => Equal0.IN11
+B[4] => LessThan1.IN12
+B[5] => LessThan0.IN11
+B[5] => Equal0.IN10
+B[5] => LessThan1.IN11
+B[6] => LessThan0.IN10
+B[6] => Equal0.IN9
+B[6] => LessThan1.IN10
+B[7] => LessThan0.IN9
+B[7] => Equal0.IN8
+B[7] => LessThan1.IN9
+AgtB <= outs[0].DB_MAX_OUTPUT_PORT_TYPE
+BgtA <= outs[2].DB_MAX_OUTPUT_PORT_TYPE
+AeqB <= outs[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst25
+i_resetBar => enARdFF_2:d0.i_resetBar
+i_resetBar => enARdFF_2:d1.i_resetBar
+i_resetBar => enARdFF_2:d2.i_resetBar
+i_resetBar => enARdFF_2:d3.i_resetBar
+i_resetBar => enARdFF_2:d4.i_resetBar
+i_resetBar => enARdFF_2:d5.i_resetBar
+i_resetBar => enARdFF_2:d6.i_resetBar
+i_resetBar => enARdFF_2:d7.i_resetBar
+i_load => enable.IN0
+shift => enable.IN1
+shift => MUX2_8bit:mux.s
+i_clock => enARdFF_2:d0.i_clock
+i_clock => enARdFF_2:d1.i_clock
+i_clock => enARdFF_2:d2.i_clock
+i_clock => enARdFF_2:d3.i_clock
+i_clock => enARdFF_2:d4.i_clock
+i_clock => enARdFF_2:d5.i_clock
+i_clock => enARdFF_2:d6.i_clock
+i_clock => enARdFF_2:d7.i_clock
+shift_val => ~NO_FANOUT~
+i_value[0] => MUX2_8bit:mux.d0[0]
+i_value[1] => MUX2_8bit:mux.d0[1]
+i_value[2] => MUX2_8bit:mux.d0[2]
+i_value[3] => MUX2_8bit:mux.d0[3]
+i_value[4] => MUX2_8bit:mux.d0[4]
+i_value[5] => MUX2_8bit:mux.d0[5]
+i_value[6] => MUX2_8bit:mux.d0[6]
+i_value[7] => MUX2_8bit:mux.d0[7]
+o_value[0] <= enARdFF_2:d0.o_q
+o_value[1] <= enARdFF_2:d1.o_q
+o_value[2] <= enARdFF_2:d2.o_q
+o_value[3] <= enARdFF_2:d3.o_q
+o_value[4] <= enARdFF_2:d4.o_q
+o_value[5] <= enARdFF_2:d5.o_q
+o_value[6] <= enARdFF_2:d6.o_q
+o_value[7] <= enARdFF_2:d7.o_q
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst25|MUX2_8bit:mux
+d0[0] => MUX2_1bit:m0.d0
+d0[1] => MUX2_1bit:m1.d0
+d0[2] => MUX2_1bit:m2.d0
+d0[3] => MUX2_1bit:m3.d0
+d0[4] => MUX2_1bit:m4.d0
+d0[5] => MUX2_1bit:m5.d0
+d0[6] => MUX2_1bit:m6.d0
+d0[7] => MUX2_1bit:m7.d0
+d1[0] => MUX2_1bit:m0.d1
+d1[1] => MUX2_1bit:m1.d1
+d1[2] => MUX2_1bit:m2.d1
+d1[3] => MUX2_1bit:m3.d1
+d1[4] => MUX2_1bit:m4.d1
+d1[5] => MUX2_1bit:m5.d1
+d1[6] => MUX2_1bit:m6.d1
+d1[7] => MUX2_1bit:m7.d1
+s => MUX2_1bit:m0.s
+s => MUX2_1bit:m1.s
+s => MUX2_1bit:m2.s
+s => MUX2_1bit:m3.s
+s => MUX2_1bit:m4.s
+s => MUX2_1bit:m5.s
+s => MUX2_1bit:m6.s
+s => MUX2_1bit:m7.s
+o_Value[0] <= MUX2_1bit:m0.y
+o_Value[1] <= MUX2_1bit:m1.y
+o_Value[2] <= MUX2_1bit:m2.y
+o_Value[3] <= MUX2_1bit:m3.y
+o_Value[4] <= MUX2_1bit:m4.y
+o_Value[5] <= MUX2_1bit:m5.y
+o_Value[6] <= MUX2_1bit:m6.y
+o_Value[7] <= MUX2_1bit:m7.y
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst25|MUX2_8bit:mux|MUX2_1bit:m0
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst25|MUX2_8bit:mux|MUX2_1bit:m1
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst25|MUX2_8bit:mux|MUX2_1bit:m2
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst25|MUX2_8bit:mux|MUX2_1bit:m3
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst25|MUX2_8bit:mux|MUX2_1bit:m4
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst25|MUX2_8bit:mux|MUX2_1bit:m5
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst25|MUX2_8bit:mux|MUX2_1bit:m6
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst25|MUX2_8bit:mux|MUX2_1bit:m7
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst25|enARdFF_2:d0
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst25|enARdFF_2:d1
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst25|enARdFF_2:d2
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst25|enARdFF_2:d3
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst25|enARdFF_2:d4
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst25|enARdFF_2:d5
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst25|enARdFF_2:d6
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst25|enARdFF_2:d7
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst26
+i_resetBar => enARdFF_2:d0.i_resetBar
+i_resetBar => enARdFF_2:d1.i_resetBar
+i_resetBar => enARdFF_2:d2.i_resetBar
+i_resetBar => enARdFF_2:d3.i_resetBar
+i_resetBar => enARdFF_2:d4.i_resetBar
+i_resetBar => enARdFF_2:d5.i_resetBar
+i_resetBar => enARdFF_2:d6.i_resetBar
+i_resetBar => enARdFF_2:d7.i_resetBar
+i_load => enable.IN0
+shift => enable.IN1
+shift => MUX2_8bit:mux.s
+i_clock => enARdFF_2:d0.i_clock
+i_clock => enARdFF_2:d1.i_clock
+i_clock => enARdFF_2:d2.i_clock
+i_clock => enARdFF_2:d3.i_clock
+i_clock => enARdFF_2:d4.i_clock
+i_clock => enARdFF_2:d5.i_clock
+i_clock => enARdFF_2:d6.i_clock
+i_clock => enARdFF_2:d7.i_clock
+shift_val => ~NO_FANOUT~
+i_value[0] => MUX2_8bit:mux.d0[0]
+i_value[1] => MUX2_8bit:mux.d0[1]
+i_value[2] => MUX2_8bit:mux.d0[2]
+i_value[3] => MUX2_8bit:mux.d0[3]
+i_value[4] => MUX2_8bit:mux.d0[4]
+i_value[5] => MUX2_8bit:mux.d0[5]
+i_value[6] => MUX2_8bit:mux.d0[6]
+i_value[7] => MUX2_8bit:mux.d0[7]
+o_value[0] <= enARdFF_2:d0.o_q
+o_value[1] <= enARdFF_2:d1.o_q
+o_value[2] <= enARdFF_2:d2.o_q
+o_value[3] <= enARdFF_2:d3.o_q
+o_value[4] <= enARdFF_2:d4.o_q
+o_value[5] <= enARdFF_2:d5.o_q
+o_value[6] <= enARdFF_2:d6.o_q
+o_value[7] <= enARdFF_2:d7.o_q
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst26|MUX2_8bit:mux
+d0[0] => MUX2_1bit:m0.d0
+d0[1] => MUX2_1bit:m1.d0
+d0[2] => MUX2_1bit:m2.d0
+d0[3] => MUX2_1bit:m3.d0
+d0[4] => MUX2_1bit:m4.d0
+d0[5] => MUX2_1bit:m5.d0
+d0[6] => MUX2_1bit:m6.d0
+d0[7] => MUX2_1bit:m7.d0
+d1[0] => MUX2_1bit:m0.d1
+d1[1] => MUX2_1bit:m1.d1
+d1[2] => MUX2_1bit:m2.d1
+d1[3] => MUX2_1bit:m3.d1
+d1[4] => MUX2_1bit:m4.d1
+d1[5] => MUX2_1bit:m5.d1
+d1[6] => MUX2_1bit:m6.d1
+d1[7] => MUX2_1bit:m7.d1
+s => MUX2_1bit:m0.s
+s => MUX2_1bit:m1.s
+s => MUX2_1bit:m2.s
+s => MUX2_1bit:m3.s
+s => MUX2_1bit:m4.s
+s => MUX2_1bit:m5.s
+s => MUX2_1bit:m6.s
+s => MUX2_1bit:m7.s
+o_Value[0] <= MUX2_1bit:m0.y
+o_Value[1] <= MUX2_1bit:m1.y
+o_Value[2] <= MUX2_1bit:m2.y
+o_Value[3] <= MUX2_1bit:m3.y
+o_Value[4] <= MUX2_1bit:m4.y
+o_Value[5] <= MUX2_1bit:m5.y
+o_Value[6] <= MUX2_1bit:m6.y
+o_Value[7] <= MUX2_1bit:m7.y
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst26|MUX2_8bit:mux|MUX2_1bit:m0
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst26|MUX2_8bit:mux|MUX2_1bit:m1
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst26|MUX2_8bit:mux|MUX2_1bit:m2
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst26|MUX2_8bit:mux|MUX2_1bit:m3
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst26|MUX2_8bit:mux|MUX2_1bit:m4
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst26|MUX2_8bit:mux|MUX2_1bit:m5
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst26|MUX2_8bit:mux|MUX2_1bit:m6
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst26|MUX2_8bit:mux|MUX2_1bit:m7
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst26|enARdFF_2:d0
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst26|enARdFF_2:d1
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst26|enARdFF_2:d2
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst26|enARdFF_2:d3
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst26|enARdFF_2:d4
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst26|enARdFF_2:d5
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst26|enARdFF_2:d6
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:inst26|enARdFF_2:d7
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|comparator8_bit:CompExponent
+A[0] => LessThan0.IN8
+A[0] => Equal0.IN7
+A[0] => LessThan1.IN8
+A[1] => LessThan0.IN7
+A[1] => Equal0.IN6
+A[1] => LessThan1.IN7
+A[2] => LessThan0.IN6
+A[2] => Equal0.IN5
+A[2] => LessThan1.IN6
+A[3] => LessThan0.IN5
+A[3] => Equal0.IN4
+A[3] => LessThan1.IN5
+A[4] => LessThan0.IN4
+A[4] => Equal0.IN3
+A[4] => LessThan1.IN4
+A[5] => LessThan0.IN3
+A[5] => Equal0.IN2
+A[5] => LessThan1.IN3
+A[6] => LessThan0.IN2
+A[6] => Equal0.IN1
+A[6] => LessThan1.IN2
+A[7] => LessThan0.IN1
+A[7] => Equal0.IN0
+A[7] => LessThan1.IN1
+B[0] => LessThan0.IN16
+B[0] => Equal0.IN15
+B[0] => LessThan1.IN16
+B[1] => LessThan0.IN15
+B[1] => Equal0.IN14
+B[1] => LessThan1.IN15
+B[2] => LessThan0.IN14
+B[2] => Equal0.IN13
+B[2] => LessThan1.IN14
+B[3] => LessThan0.IN13
+B[3] => Equal0.IN12
+B[3] => LessThan1.IN13
+B[4] => LessThan0.IN12
+B[4] => Equal0.IN11
+B[4] => LessThan1.IN12
+B[5] => LessThan0.IN11
+B[5] => Equal0.IN10
+B[5] => LessThan1.IN11
+B[6] => LessThan0.IN10
+B[6] => Equal0.IN9
+B[6] => LessThan1.IN10
+B[7] => LessThan0.IN9
+B[7] => Equal0.IN8
+B[7] => LessThan1.IN9
+AgtB <= outs[0].DB_MAX_OUTPUT_PORT_TYPE
+BgtA <= outs[2].DB_MAX_OUTPUT_PORT_TYPE
+AeqB <= outs[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpA
+y[0] <= ESPL7counter:inst.outValue[0]
+y[1] <= ESPL7counter:inst.outValue[1]
+y[2] <= ESPL7counter:inst.outValue[2]
+y[3] <= ESPL7counter:inst.outValue[3]
+y[4] <= ESPL7counter:inst.outValue[4]
+y[5] <= ESPL7counter:inst.outValue[5]
+y[6] <= ESPL7counter:inst.outValue[6]
+count => ESPL7counter:inst.count
+resetBAR => inst3.IN0
+resetBAR => MUX2_7bit:inst1.s
+load => inst2.IN1
+clk => ESPL7counter:inst.clk
+dataValue[0] => MUX2_7bit:inst1.d1[0]
+dataValue[1] => MUX2_7bit:inst1.d1[1]
+dataValue[2] => MUX2_7bit:inst1.d1[2]
+dataValue[3] => MUX2_7bit:inst1.d1[3]
+dataValue[4] => MUX2_7bit:inst1.d1[4]
+dataValue[5] => MUX2_7bit:inst1.d1[5]
+dataValue[6] => MUX2_7bit:inst1.d1[6]
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpA|ESPL7counter:inst
+count => comb~1.IN0
+count => comb~4.IN0
+count => comb~7.IN0
+count => comb~11.IN0
+count => comb~15.IN0
+count => comb~20.IN0
+count => comb~25.IN0
+count => comb~31.IN0
+count => comb~37.IN0
+count => comb~44.IN0
+count => comb~51.IN0
+count => comb~59.IN0
+count => comb~67.IN0
+count => comb~76.IN0
+load => comb~0.IN0
+load => comb~3.IN0
+load => comb~6.IN0
+load => comb~10.IN0
+load => comb~14.IN0
+load => comb~19.IN0
+load => comb~24.IN0
+load => comb~30.IN0
+load => comb~36.IN0
+load => comb~43.IN0
+load => comb~50.IN0
+load => comb~58.IN0
+load => comb~66.IN0
+load => comb~75.IN0
+load => comb~1.IN1
+load => comb~4.IN1
+load => comb~7.IN1
+load => comb~11.IN1
+load => comb~15.IN1
+load => comb~20.IN1
+load => comb~25.IN1
+load => comb~31.IN1
+load => comb~37.IN1
+load => comb~44.IN1
+load => comb~51.IN1
+load => comb~59.IN1
+load => comb~67.IN1
+load => comb~76.IN1
+clk => jkFF_2:jk0.i_clock
+clk => jkFF_2:jk1.i_clock
+clk => jkFF_2:jk2.i_clock
+clk => jkFF_2:jk3.i_clock
+clk => jkFF_2:jk4.i_clock
+clk => jkFF_2:jk5.i_clock
+clk => jkFF_2:jk6.i_clock
+dataValue[0] => comb~0.IN1
+dataValue[0] => comb~3.IN1
+dataValue[1] => comb~6.IN1
+dataValue[1] => comb~10.IN1
+dataValue[2] => comb~14.IN1
+dataValue[2] => comb~19.IN1
+dataValue[3] => comb~24.IN1
+dataValue[3] => comb~30.IN1
+dataValue[4] => comb~36.IN1
+dataValue[4] => comb~43.IN1
+dataValue[5] => comb~50.IN1
+dataValue[5] => comb~58.IN1
+dataValue[6] => comb~66.IN1
+dataValue[6] => comb~75.IN1
+outValue[0] <= jkFF_2:jk0.o_q
+outValue[1] <= jkFF_2:jk1.o_q
+outValue[2] <= jkFF_2:jk2.o_q
+outValue[3] <= jkFF_2:jk3.o_q
+outValue[4] <= jkFF_2:jk4.o_q
+outValue[5] <= jkFF_2:jk5.o_q
+outValue[6] <= jkFF_2:jk6.o_q
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpA|ESPL7counter:inst|jkFF_2:jk0
+i_j => Equal0.IN1
+i_j => Equal1.IN0
+i_j => Equal2.IN0
+i_k => Equal0.IN0
+i_k => Equal1.IN1
+i_k => Equal2.IN1
+i_clock => dFF_2:dFlipFlop.i_clock
+o_q <= dFF_2:dFlipFlop.o_q
+o_qBar <= dFF_2:dFlipFlop.o_qBar
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpA|ESPL7counter:inst|jkFF_2:jk0|dFF_2:dFlipFlop
+i_d => int_q.DATAIN
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpA|ESPL7counter:inst|jkFF_2:jk1
+i_j => Equal0.IN1
+i_j => Equal1.IN0
+i_j => Equal2.IN0
+i_k => Equal0.IN0
+i_k => Equal1.IN1
+i_k => Equal2.IN1
+i_clock => dFF_2:dFlipFlop.i_clock
+o_q <= dFF_2:dFlipFlop.o_q
+o_qBar <= dFF_2:dFlipFlop.o_qBar
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpA|ESPL7counter:inst|jkFF_2:jk1|dFF_2:dFlipFlop
+i_d => int_q.DATAIN
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpA|ESPL7counter:inst|jkFF_2:jk2
+i_j => Equal0.IN1
+i_j => Equal1.IN0
+i_j => Equal2.IN0
+i_k => Equal0.IN0
+i_k => Equal1.IN1
+i_k => Equal2.IN1
+i_clock => dFF_2:dFlipFlop.i_clock
+o_q <= dFF_2:dFlipFlop.o_q
+o_qBar <= dFF_2:dFlipFlop.o_qBar
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpA|ESPL7counter:inst|jkFF_2:jk2|dFF_2:dFlipFlop
+i_d => int_q.DATAIN
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpA|ESPL7counter:inst|jkFF_2:jk3
+i_j => Equal0.IN1
+i_j => Equal1.IN0
+i_j => Equal2.IN0
+i_k => Equal0.IN0
+i_k => Equal1.IN1
+i_k => Equal2.IN1
+i_clock => dFF_2:dFlipFlop.i_clock
+o_q <= dFF_2:dFlipFlop.o_q
+o_qBar <= dFF_2:dFlipFlop.o_qBar
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpA|ESPL7counter:inst|jkFF_2:jk3|dFF_2:dFlipFlop
+i_d => int_q.DATAIN
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpA|ESPL7counter:inst|jkFF_2:jk4
+i_j => Equal0.IN1
+i_j => Equal1.IN0
+i_j => Equal2.IN0
+i_k => Equal0.IN0
+i_k => Equal1.IN1
+i_k => Equal2.IN1
+i_clock => dFF_2:dFlipFlop.i_clock
+o_q <= dFF_2:dFlipFlop.o_q
+o_qBar <= dFF_2:dFlipFlop.o_qBar
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpA|ESPL7counter:inst|jkFF_2:jk4|dFF_2:dFlipFlop
+i_d => int_q.DATAIN
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpA|ESPL7counter:inst|jkFF_2:jk5
+i_j => Equal0.IN1
+i_j => Equal1.IN0
+i_j => Equal2.IN0
+i_k => Equal0.IN0
+i_k => Equal1.IN1
+i_k => Equal2.IN1
+i_clock => dFF_2:dFlipFlop.i_clock
+o_q <= dFF_2:dFlipFlop.o_q
+o_qBar <= dFF_2:dFlipFlop.o_qBar
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpA|ESPL7counter:inst|jkFF_2:jk5|dFF_2:dFlipFlop
+i_d => int_q.DATAIN
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpA|ESPL7counter:inst|jkFF_2:jk6
+i_j => Equal0.IN1
+i_j => Equal1.IN0
+i_j => Equal2.IN0
+i_k => Equal0.IN0
+i_k => Equal1.IN1
+i_k => Equal2.IN1
+i_clock => dFF_2:dFlipFlop.i_clock
+o_q <= dFF_2:dFlipFlop.o_q
+o_qBar <= dFF_2:dFlipFlop.o_qBar
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpA|ESPL7counter:inst|jkFF_2:jk6|dFF_2:dFlipFlop
+i_d => int_q.DATAIN
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpA|MUX2_7bit:inst1
+d0[0] => MUX2_1bit:m0.d0
+d0[1] => MUX2_1bit:m1.d0
+d0[2] => MUX2_1bit:m2.d0
+d0[3] => MUX2_1bit:m3.d0
+d0[4] => MUX2_1bit:m4.d0
+d0[5] => MUX2_1bit:m5.d0
+d0[6] => MUX2_1bit:m6.d0
+d1[0] => MUX2_1bit:m0.d1
+d1[1] => MUX2_1bit:m1.d1
+d1[2] => MUX2_1bit:m2.d1
+d1[3] => MUX2_1bit:m3.d1
+d1[4] => MUX2_1bit:m4.d1
+d1[5] => MUX2_1bit:m5.d1
+d1[6] => MUX2_1bit:m6.d1
+s => MUX2_1bit:m0.s
+s => MUX2_1bit:m1.s
+s => MUX2_1bit:m2.s
+s => MUX2_1bit:m3.s
+s => MUX2_1bit:m4.s
+s => MUX2_1bit:m5.s
+s => MUX2_1bit:m6.s
+o_Value[0] <= MUX2_1bit:m0.y
+o_Value[1] <= MUX2_1bit:m1.y
+o_Value[2] <= MUX2_1bit:m2.y
+o_Value[3] <= MUX2_1bit:m3.y
+o_Value[4] <= MUX2_1bit:m4.y
+o_Value[5] <= MUX2_1bit:m5.y
+o_Value[6] <= MUX2_1bit:m6.y
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpA|MUX2_7bit:inst1|MUX2_1bit:m0
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpA|MUX2_7bit:inst1|MUX2_1bit:m1
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpA|MUX2_7bit:inst1|MUX2_1bit:m2
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpA|MUX2_7bit:inst1|MUX2_1bit:m3
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpA|MUX2_7bit:inst1|MUX2_1bit:m4
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpA|MUX2_7bit:inst1|MUX2_1bit:m5
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpA|MUX2_7bit:inst1|MUX2_1bit:m6
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpB
+y[0] <= ESPL7counter:inst.outValue[0]
+y[1] <= ESPL7counter:inst.outValue[1]
+y[2] <= ESPL7counter:inst.outValue[2]
+y[3] <= ESPL7counter:inst.outValue[3]
+y[4] <= ESPL7counter:inst.outValue[4]
+y[5] <= ESPL7counter:inst.outValue[5]
+y[6] <= ESPL7counter:inst.outValue[6]
+count => ESPL7counter:inst.count
+resetBAR => inst3.IN0
+resetBAR => MUX2_7bit:inst1.s
+load => inst2.IN1
+clk => ESPL7counter:inst.clk
+dataValue[0] => MUX2_7bit:inst1.d1[0]
+dataValue[1] => MUX2_7bit:inst1.d1[1]
+dataValue[2] => MUX2_7bit:inst1.d1[2]
+dataValue[3] => MUX2_7bit:inst1.d1[3]
+dataValue[4] => MUX2_7bit:inst1.d1[4]
+dataValue[5] => MUX2_7bit:inst1.d1[5]
+dataValue[6] => MUX2_7bit:inst1.d1[6]
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpB|ESPL7counter:inst
+count => comb~1.IN0
+count => comb~4.IN0
+count => comb~7.IN0
+count => comb~11.IN0
+count => comb~15.IN0
+count => comb~20.IN0
+count => comb~25.IN0
+count => comb~31.IN0
+count => comb~37.IN0
+count => comb~44.IN0
+count => comb~51.IN0
+count => comb~59.IN0
+count => comb~67.IN0
+count => comb~76.IN0
+load => comb~0.IN0
+load => comb~3.IN0
+load => comb~6.IN0
+load => comb~10.IN0
+load => comb~14.IN0
+load => comb~19.IN0
+load => comb~24.IN0
+load => comb~30.IN0
+load => comb~36.IN0
+load => comb~43.IN0
+load => comb~50.IN0
+load => comb~58.IN0
+load => comb~66.IN0
+load => comb~75.IN0
+load => comb~1.IN1
+load => comb~4.IN1
+load => comb~7.IN1
+load => comb~11.IN1
+load => comb~15.IN1
+load => comb~20.IN1
+load => comb~25.IN1
+load => comb~31.IN1
+load => comb~37.IN1
+load => comb~44.IN1
+load => comb~51.IN1
+load => comb~59.IN1
+load => comb~67.IN1
+load => comb~76.IN1
+clk => jkFF_2:jk0.i_clock
+clk => jkFF_2:jk1.i_clock
+clk => jkFF_2:jk2.i_clock
+clk => jkFF_2:jk3.i_clock
+clk => jkFF_2:jk4.i_clock
+clk => jkFF_2:jk5.i_clock
+clk => jkFF_2:jk6.i_clock
+dataValue[0] => comb~0.IN1
+dataValue[0] => comb~3.IN1
+dataValue[1] => comb~6.IN1
+dataValue[1] => comb~10.IN1
+dataValue[2] => comb~14.IN1
+dataValue[2] => comb~19.IN1
+dataValue[3] => comb~24.IN1
+dataValue[3] => comb~30.IN1
+dataValue[4] => comb~36.IN1
+dataValue[4] => comb~43.IN1
+dataValue[5] => comb~50.IN1
+dataValue[5] => comb~58.IN1
+dataValue[6] => comb~66.IN1
+dataValue[6] => comb~75.IN1
+outValue[0] <= jkFF_2:jk0.o_q
+outValue[1] <= jkFF_2:jk1.o_q
+outValue[2] <= jkFF_2:jk2.o_q
+outValue[3] <= jkFF_2:jk3.o_q
+outValue[4] <= jkFF_2:jk4.o_q
+outValue[5] <= jkFF_2:jk5.o_q
+outValue[6] <= jkFF_2:jk6.o_q
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpB|ESPL7counter:inst|jkFF_2:jk0
+i_j => Equal0.IN1
+i_j => Equal1.IN0
+i_j => Equal2.IN0
+i_k => Equal0.IN0
+i_k => Equal1.IN1
+i_k => Equal2.IN1
+i_clock => dFF_2:dFlipFlop.i_clock
+o_q <= dFF_2:dFlipFlop.o_q
+o_qBar <= dFF_2:dFlipFlop.o_qBar
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpB|ESPL7counter:inst|jkFF_2:jk0|dFF_2:dFlipFlop
+i_d => int_q.DATAIN
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpB|ESPL7counter:inst|jkFF_2:jk1
+i_j => Equal0.IN1
+i_j => Equal1.IN0
+i_j => Equal2.IN0
+i_k => Equal0.IN0
+i_k => Equal1.IN1
+i_k => Equal2.IN1
+i_clock => dFF_2:dFlipFlop.i_clock
+o_q <= dFF_2:dFlipFlop.o_q
+o_qBar <= dFF_2:dFlipFlop.o_qBar
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpB|ESPL7counter:inst|jkFF_2:jk1|dFF_2:dFlipFlop
+i_d => int_q.DATAIN
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpB|ESPL7counter:inst|jkFF_2:jk2
+i_j => Equal0.IN1
+i_j => Equal1.IN0
+i_j => Equal2.IN0
+i_k => Equal0.IN0
+i_k => Equal1.IN1
+i_k => Equal2.IN1
+i_clock => dFF_2:dFlipFlop.i_clock
+o_q <= dFF_2:dFlipFlop.o_q
+o_qBar <= dFF_2:dFlipFlop.o_qBar
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpB|ESPL7counter:inst|jkFF_2:jk2|dFF_2:dFlipFlop
+i_d => int_q.DATAIN
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpB|ESPL7counter:inst|jkFF_2:jk3
+i_j => Equal0.IN1
+i_j => Equal1.IN0
+i_j => Equal2.IN0
+i_k => Equal0.IN0
+i_k => Equal1.IN1
+i_k => Equal2.IN1
+i_clock => dFF_2:dFlipFlop.i_clock
+o_q <= dFF_2:dFlipFlop.o_q
+o_qBar <= dFF_2:dFlipFlop.o_qBar
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpB|ESPL7counter:inst|jkFF_2:jk3|dFF_2:dFlipFlop
+i_d => int_q.DATAIN
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpB|ESPL7counter:inst|jkFF_2:jk4
+i_j => Equal0.IN1
+i_j => Equal1.IN0
+i_j => Equal2.IN0
+i_k => Equal0.IN0
+i_k => Equal1.IN1
+i_k => Equal2.IN1
+i_clock => dFF_2:dFlipFlop.i_clock
+o_q <= dFF_2:dFlipFlop.o_q
+o_qBar <= dFF_2:dFlipFlop.o_qBar
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpB|ESPL7counter:inst|jkFF_2:jk4|dFF_2:dFlipFlop
+i_d => int_q.DATAIN
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpB|ESPL7counter:inst|jkFF_2:jk5
+i_j => Equal0.IN1
+i_j => Equal1.IN0
+i_j => Equal2.IN0
+i_k => Equal0.IN0
+i_k => Equal1.IN1
+i_k => Equal2.IN1
+i_clock => dFF_2:dFlipFlop.i_clock
+o_q <= dFF_2:dFlipFlop.o_q
+o_qBar <= dFF_2:dFlipFlop.o_qBar
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpB|ESPL7counter:inst|jkFF_2:jk5|dFF_2:dFlipFlop
+i_d => int_q.DATAIN
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpB|ESPL7counter:inst|jkFF_2:jk6
+i_j => Equal0.IN1
+i_j => Equal1.IN0
+i_j => Equal2.IN0
+i_k => Equal0.IN0
+i_k => Equal1.IN1
+i_k => Equal2.IN1
+i_clock => dFF_2:dFlipFlop.i_clock
+o_q <= dFF_2:dFlipFlop.o_q
+o_qBar <= dFF_2:dFlipFlop.o_qBar
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpB|ESPL7counter:inst|jkFF_2:jk6|dFF_2:dFlipFlop
+i_d => int_q.DATAIN
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpB|MUX2_7bit:inst1
+d0[0] => MUX2_1bit:m0.d0
+d0[1] => MUX2_1bit:m1.d0
+d0[2] => MUX2_1bit:m2.d0
+d0[3] => MUX2_1bit:m3.d0
+d0[4] => MUX2_1bit:m4.d0
+d0[5] => MUX2_1bit:m5.d0
+d0[6] => MUX2_1bit:m6.d0
+d1[0] => MUX2_1bit:m0.d1
+d1[1] => MUX2_1bit:m1.d1
+d1[2] => MUX2_1bit:m2.d1
+d1[3] => MUX2_1bit:m3.d1
+d1[4] => MUX2_1bit:m4.d1
+d1[5] => MUX2_1bit:m5.d1
+d1[6] => MUX2_1bit:m6.d1
+s => MUX2_1bit:m0.s
+s => MUX2_1bit:m1.s
+s => MUX2_1bit:m2.s
+s => MUX2_1bit:m3.s
+s => MUX2_1bit:m4.s
+s => MUX2_1bit:m5.s
+s => MUX2_1bit:m6.s
+o_Value[0] <= MUX2_1bit:m0.y
+o_Value[1] <= MUX2_1bit:m1.y
+o_Value[2] <= MUX2_1bit:m2.y
+o_Value[3] <= MUX2_1bit:m3.y
+o_Value[4] <= MUX2_1bit:m4.y
+o_Value[5] <= MUX2_1bit:m5.y
+o_Value[6] <= MUX2_1bit:m6.y
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpB|MUX2_7bit:inst1|MUX2_1bit:m0
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpB|MUX2_7bit:inst1|MUX2_1bit:m1
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpB|MUX2_7bit:inst1|MUX2_1bit:m2
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpB|MUX2_7bit:inst1|MUX2_1bit:m3
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpB|MUX2_7bit:inst1|MUX2_1bit:m4
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpB|MUX2_7bit:inst1|MUX2_1bit:m5
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExpB|MUX2_7bit:inst1|MUX2_1bit:m6
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|enARdFF_2:SignOutReg
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|MUX2_1bit:inst2898
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|enARdFF_2:SnA
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|enARdFF_2:SnB
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExponentOutReg
+y[0] <= ESPL7counter:inst.outValue[0]
+y[1] <= ESPL7counter:inst.outValue[1]
+y[2] <= ESPL7counter:inst.outValue[2]
+y[3] <= ESPL7counter:inst.outValue[3]
+y[4] <= ESPL7counter:inst.outValue[4]
+y[5] <= ESPL7counter:inst.outValue[5]
+y[6] <= ESPL7counter:inst.outValue[6]
+count => ESPL7counter:inst.count
+resetBAR => inst3.IN0
+resetBAR => MUX2_7bit:inst1.s
+load => inst2.IN1
+clk => ESPL7counter:inst.clk
+dataValue[0] => MUX2_7bit:inst1.d1[0]
+dataValue[1] => MUX2_7bit:inst1.d1[1]
+dataValue[2] => MUX2_7bit:inst1.d1[2]
+dataValue[3] => MUX2_7bit:inst1.d1[3]
+dataValue[4] => MUX2_7bit:inst1.d1[4]
+dataValue[5] => MUX2_7bit:inst1.d1[5]
+dataValue[6] => MUX2_7bit:inst1.d1[6]
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExponentOutReg|ESPL7counter:inst
+count => comb~1.IN0
+count => comb~4.IN0
+count => comb~7.IN0
+count => comb~11.IN0
+count => comb~15.IN0
+count => comb~20.IN0
+count => comb~25.IN0
+count => comb~31.IN0
+count => comb~37.IN0
+count => comb~44.IN0
+count => comb~51.IN0
+count => comb~59.IN0
+count => comb~67.IN0
+count => comb~76.IN0
+load => comb~0.IN0
+load => comb~3.IN0
+load => comb~6.IN0
+load => comb~10.IN0
+load => comb~14.IN0
+load => comb~19.IN0
+load => comb~24.IN0
+load => comb~30.IN0
+load => comb~36.IN0
+load => comb~43.IN0
+load => comb~50.IN0
+load => comb~58.IN0
+load => comb~66.IN0
+load => comb~75.IN0
+load => comb~1.IN1
+load => comb~4.IN1
+load => comb~7.IN1
+load => comb~11.IN1
+load => comb~15.IN1
+load => comb~20.IN1
+load => comb~25.IN1
+load => comb~31.IN1
+load => comb~37.IN1
+load => comb~44.IN1
+load => comb~51.IN1
+load => comb~59.IN1
+load => comb~67.IN1
+load => comb~76.IN1
+clk => jkFF_2:jk0.i_clock
+clk => jkFF_2:jk1.i_clock
+clk => jkFF_2:jk2.i_clock
+clk => jkFF_2:jk3.i_clock
+clk => jkFF_2:jk4.i_clock
+clk => jkFF_2:jk5.i_clock
+clk => jkFF_2:jk6.i_clock
+dataValue[0] => comb~0.IN1
+dataValue[0] => comb~3.IN1
+dataValue[1] => comb~6.IN1
+dataValue[1] => comb~10.IN1
+dataValue[2] => comb~14.IN1
+dataValue[2] => comb~19.IN1
+dataValue[3] => comb~24.IN1
+dataValue[3] => comb~30.IN1
+dataValue[4] => comb~36.IN1
+dataValue[4] => comb~43.IN1
+dataValue[5] => comb~50.IN1
+dataValue[5] => comb~58.IN1
+dataValue[6] => comb~66.IN1
+dataValue[6] => comb~75.IN1
+outValue[0] <= jkFF_2:jk0.o_q
+outValue[1] <= jkFF_2:jk1.o_q
+outValue[2] <= jkFF_2:jk2.o_q
+outValue[3] <= jkFF_2:jk3.o_q
+outValue[4] <= jkFF_2:jk4.o_q
+outValue[5] <= jkFF_2:jk5.o_q
+outValue[6] <= jkFF_2:jk6.o_q
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExponentOutReg|ESPL7counter:inst|jkFF_2:jk0
+i_j => Equal0.IN1
+i_j => Equal1.IN0
+i_j => Equal2.IN0
+i_k => Equal0.IN0
+i_k => Equal1.IN1
+i_k => Equal2.IN1
+i_clock => dFF_2:dFlipFlop.i_clock
+o_q <= dFF_2:dFlipFlop.o_q
+o_qBar <= dFF_2:dFlipFlop.o_qBar
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExponentOutReg|ESPL7counter:inst|jkFF_2:jk0|dFF_2:dFlipFlop
+i_d => int_q.DATAIN
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExponentOutReg|ESPL7counter:inst|jkFF_2:jk1
+i_j => Equal0.IN1
+i_j => Equal1.IN0
+i_j => Equal2.IN0
+i_k => Equal0.IN0
+i_k => Equal1.IN1
+i_k => Equal2.IN1
+i_clock => dFF_2:dFlipFlop.i_clock
+o_q <= dFF_2:dFlipFlop.o_q
+o_qBar <= dFF_2:dFlipFlop.o_qBar
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExponentOutReg|ESPL7counter:inst|jkFF_2:jk1|dFF_2:dFlipFlop
+i_d => int_q.DATAIN
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExponentOutReg|ESPL7counter:inst|jkFF_2:jk2
+i_j => Equal0.IN1
+i_j => Equal1.IN0
+i_j => Equal2.IN0
+i_k => Equal0.IN0
+i_k => Equal1.IN1
+i_k => Equal2.IN1
+i_clock => dFF_2:dFlipFlop.i_clock
+o_q <= dFF_2:dFlipFlop.o_q
+o_qBar <= dFF_2:dFlipFlop.o_qBar
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExponentOutReg|ESPL7counter:inst|jkFF_2:jk2|dFF_2:dFlipFlop
+i_d => int_q.DATAIN
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExponentOutReg|ESPL7counter:inst|jkFF_2:jk3
+i_j => Equal0.IN1
+i_j => Equal1.IN0
+i_j => Equal2.IN0
+i_k => Equal0.IN0
+i_k => Equal1.IN1
+i_k => Equal2.IN1
+i_clock => dFF_2:dFlipFlop.i_clock
+o_q <= dFF_2:dFlipFlop.o_q
+o_qBar <= dFF_2:dFlipFlop.o_qBar
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExponentOutReg|ESPL7counter:inst|jkFF_2:jk3|dFF_2:dFlipFlop
+i_d => int_q.DATAIN
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExponentOutReg|ESPL7counter:inst|jkFF_2:jk4
+i_j => Equal0.IN1
+i_j => Equal1.IN0
+i_j => Equal2.IN0
+i_k => Equal0.IN0
+i_k => Equal1.IN1
+i_k => Equal2.IN1
+i_clock => dFF_2:dFlipFlop.i_clock
+o_q <= dFF_2:dFlipFlop.o_q
+o_qBar <= dFF_2:dFlipFlop.o_qBar
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExponentOutReg|ESPL7counter:inst|jkFF_2:jk4|dFF_2:dFlipFlop
+i_d => int_q.DATAIN
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExponentOutReg|ESPL7counter:inst|jkFF_2:jk5
+i_j => Equal0.IN1
+i_j => Equal1.IN0
+i_j => Equal2.IN0
+i_k => Equal0.IN0
+i_k => Equal1.IN1
+i_k => Equal2.IN1
+i_clock => dFF_2:dFlipFlop.i_clock
+o_q <= dFF_2:dFlipFlop.o_q
+o_qBar <= dFF_2:dFlipFlop.o_qBar
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExponentOutReg|ESPL7counter:inst|jkFF_2:jk5|dFF_2:dFlipFlop
+i_d => int_q.DATAIN
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExponentOutReg|ESPL7counter:inst|jkFF_2:jk6
+i_j => Equal0.IN1
+i_j => Equal1.IN0
+i_j => Equal2.IN0
+i_k => Equal0.IN0
+i_k => Equal1.IN1
+i_k => Equal2.IN1
+i_clock => dFF_2:dFlipFlop.i_clock
+o_q <= dFF_2:dFlipFlop.o_q
+o_qBar <= dFF_2:dFlipFlop.o_qBar
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExponentOutReg|ESPL7counter:inst|jkFF_2:jk6|dFF_2:dFlipFlop
+i_d => int_q.DATAIN
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExponentOutReg|MUX2_7bit:inst1
+d0[0] => MUX2_1bit:m0.d0
+d0[1] => MUX2_1bit:m1.d0
+d0[2] => MUX2_1bit:m2.d0
+d0[3] => MUX2_1bit:m3.d0
+d0[4] => MUX2_1bit:m4.d0
+d0[5] => MUX2_1bit:m5.d0
+d0[6] => MUX2_1bit:m6.d0
+d1[0] => MUX2_1bit:m0.d1
+d1[1] => MUX2_1bit:m1.d1
+d1[2] => MUX2_1bit:m2.d1
+d1[3] => MUX2_1bit:m3.d1
+d1[4] => MUX2_1bit:m4.d1
+d1[5] => MUX2_1bit:m5.d1
+d1[6] => MUX2_1bit:m6.d1
+s => MUX2_1bit:m0.s
+s => MUX2_1bit:m1.s
+s => MUX2_1bit:m2.s
+s => MUX2_1bit:m3.s
+s => MUX2_1bit:m4.s
+s => MUX2_1bit:m5.s
+s => MUX2_1bit:m6.s
+o_Value[0] <= MUX2_1bit:m0.y
+o_Value[1] <= MUX2_1bit:m1.y
+o_Value[2] <= MUX2_1bit:m2.y
+o_Value[3] <= MUX2_1bit:m3.y
+o_Value[4] <= MUX2_1bit:m4.y
+o_Value[5] <= MUX2_1bit:m5.y
+o_Value[6] <= MUX2_1bit:m6.y
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExponentOutReg|MUX2_7bit:inst1|MUX2_1bit:m0
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExponentOutReg|MUX2_7bit:inst1|MUX2_1bit:m1
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExponentOutReg|MUX2_7bit:inst1|MUX2_1bit:m2
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExponentOutReg|MUX2_7bit:inst1|MUX2_1bit:m3
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExponentOutReg|MUX2_7bit:inst1|MUX2_1bit:m4
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExponentOutReg|MUX2_7bit:inst1|MUX2_1bit:m5
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|loadableCounter:ExponentOutReg|MUX2_7bit:inst1|MUX2_1bit:m6
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:MantissaOutReg
+i_resetBar => enARdFF_2:d0.i_resetBar
+i_resetBar => enARdFF_2:d1.i_resetBar
+i_resetBar => enARdFF_2:d2.i_resetBar
+i_resetBar => enARdFF_2:d3.i_resetBar
+i_resetBar => enARdFF_2:d4.i_resetBar
+i_resetBar => enARdFF_2:d5.i_resetBar
+i_resetBar => enARdFF_2:d6.i_resetBar
+i_resetBar => enARdFF_2:d7.i_resetBar
+i_load => enable.IN0
+shift => enable.IN1
+shift => MUX2_8bit:mux.s
+i_clock => enARdFF_2:d0.i_clock
+i_clock => enARdFF_2:d1.i_clock
+i_clock => enARdFF_2:d2.i_clock
+i_clock => enARdFF_2:d3.i_clock
+i_clock => enARdFF_2:d4.i_clock
+i_clock => enARdFF_2:d5.i_clock
+i_clock => enARdFF_2:d6.i_clock
+i_clock => enARdFF_2:d7.i_clock
+shift_val => ~NO_FANOUT~
+i_value[0] => MUX2_8bit:mux.d0[0]
+i_value[1] => MUX2_8bit:mux.d0[1]
+i_value[2] => MUX2_8bit:mux.d0[2]
+i_value[3] => MUX2_8bit:mux.d0[3]
+i_value[4] => MUX2_8bit:mux.d0[4]
+i_value[5] => MUX2_8bit:mux.d0[5]
+i_value[6] => MUX2_8bit:mux.d0[6]
+i_value[7] => MUX2_8bit:mux.d0[7]
+o_value[0] <= enARdFF_2:d0.o_q
+o_value[1] <= enARdFF_2:d1.o_q
+o_value[2] <= enARdFF_2:d2.o_q
+o_value[3] <= enARdFF_2:d3.o_q
+o_value[4] <= enARdFF_2:d4.o_q
+o_value[5] <= enARdFF_2:d5.o_q
+o_value[6] <= enARdFF_2:d6.o_q
+o_value[7] <= enARdFF_2:d7.o_q
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:MantissaOutReg|MUX2_8bit:mux
+d0[0] => MUX2_1bit:m0.d0
+d0[1] => MUX2_1bit:m1.d0
+d0[2] => MUX2_1bit:m2.d0
+d0[3] => MUX2_1bit:m3.d0
+d0[4] => MUX2_1bit:m4.d0
+d0[5] => MUX2_1bit:m5.d0
+d0[6] => MUX2_1bit:m6.d0
+d0[7] => MUX2_1bit:m7.d0
+d1[0] => MUX2_1bit:m0.d1
+d1[1] => MUX2_1bit:m1.d1
+d1[2] => MUX2_1bit:m2.d1
+d1[3] => MUX2_1bit:m3.d1
+d1[4] => MUX2_1bit:m4.d1
+d1[5] => MUX2_1bit:m5.d1
+d1[6] => MUX2_1bit:m6.d1
+d1[7] => MUX2_1bit:m7.d1
+s => MUX2_1bit:m0.s
+s => MUX2_1bit:m1.s
+s => MUX2_1bit:m2.s
+s => MUX2_1bit:m3.s
+s => MUX2_1bit:m4.s
+s => MUX2_1bit:m5.s
+s => MUX2_1bit:m6.s
+s => MUX2_1bit:m7.s
+o_Value[0] <= MUX2_1bit:m0.y
+o_Value[1] <= MUX2_1bit:m1.y
+o_Value[2] <= MUX2_1bit:m2.y
+o_Value[3] <= MUX2_1bit:m3.y
+o_Value[4] <= MUX2_1bit:m4.y
+o_Value[5] <= MUX2_1bit:m5.y
+o_Value[6] <= MUX2_1bit:m6.y
+o_Value[7] <= MUX2_1bit:m7.y
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:MantissaOutReg|MUX2_8bit:mux|MUX2_1bit:m0
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:MantissaOutReg|MUX2_8bit:mux|MUX2_1bit:m1
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:MantissaOutReg|MUX2_8bit:mux|MUX2_1bit:m2
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:MantissaOutReg|MUX2_8bit:mux|MUX2_1bit:m3
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:MantissaOutReg|MUX2_8bit:mux|MUX2_1bit:m4
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:MantissaOutReg|MUX2_8bit:mux|MUX2_1bit:m5
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:MantissaOutReg|MUX2_8bit:mux|MUX2_1bit:m6
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:MantissaOutReg|MUX2_8bit:mux|MUX2_1bit:m7
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:MantissaOutReg|enARdFF_2:d0
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:MantissaOutReg|enARdFF_2:d1
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:MantissaOutReg|enARdFF_2:d2
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:MantissaOutReg|enARdFF_2:d3
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:MantissaOutReg|enARdFF_2:d4
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:MantissaOutReg|enARdFF_2:d5
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:MantissaOutReg|enARdFF_2:d6
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|LSPL8Reg:MantissaOutReg|enARdFF_2:d7
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|MUX2_8bit:inst3
+d0[0] => MUX2_1bit:m0.d0
+d0[1] => MUX2_1bit:m1.d0
+d0[2] => MUX2_1bit:m2.d0
+d0[3] => MUX2_1bit:m3.d0
+d0[4] => MUX2_1bit:m4.d0
+d0[5] => MUX2_1bit:m5.d0
+d0[6] => MUX2_1bit:m6.d0
+d0[7] => MUX2_1bit:m7.d0
+d1[0] => MUX2_1bit:m0.d1
+d1[1] => MUX2_1bit:m1.d1
+d1[2] => MUX2_1bit:m2.d1
+d1[3] => MUX2_1bit:m3.d1
+d1[4] => MUX2_1bit:m4.d1
+d1[5] => MUX2_1bit:m5.d1
+d1[6] => MUX2_1bit:m6.d1
+d1[7] => MUX2_1bit:m7.d1
+s => MUX2_1bit:m0.s
+s => MUX2_1bit:m1.s
+s => MUX2_1bit:m2.s
+s => MUX2_1bit:m3.s
+s => MUX2_1bit:m4.s
+s => MUX2_1bit:m5.s
+s => MUX2_1bit:m6.s
+s => MUX2_1bit:m7.s
+o_Value[0] <= MUX2_1bit:m0.y
+o_Value[1] <= MUX2_1bit:m1.y
+o_Value[2] <= MUX2_1bit:m2.y
+o_Value[3] <= MUX2_1bit:m3.y
+o_Value[4] <= MUX2_1bit:m4.y
+o_Value[5] <= MUX2_1bit:m5.y
+o_Value[6] <= MUX2_1bit:m6.y
+o_Value[7] <= MUX2_1bit:m7.y
+
+
+|lab1CEG3156|DataPath:inst|MUX2_8bit:inst3|MUX2_1bit:m0
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|MUX2_8bit:inst3|MUX2_1bit:m1
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|MUX2_8bit:inst3|MUX2_1bit:m2
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|MUX2_8bit:inst3|MUX2_1bit:m3
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|MUX2_8bit:inst3|MUX2_1bit:m4
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|MUX2_8bit:inst3|MUX2_1bit:m5
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|MUX2_8bit:inst3|MUX2_1bit:m6
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|MUX2_8bit:inst3|MUX2_1bit:m7
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|fullAdder8_bit:inst
+A[0] => fullAdder:bit0.A
+A[1] => fullAdder:bit1.A
+A[2] => fullAdder:bit2.A
+A[3] => fullAdder:bit3.A
+A[4] => fullAdder:bit4.A
+A[5] => fullAdder:bit5.A
+A[6] => fullAdder:bit6.A
+A[7] => fullAdder:bit7.A
+B[0] => fullAdder:bit0.B
+B[1] => fullAdder:bit1.B
+B[2] => fullAdder:bit2.B
+B[3] => fullAdder:bit3.B
+B[4] => fullAdder:bit4.B
+B[5] => fullAdder:bit5.B
+B[6] => fullAdder:bit6.B
+B[7] => fullAdder:bit7.B
+Cin => fullAdder:bit0.Cin
+Sum[0] <= fullAdder:bit0.Sum
+Sum[1] <= fullAdder:bit1.Sum
+Sum[2] <= fullAdder:bit2.Sum
+Sum[3] <= fullAdder:bit3.Sum
+Sum[4] <= fullAdder:bit4.Sum
+Sum[5] <= fullAdder:bit5.Sum
+Sum[6] <= fullAdder:bit6.Sum
+Sum[7] <= fullAdder:bit7.Sum
+Cout <= fullAdder:bit7.Cout
+
+
+|lab1CEG3156|DataPath:inst|fullAdder8_bit:inst|fullAdder:bit0
+A => Sum~0.IN0
+A => Cout~1.IN0
+B => Sum~0.IN1
+B => Cout~1.IN1
+Cin => Sum~1.IN1
+Cin => Cout~0.IN1
+Sum <= Sum~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|fullAdder8_bit:inst|fullAdder:bit1
+A => Sum~0.IN0
+A => Cout~1.IN0
+B => Sum~0.IN1
+B => Cout~1.IN1
+Cin => Sum~1.IN1
+Cin => Cout~0.IN1
+Sum <= Sum~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|fullAdder8_bit:inst|fullAdder:bit2
+A => Sum~0.IN0
+A => Cout~1.IN0
+B => Sum~0.IN1
+B => Cout~1.IN1
+Cin => Sum~1.IN1
+Cin => Cout~0.IN1
+Sum <= Sum~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|fullAdder8_bit:inst|fullAdder:bit3
+A => Sum~0.IN0
+A => Cout~1.IN0
+B => Sum~0.IN1
+B => Cout~1.IN1
+Cin => Sum~1.IN1
+Cin => Cout~0.IN1
+Sum <= Sum~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|fullAdder8_bit:inst|fullAdder:bit4
+A => Sum~0.IN0
+A => Cout~1.IN0
+B => Sum~0.IN1
+B => Cout~1.IN1
+Cin => Sum~1.IN1
+Cin => Cout~0.IN1
+Sum <= Sum~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|fullAdder8_bit:inst|fullAdder:bit5
+A => Sum~0.IN0
+A => Cout~1.IN0
+B => Sum~0.IN1
+B => Cout~1.IN1
+Cin => Sum~1.IN1
+Cin => Cout~0.IN1
+Sum <= Sum~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|fullAdder8_bit:inst|fullAdder:bit6
+A => Sum~0.IN0
+A => Cout~1.IN0
+B => Sum~0.IN1
+B => Cout~1.IN1
+Cin => Sum~1.IN1
+Cin => Cout~0.IN1
+Sum <= Sum~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|fullAdder8_bit:inst|fullAdder:bit7
+A => Sum~0.IN0
+A => Cout~1.IN0
+B => Sum~0.IN1
+B => Cout~1.IN1
+Cin => Sum~1.IN1
+Cin => Cout~0.IN1
+Sum <= Sum~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|MUX2_8bit:compA
+d0[0] => MUX2_1bit:m0.d0
+d0[1] => MUX2_1bit:m1.d0
+d0[2] => MUX2_1bit:m2.d0
+d0[3] => MUX2_1bit:m3.d0
+d0[4] => MUX2_1bit:m4.d0
+d0[5] => MUX2_1bit:m5.d0
+d0[6] => MUX2_1bit:m6.d0
+d0[7] => MUX2_1bit:m7.d0
+d1[0] => MUX2_1bit:m0.d1
+d1[1] => MUX2_1bit:m1.d1
+d1[2] => MUX2_1bit:m2.d1
+d1[3] => MUX2_1bit:m3.d1
+d1[4] => MUX2_1bit:m4.d1
+d1[5] => MUX2_1bit:m5.d1
+d1[6] => MUX2_1bit:m6.d1
+d1[7] => MUX2_1bit:m7.d1
+s => MUX2_1bit:m0.s
+s => MUX2_1bit:m1.s
+s => MUX2_1bit:m2.s
+s => MUX2_1bit:m3.s
+s => MUX2_1bit:m4.s
+s => MUX2_1bit:m5.s
+s => MUX2_1bit:m6.s
+s => MUX2_1bit:m7.s
+o_Value[0] <= MUX2_1bit:m0.y
+o_Value[1] <= MUX2_1bit:m1.y
+o_Value[2] <= MUX2_1bit:m2.y
+o_Value[3] <= MUX2_1bit:m3.y
+o_Value[4] <= MUX2_1bit:m4.y
+o_Value[5] <= MUX2_1bit:m5.y
+o_Value[6] <= MUX2_1bit:m6.y
+o_Value[7] <= MUX2_1bit:m7.y
+
+
+|lab1CEG3156|DataPath:inst|MUX2_8bit:compA|MUX2_1bit:m0
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|MUX2_8bit:compA|MUX2_1bit:m1
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|MUX2_8bit:compA|MUX2_1bit:m2
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|MUX2_8bit:compA|MUX2_1bit:m3
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|MUX2_8bit:compA|MUX2_1bit:m4
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|MUX2_8bit:compA|MUX2_1bit:m5
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|MUX2_8bit:compA|MUX2_1bit:m6
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|MUX2_8bit:compA|MUX2_1bit:m7
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|complementor8_bit:inst20
+dataIn[0] => Add0.IN16
+dataIn[1] => Add0.IN15
+dataIn[2] => Add0.IN14
+dataIn[3] => Add0.IN13
+dataIn[4] => Add0.IN12
+dataIn[5] => Add0.IN11
+dataIn[6] => Add0.IN10
+dataIn[7] => Add0.IN9
+dataOut[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[4] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[5] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[6] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[7] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|MUX2_8bit:compB
+d0[0] => MUX2_1bit:m0.d0
+d0[1] => MUX2_1bit:m1.d0
+d0[2] => MUX2_1bit:m2.d0
+d0[3] => MUX2_1bit:m3.d0
+d0[4] => MUX2_1bit:m4.d0
+d0[5] => MUX2_1bit:m5.d0
+d0[6] => MUX2_1bit:m6.d0
+d0[7] => MUX2_1bit:m7.d0
+d1[0] => MUX2_1bit:m0.d1
+d1[1] => MUX2_1bit:m1.d1
+d1[2] => MUX2_1bit:m2.d1
+d1[3] => MUX2_1bit:m3.d1
+d1[4] => MUX2_1bit:m4.d1
+d1[5] => MUX2_1bit:m5.d1
+d1[6] => MUX2_1bit:m6.d1
+d1[7] => MUX2_1bit:m7.d1
+s => MUX2_1bit:m0.s
+s => MUX2_1bit:m1.s
+s => MUX2_1bit:m2.s
+s => MUX2_1bit:m3.s
+s => MUX2_1bit:m4.s
+s => MUX2_1bit:m5.s
+s => MUX2_1bit:m6.s
+s => MUX2_1bit:m7.s
+o_Value[0] <= MUX2_1bit:m0.y
+o_Value[1] <= MUX2_1bit:m1.y
+o_Value[2] <= MUX2_1bit:m2.y
+o_Value[3] <= MUX2_1bit:m3.y
+o_Value[4] <= MUX2_1bit:m4.y
+o_Value[5] <= MUX2_1bit:m5.y
+o_Value[6] <= MUX2_1bit:m6.y
+o_Value[7] <= MUX2_1bit:m7.y
+
+
+|lab1CEG3156|DataPath:inst|MUX2_8bit:compB|MUX2_1bit:m0
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|MUX2_8bit:compB|MUX2_1bit:m1
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|MUX2_8bit:compB|MUX2_1bit:m2
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|MUX2_8bit:compB|MUX2_1bit:m3
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|MUX2_8bit:compB|MUX2_1bit:m4
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|MUX2_8bit:compB|MUX2_1bit:m5
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|MUX2_8bit:compB|MUX2_1bit:m6
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|MUX2_8bit:compB|MUX2_1bit:m7
+s => y~1.IN0
+s => y~0.IN0
+d0 => y~0.IN1
+d1 => y~1.IN1
+y <= y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|complementor8_bit:inst21
+dataIn[0] => Add0.IN16
+dataIn[1] => Add0.IN15
+dataIn[2] => Add0.IN14
+dataIn[3] => Add0.IN13
+dataIn[4] => Add0.IN12
+dataIn[5] => Add0.IN11
+dataIn[6] => Add0.IN10
+dataIn[7] => Add0.IN9
+dataOut[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[4] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[5] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[6] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[7] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|DataPath:inst|complementor8_bit:inst2
+dataIn[0] => Add0.IN16
+dataIn[1] => Add0.IN15
+dataIn[2] => Add0.IN14
+dataIn[3] => Add0.IN13
+dataIn[4] => Add0.IN12
+dataIn[5] => Add0.IN11
+dataIn[6] => Add0.IN10
+dataIn[7] => Add0.IN9
+dataOut[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[4] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[5] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[6] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+dataOut[7] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|ControlPath:inst1
+EAeqEB => ffIns[3].IN1
+EAgtEB => ffIns[1].IN1
+EBgtEA => ffIns[2].IN1
+SAeqSB => ffIns[4].IN1
+SAeqSB => ffIns~2.IN1
+SAeqSB => ffIns~3.IN1
+MAgtMB => ffIns[5].IN1
+MAgtMB => ffIns[6].IN1
+SA => ffIns[8].IN1
+SA => ffIns[7].IN1
+MO7 => ffIns~9.IN1
+MO7 => ffIns~13.IN1
+SO => ffIns[9].IN1
+SO => ffIns~12.IN1
+GClock => enARdFF_2:s0.i_clock
+GClock => enARdFF_2:s1.i_clock
+GClock => enARdFF_2:s2.i_clock
+GClock => enARdFF_2:s3.i_clock
+GClock => enARdFF_2:s4.i_clock
+GClock => enARdFF_2:s5.i_clock
+GClock => enARdFF_2:s6.i_clock
+GClock => enARdFF_2:s7.i_clock
+GClock => enARdFF_2:s8.i_clock
+GClock => enARdFF_2:s9.i_clock
+GClock => enARdFF_2:s10.i_clock
+GReset => enARdFF_2:s0.i_resetBar
+GReset => enARdFF_2:s1.i_resetBar
+GReset => enARdFF_2:s2.i_resetBar
+GReset => enARdFF_2:s3.i_resetBar
+GReset => enARdFF_2:s4.i_resetBar
+GReset => enARdFF_2:s5.i_resetBar
+GReset => enARdFF_2:s6.i_resetBar
+GReset => enARdFF_2:s7.i_resetBar
+GReset => enARdFF_2:s8.i_resetBar
+GReset => enARdFF_2:s9.i_resetBar
+GReset => enARdFF_2:s10.i_resetBar
+loadMA <= enARdFF_2:s0.o_qBar
+loadEA <= enARdFF_2:s0.o_qBar
+loadSA <= enARdFF_2:s0.o_qBar
+loadMB <= enARdFF_2:s0.o_qBar
+loadEB <= enARdFF_2:s0.o_qBar
+loadSB <= enARdFF_2:s0.o_qBar
+incEB <= enARdFF_2:s1.o_q
+shiftMB <= enARdFF_2:s1.o_q
+incEA <= enARdFF_2:s2.o_q
+shiftMA <= enARdFF_2:s2.o_q
+loadEO <= enARdFF_2:s3.o_q
+SMUX <= SMUX~0.DB_MAX_OUTPUT_PORT_TYPE
+loadSO <= loadSO~1.DB_MAX_OUTPUT_PORT_TYPE
+loadMO <= loadMO~2.DB_MAX_OUTPUT_PORT_TYPE
+invB <= enARdFF_2:s7.o_q
+invA <= enARdFF_2:s8.o_q
+incEO <= enARdFF_2:s10.o_q
+shiftMO <= enARdFF_2:s10.o_q
+invMO <= enARdFF_2:s9.o_q
+
+
+|lab1CEG3156|ControlPath:inst1|enARdFF_2:s0
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|ControlPath:inst1|enARdFF_2:s1
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|ControlPath:inst1|enARdFF_2:s2
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|ControlPath:inst1|enARdFF_2:s3
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|ControlPath:inst1|enARdFF_2:s4
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|ControlPath:inst1|enARdFF_2:s5
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|ControlPath:inst1|enARdFF_2:s6
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|ControlPath:inst1|enARdFF_2:s7
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|ControlPath:inst1|enARdFF_2:s8
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|ControlPath:inst1|enARdFF_2:s9
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab1CEG3156|ControlPath:inst1|enARdFF_2:s10
+i_resetBar => int_q.ACLR
+i_d => int_q.DATAIN
+i_enable => int_q.ENA
+i_clock => int_q.CLK
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qBar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+

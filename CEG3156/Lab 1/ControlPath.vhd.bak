@@ -1,0 +1,33 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+ENTITY ControlPath IS
+	PORT(
+		GReset,EAeqEB,EAeq  : IN	STD_LOGIC;
+		s		  : IN	STD_LOGIC;
+		o_Value : OUT	STD_LOGIC_VECTOR(6 downto 0));
+END ControlPath;
+
+ARCHITECTURE rtl OF ControlPath IS
+
+	COMPONENT enARdFF_2 IS
+	PORT(
+		i_resetBar	: IN	STD_LOGIC;
+		i_d		: IN	STD_LOGIC;
+		i_enable	: IN	STD_LOGIC;
+		i_clock		: IN	STD_LOGIC;
+		o_q, o_qBar	: OUT	STD_LOGIC);
+	END COMPONENT;
+
+BEGIN
+s0: enARdFF_2
+	PORT MAP(
+		i_resetBar => GReset,
+		i_d		  => '0',
+		i_enable	  => '1',
+		i_clock	  => ,
+		o_q        => ,
+		o_qBar	  => );
+
+
+end rtl;

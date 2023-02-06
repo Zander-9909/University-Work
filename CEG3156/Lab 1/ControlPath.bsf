@@ -1,0 +1,232 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 192 384)
+	(text "ControlPath" (rect 5 0 51 12)(font "Arial" ))
+	(text "inst" (rect 8 352 20 364)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "EAeqEB" (rect 0 0 37 12)(font "Arial" ))
+		(text "EAeqEB" (rect 21 27 58 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "EAgtEB" (rect 0 0 35 12)(font "Arial" ))
+		(text "EAgtEB" (rect 21 43 56 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "EBgtEA" (rect 0 0 35 12)(font "Arial" ))
+		(text "EBgtEA" (rect 21 59 56 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "SAeqSB" (rect 0 0 35 12)(font "Arial" ))
+		(text "SAeqSB" (rect 21 75 56 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "MAgtMB" (rect 0 0 37 12)(font "Arial" ))
+		(text "MAgtMB" (rect 21 91 58 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "SA" (rect 0 0 14 12)(font "Arial" ))
+		(text "SA" (rect 21 107 35 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 1))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "MO7" (rect 0 0 20 12)(font "Arial" ))
+		(text "MO7" (rect 21 123 41 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "SO" (rect 0 0 12 12)(font "Arial" ))
+		(text "SO" (rect 21 139 33 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 1))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "GClock" (rect 0 0 29 12)(font "Arial" ))
+		(text "GClock" (rect 21 155 50 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "GReset" (rect 0 0 31 12)(font "Arial" ))
+		(text "GReset" (rect 21 171 52 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 1))
+	)
+	(port
+		(pt 176 32)
+		(output)
+		(text "loadMA" (rect 0 0 31 12)(font "Arial" ))
+		(text "loadMA" (rect 124 27 155 39)(font "Arial" ))
+		(line (pt 176 32)(pt 160 32)(line_width 1))
+	)
+	(port
+		(pt 176 48)
+		(output)
+		(text "loadEA" (rect 0 0 30 12)(font "Arial" ))
+		(text "loadEA" (rect 125 43 155 55)(font "Arial" ))
+		(line (pt 176 48)(pt 160 48)(line_width 1))
+	)
+	(port
+		(pt 176 64)
+		(output)
+		(text "loadSA" (rect 0 0 29 12)(font "Arial" ))
+		(text "loadSA" (rect 126 59 155 71)(font "Arial" ))
+		(line (pt 176 64)(pt 160 64)(line_width 1))
+	)
+	(port
+		(pt 176 80)
+		(output)
+		(text "loadMB" (rect 0 0 29 12)(font "Arial" ))
+		(text "loadMB" (rect 126 75 155 87)(font "Arial" ))
+		(line (pt 176 80)(pt 160 80)(line_width 1))
+	)
+	(port
+		(pt 176 96)
+		(output)
+		(text "loadEB" (rect 0 0 28 12)(font "Arial" ))
+		(text "loadEB" (rect 127 91 155 103)(font "Arial" ))
+		(line (pt 176 96)(pt 160 96)(line_width 1))
+	)
+	(port
+		(pt 176 112)
+		(output)
+		(text "loadSB" (rect 0 0 27 12)(font "Arial" ))
+		(text "loadSB" (rect 128 107 155 119)(font "Arial" ))
+		(line (pt 176 112)(pt 160 112)(line_width 1))
+	)
+	(port
+		(pt 176 128)
+		(output)
+		(text "incEB" (rect 0 0 23 12)(font "Arial" ))
+		(text "incEB" (rect 132 123 155 135)(font "Arial" ))
+		(line (pt 176 128)(pt 160 128)(line_width 1))
+	)
+	(port
+		(pt 176 144)
+		(output)
+		(text "shiftMB" (rect 0 0 30 12)(font "Arial" ))
+		(text "shiftMB" (rect 125 139 155 151)(font "Arial" ))
+		(line (pt 176 144)(pt 160 144)(line_width 1))
+	)
+	(port
+		(pt 176 160)
+		(output)
+		(text "incEA" (rect 0 0 25 12)(font "Arial" ))
+		(text "incEA" (rect 130 155 155 167)(font "Arial" ))
+		(line (pt 176 160)(pt 160 160)(line_width 1))
+	)
+	(port
+		(pt 176 176)
+		(output)
+		(text "shiftMA" (rect 0 0 33 12)(font "Arial" ))
+		(text "shiftMA" (rect 122 171 155 183)(font "Arial" ))
+		(line (pt 176 176)(pt 160 176)(line_width 1))
+	)
+	(port
+		(pt 176 192)
+		(output)
+		(text "loadEO" (rect 0 0 29 12)(font "Arial" ))
+		(text "loadEO" (rect 126 187 155 199)(font "Arial" ))
+		(line (pt 176 192)(pt 160 192)(line_width 1))
+	)
+	(port
+		(pt 176 208)
+		(output)
+		(text "SMUX" (rect 0 0 27 12)(font "Arial" ))
+		(text "SMUX" (rect 128 203 155 215)(font "Arial" ))
+		(line (pt 176 208)(pt 160 208)(line_width 1))
+	)
+	(port
+		(pt 176 224)
+		(output)
+		(text "loadSO" (rect 0 0 28 12)(font "Arial" ))
+		(text "loadSO" (rect 127 219 155 231)(font "Arial" ))
+		(line (pt 176 224)(pt 160 224)(line_width 1))
+	)
+	(port
+		(pt 176 240)
+		(output)
+		(text "loadMO" (rect 0 0 30 12)(font "Arial" ))
+		(text "loadMO" (rect 125 235 155 247)(font "Arial" ))
+		(line (pt 176 240)(pt 160 240)(line_width 1))
+	)
+	(port
+		(pt 176 256)
+		(output)
+		(text "invB" (rect 0 0 17 12)(font "Arial" ))
+		(text "invB" (rect 138 251 155 263)(font "Arial" ))
+		(line (pt 176 256)(pt 160 256)(line_width 1))
+	)
+	(port
+		(pt 176 272)
+		(output)
+		(text "invA" (rect 0 0 20 12)(font "Arial" ))
+		(text "invA" (rect 135 267 155 279)(font "Arial" ))
+		(line (pt 176 272)(pt 160 272)(line_width 1))
+	)
+	(port
+		(pt 176 288)
+		(output)
+		(text "incEO" (rect 0 0 24 12)(font "Arial" ))
+		(text "incEO" (rect 131 283 155 295)(font "Arial" ))
+		(line (pt 176 288)(pt 160 288)(line_width 1))
+	)
+	(port
+		(pt 176 304)
+		(output)
+		(text "shiftMO" (rect 0 0 31 12)(font "Arial" ))
+		(text "shiftMO" (rect 124 299 155 311)(font "Arial" ))
+		(line (pt 176 304)(pt 160 304)(line_width 1))
+	)
+	(port
+		(pt 176 320)
+		(output)
+		(text "invMO" (rect 0 0 27 12)(font "Arial" ))
+		(text "invMO" (rect 128 315 155 327)(font "Arial" ))
+		(line (pt 176 320)(pt 160 320)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 160 352)(line_width 1))
+	)
+)

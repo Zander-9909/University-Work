@@ -1,0 +1,224 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "05/26/2022 13:12:00"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    lab1CEG3156
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module lab1CEG3156_vlg_sample_tst(
+	d0,
+	d1,
+	S,
+	sampler_tx
+);
+input  d0;
+input  d1;
+input  S;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(d0 or d1 or S)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module lab1CEG3156_vlg_check_tst (
+	y,
+	sampler_rx
+);
+input  y;
+input sampler_rx;
+
+reg  y_expected;
+
+reg  y_prev;
+
+reg  y_expected_prev;
+
+reg  last_y_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:1] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 1'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	y_prev = y;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	y_expected_prev = y_expected;
+end
+
+
+
+// expected y
+initial
+begin
+	y_expected = 1'bX;
+end 
+// generate trigger
+always @(y_expected or y)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected y = %b | ",y_expected_prev);
+	$display("| real y = %b | ",y_prev);
+`endif
+	if (
+		( y_expected_prev !== 1'bx ) && ( y_prev !== y_expected_prev )
+		&& ((y_expected_prev !== last_y_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port y :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", y_expected_prev);
+		$display ("     Real value = %b", y_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_y_exp = y_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module lab1CEG3156_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg d0;
+reg d1;
+reg S;
+// wires                                               
+wire y;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+lab1CEG3156 i1 (
+// port map - connection between master ports and signals/registers   
+	.d0(d0),
+	.d1(d1),
+	.S(S),
+	.y(y)
+);
+
+// d0
+initial
+begin
+	repeat(12)
+	begin
+		d0 = 1'b0;
+		d0 = #40000 1'b1;
+		# 40000;
+	end
+	d0 = 1'b0;
+end 
+
+// d1
+initial
+begin
+	repeat(6)
+	begin
+		d1 = 1'b0;
+		d1 = #80000 1'b1;
+		# 80000;
+	end
+	d1 = 1'b0;
+end 
+
+// S
+initial
+begin
+	repeat(3)
+	begin
+		S = 1'b0;
+		S = #160000 1'b1;
+		# 160000;
+	end
+	S = 1'b0;
+end 
+
+lab1CEG3156_vlg_sample_tst tb_sample (
+	.d0(d0),
+	.d1(d1),
+	.S(S),
+	.sampler_tx(sampler)
+);
+
+lab1CEG3156_vlg_check_tst tb_out(
+	.y(y),
+	.sampler_rx(sampler)
+);
+endmodule
+

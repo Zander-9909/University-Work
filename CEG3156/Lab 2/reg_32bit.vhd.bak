@@ -1,0 +1,29 @@
+--------------------------------------------------------------------------------
+--Eight bit register, based on the implementation of the 3bitregister by Professor Rami.
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+ENTITY reg_32bit IS
+	PORT(
+		i_resetBar, i_load	: IN	STD_LOGIC;
+		i_clock			: IN	STD_LOGIC;
+		i_Value			: IN	STD_LOGIC_VECTOR(31 downto 0);
+		o_Value			: OUT	STD_LOGIC_VECTOR(31 downto 0));
+END reg_32bit;
+
+ARCHITECTURE rtl OF reg_32bit IS
+	SIGNAL int_Value, int_notValue : STD_LOGIC_VECTOR(31 downto 0);
+
+	COMPONENT eightBitRegister
+		PORT(
+		i_resetBar, i_load	: IN	STD_LOGIC;
+		i_clock			: IN	STD_LOGIC;
+		i_Value			: IN	STD_LOGIC_VECTOR(7 downto 0);
+		o_Value			: OUT	STD_LOGIC_VECTOR(7 downto 0));
+	END component;
+
+BEGIN
+
+
+
+END rtl;

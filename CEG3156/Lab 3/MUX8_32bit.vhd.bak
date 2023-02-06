@@ -1,0 +1,22 @@
+library ieee;
+use ieee.std_logic_1164.all;
+--8x1 Mux
+
+entity MUX2_32bit is
+	port(s : in std_logic_vector(2 downto 0); --Selection bit
+		  d3,d2,d1,d0 : in std_logic_vector(31 downto 0); --Data bits
+		  d7,d6,d5,d4 : in std_logic_vector(31 downto 0); --Data bits
+		  y : out std_logic_vector(31 downto 0)); --Out bit
+end MUX2_32bit;
+
+architecture rtl of MUX2_32bit is
+component MUX2_32bit is
+	port(s     : in std_logic; --Selection bit
+		  d0,d1 : in std_logic_vector(31 downto 0); --Data bits
+		  y     : out std_logic_vector(31 downto 0)); --Out bit
+end component;
+
+begin
+
+
+end rtl;

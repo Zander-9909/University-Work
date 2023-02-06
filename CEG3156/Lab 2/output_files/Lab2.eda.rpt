@@ -1,0 +1,67 @@
+EDA Netlist Writer report for Lab2
+Thu Jun 30 13:44:35 2022
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. EDA Netlist Writer Summary
+  3. EDA Netlist Writer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------+
+; EDA Netlist Writer Summary                                    ;
++---------------------------+-----------------------------------+
+; EDA Netlist Writer Status ; Failed - Thu Jun 30 13:44:35 2022 ;
+; Revision Name             ; Lab2                              ;
+; Top-level Entity Name     ; singleCycleProc                   ;
+; Family                    ; Cyclone IV E                      ;
++---------------------------+-----------------------------------+
+
+
++-----------------------------+
+; EDA Netlist Writer Messages ;
++-----------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit EDA Netlist Writer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu Jun 30 13:44:35 2022
+Info: Command: quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog Lab2 -c Lab2 --vector_source="C:/Users/Zander9909/OneDrive - University of Ottawa/Courses/3rd Year/Semester 2 - Summer 2022/CEG3156 - Computer Systems Design/Labs/Lab 2/Waveform1.vwf" --testbench_file=./simulation/qsim/Lab2.vt
+Error (201009): Bus port "WriteRegAdd" specified in vector source file has width of 8, which does not match width 5 of top level port of same name
+Warning (201007): Can't find port "WriteRegAdd[7]" in design
+Warning (201007): Can't find port "WriteRegAdd[6]" in design
+Warning (201007): Can't find port "WriteRegAdd[5]" in design
+Error (201009): Bus port "WriteRegAdd" specified in vector source file has width of 8, which does not match width 5 of top level port of same name
+Warning (201007): Can't find port "WriteRegAdd[7]" in design
+Warning (201007): Can't find port "WriteRegAdd[6]" in design
+Warning (201007): Can't find port "WriteRegAdd[5]" in design
+Info (201000): Generated Verilog Test Bench File ./simulation/qsim/Lab2.vt for simulation
+Error: Quartus II 64-Bit EDA Netlist Writer was unsuccessful. 2 errors, 6 warnings
+    Error: Peak virtual memory: 4532 megabytes
+    Error: Processing ended: Thu Jun 30 13:44:35 2022
+    Error: Elapsed time: 00:00:00
+    Error: Total CPU time (on all processors): 00:00:01
+
+

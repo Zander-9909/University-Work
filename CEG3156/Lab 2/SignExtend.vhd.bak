@@ -1,0 +1,15 @@
+library ieee;
+use ieee.std_logic_1164.all;
+--Sign extension unit
+
+entity SignExtend is
+	port(Instruction16 : in std_logic_vector(15 downto 0);
+		  Instruction32 : out std_logic_vector(31 downto 0)); 
+end SignExtend;
+
+architecture rtl of SignExtend is
+signal sign : std_logic;
+
+begin
+
+end rtl;

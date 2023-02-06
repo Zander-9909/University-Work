@@ -1,0 +1,302 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 264 496)
+	(text "DataPath" (rect 5 0 55 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 464 25 476)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "GClock" (rect 0 0 40 14)(font "Arial" (font_size 8)))
+		(text "GClock" (rect 21 27 61 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "loadEA" (rect 0 0 40 14)(font "Arial" (font_size 8)))
+		(text "loadEA" (rect 21 43 61 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "loadMB" (rect 0 0 41 14)(font "Arial" (font_size 8)))
+		(text "loadMB" (rect 21 59 62 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "invA" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "invA" (rect 21 75 46 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "GReset" (rect 0 0 42 14)(font "Arial" (font_size 8)))
+		(text "GReset" (rect 21 91 63 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "ExponentA[6..0]" (rect 0 0 90 14)(font "Arial" (font_size 8)))
+		(text "ExponentA[6..0]" (rect 21 107 111 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "shiftMB" (rect 0 0 42 14)(font "Arial" (font_size 8)))
+		(text "shiftMB" (rect 21 123 63 137)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "invB" (rect 0 0 24 14)(font "Arial" (font_size 8)))
+		(text "invB" (rect 21 139 45 153)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 16 144))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "SignA" (rect 0 0 34 14)(font "Arial" (font_size 8)))
+		(text "SignA" (rect 21 155 55 169)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 16 160))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "incEB" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "incEB" (rect 21 171 52 185)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 16 176))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "MantissaA[7..0]" (rect 0 0 88 14)(font "Arial" (font_size 8)))
+		(text "MantissaA[7..0]" (rect 21 187 109 201)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 16 192)(line_width 3))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "loadSO" (rect 0 0 41 14)(font "Arial" (font_size 8)))
+		(text "loadSO" (rect 21 203 62 217)(font "Arial" (font_size 8)))
+		(line (pt 0 208)(pt 16 208))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "loadSA" (rect 0 0 41 14)(font "Arial" (font_size 8)))
+		(text "loadSA" (rect 21 219 62 233)(font "Arial" (font_size 8)))
+		(line (pt 0 224)(pt 16 224))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "loadEB" (rect 0 0 38 14)(font "Arial" (font_size 8)))
+		(text "loadEB" (rect 21 235 59 249)(font "Arial" (font_size 8)))
+		(line (pt 0 240)(pt 16 240))
+	)
+	(port
+		(pt 0 256)
+		(input)
+		(text "loadMO" (rect 0 0 42 14)(font "Arial" (font_size 8)))
+		(text "loadMO" (rect 21 251 63 265)(font "Arial" (font_size 8)))
+		(line (pt 0 256)(pt 16 256))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "MantissaB[7..0]" (rect 0 0 87 14)(font "Arial" (font_size 8)))
+		(text "MantissaB[7..0]" (rect 21 267 108 281)(font "Arial" (font_size 8)))
+		(line (pt 0 272)(pt 16 272)(line_width 3))
+	)
+	(port
+		(pt 0 288)
+		(input)
+		(text "SignB" (rect 0 0 33 14)(font "Arial" (font_size 8)))
+		(text "SignB" (rect 21 283 54 297)(font "Arial" (font_size 8)))
+		(line (pt 0 288)(pt 16 288))
+	)
+	(port
+		(pt 0 304)
+		(input)
+		(text "ExponentB[6..0]" (rect 0 0 89 14)(font "Arial" (font_size 8)))
+		(text "ExponentB[6..0]" (rect 21 299 110 313)(font "Arial" (font_size 8)))
+		(line (pt 0 304)(pt 16 304)(line_width 3))
+	)
+	(port
+		(pt 0 320)
+		(input)
+		(text "SMUX" (rect 0 0 34 14)(font "Arial" (font_size 8)))
+		(text "SMUX" (rect 21 315 55 329)(font "Arial" (font_size 8)))
+		(line (pt 0 320)(pt 16 320))
+	)
+	(port
+		(pt 0 336)
+		(input)
+		(text "incEO" (rect 0 0 33 14)(font "Arial" (font_size 8)))
+		(text "incEO" (rect 21 331 54 345)(font "Arial" (font_size 8)))
+		(line (pt 0 336)(pt 16 336))
+	)
+	(port
+		(pt 0 352)
+		(input)
+		(text "loadSB" (rect 0 0 40 14)(font "Arial" (font_size 8)))
+		(text "loadSB" (rect 21 347 61 361)(font "Arial" (font_size 8)))
+		(line (pt 0 352)(pt 16 352))
+	)
+	(port
+		(pt 0 368)
+		(input)
+		(text "loadMA" (rect 0 0 42 14)(font "Arial" (font_size 8)))
+		(text "loadMA" (rect 21 363 63 377)(font "Arial" (font_size 8)))
+		(line (pt 0 368)(pt 16 368))
+	)
+	(port
+		(pt 0 384)
+		(input)
+		(text "shiftMO" (rect 0 0 43 14)(font "Arial" (font_size 8)))
+		(text "shiftMO" (rect 21 379 64 393)(font "Arial" (font_size 8)))
+		(line (pt 0 384)(pt 16 384))
+	)
+	(port
+		(pt 0 400)
+		(input)
+		(text "loadEO" (rect 0 0 40 14)(font "Arial" (font_size 8)))
+		(text "loadEO" (rect 21 395 61 409)(font "Arial" (font_size 8)))
+		(line (pt 0 400)(pt 16 400))
+	)
+	(port
+		(pt 0 416)
+		(input)
+		(text "incEA" (rect 0 0 33 14)(font "Arial" (font_size 8)))
+		(text "incEA" (rect 21 411 54 425)(font "Arial" (font_size 8)))
+		(line (pt 0 416)(pt 16 416))
+	)
+	(port
+		(pt 0 432)
+		(input)
+		(text "shiftMA" (rect 0 0 43 14)(font "Arial" (font_size 8)))
+		(text "shiftMA" (rect 21 427 64 441)(font "Arial" (font_size 8)))
+		(line (pt 0 432)(pt 16 432))
+	)
+	(port
+		(pt 0 448)
+		(input)
+		(text "invMO" (rect 0 0 35 14)(font "Arial" (font_size 8)))
+		(text "invMO" (rect 21 443 56 457)(font "Arial" (font_size 8)))
+		(line (pt 0 448)(pt 16 448))
+	)
+	(port
+		(pt 248 32)
+		(output)
+		(text "MAgtMB" (rect 0 0 47 14)(font "Arial" (font_size 8)))
+		(text "MAgtMB" (rect 180 27 227 41)(font "Arial" (font_size 8)))
+		(line (pt 248 32)(pt 232 32))
+	)
+	(port
+		(pt 248 48)
+		(output)
+		(text "MBgtMA" (rect 0 0 47 14)(font "Arial" (font_size 8)))
+		(text "MBgtMA" (rect 180 43 227 57)(font "Arial" (font_size 8)))
+		(line (pt 248 48)(pt 232 48))
+	)
+	(port
+		(pt 248 64)
+		(output)
+		(text "MAeqMB" (rect 0 0 50 14)(font "Arial" (font_size 8)))
+		(text "MAeqMB" (rect 177 59 227 73)(font "Arial" (font_size 8)))
+		(line (pt 248 64)(pt 232 64))
+	)
+	(port
+		(pt 248 80)
+		(output)
+		(text "EAgtEB" (rect 0 0 42 14)(font "Arial" (font_size 8)))
+		(text "EAgtEB" (rect 185 75 227 89)(font "Arial" (font_size 8)))
+		(line (pt 248 80)(pt 232 80))
+	)
+	(port
+		(pt 248 96)
+		(output)
+		(text "EBgtEA" (rect 0 0 42 14)(font "Arial" (font_size 8)))
+		(text "EBgtEA" (rect 185 91 227 105)(font "Arial" (font_size 8)))
+		(line (pt 248 96)(pt 232 96))
+	)
+	(port
+		(pt 248 112)
+		(output)
+		(text "EAeqEB" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "EAeqEB" (rect 181 107 227 121)(font "Arial" (font_size 8)))
+		(line (pt 248 112)(pt 232 112))
+	)
+	(port
+		(pt 248 128)
+		(output)
+		(text "MantissaOut[7..0]" (rect 0 0 99 14)(font "Arial" (font_size 8)))
+		(text "MantissaOut[7..0]" (rect 128 123 227 137)(font "Arial" (font_size 8)))
+		(line (pt 248 128)(pt 232 128)(line_width 3))
+	)
+	(port
+		(pt 248 144)
+		(output)
+		(text "ExponentOut[6..0]" (rect 0 0 101 14)(font "Arial" (font_size 8)))
+		(text "ExponentOut[6..0]" (rect 126 139 227 153)(font "Arial" (font_size 8)))
+		(line (pt 248 144)(pt 232 144)(line_width 3))
+	)
+	(port
+		(pt 248 160)
+		(output)
+		(text "SignOut" (rect 0 0 44 14)(font "Arial" (font_size 8)))
+		(text "SignOut" (rect 183 155 227 169)(font "Arial" (font_size 8)))
+		(line (pt 248 160)(pt 232 160))
+	)
+	(port
+		(pt 248 176)
+		(output)
+		(text "SA" (rect 0 0 17 14)(font "Arial" (font_size 8)))
+		(text "SA" (rect 210 171 227 185)(font "Arial" (font_size 8)))
+		(line (pt 248 176)(pt 232 176))
+	)
+	(port
+		(pt 248 192)
+		(output)
+		(text "SB" (rect 0 0 16 14)(font "Arial" (font_size 8)))
+		(text "SB" (rect 211 187 227 201)(font "Arial" (font_size 8)))
+		(line (pt 248 192)(pt 232 192))
+	)
+	(port
+		(pt 248 208)
+		(output)
+		(text "SAeqSB" (rect 0 0 48 14)(font "Arial" (font_size 8)))
+		(text "SAeqSB" (rect 179 203 227 217)(font "Arial" (font_size 8)))
+		(line (pt 248 208)(pt 232 208))
+	)
+	(drawing
+		(rectangle (rect 16 16 232 464))
+	)
+)

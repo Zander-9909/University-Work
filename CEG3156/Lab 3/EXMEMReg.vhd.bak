@@ -1,0 +1,41 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity EXMEMReg is
+	port(
+		Enable, GClock, GReset : in std_logic;
+		ALUResult : in std_LOGIC_VECTOR(7 downto 0);
+		ALUResultOut: out STD_LOGIC_VECTOR(7 downto 0);
+		RegisterRD : in std_logic_vector(7 downto 0); 
+		RegisterRDOut : Out std_logic_vector(7 downto 0)); 
+end EXMEMReg;
+
+architecture rtl of EXMEMReg is
+	
+	COMPONENT reg_8bit
+		PORT(
+		i_resetBar, i_load	: IN	STD_LOGIC;
+		i_clock			: IN	STD_LOGIC;
+		i_Value			: IN	STD_LOGIC_VECTOR(7 downto 0);
+		o_Value			: OUT	STD_LOGIC_VECTOR(7 downto 0));
+	END component;
+
+begin
+
+
+ALUResult: reg_8bit
+PORT MAP (i_resetBar => GReset,
+	i_Value => ALUResult(7 downto 0), 
+	i_load => Enable,
+	i_clock => GClock,
+	o_Value => ALUResultOut(7 downto 0));
+	
+instReg:reg_8bit
+	PORT MAP(
+		i_resetBar => GReset,
+		i_load => Enable,
+		i_clock => GClock,
+		i_Value => RegisterRD(7 downto 0),
+		o_Value => RegisterRDOut(7 downto 0));
+
+end rtl;

@@ -1,0 +1,15 @@
+library ieee;
+use ieee.std_logic_1164.all;
+--4x1 Mux
+
+entity MUX4_1bit is
+	port(s1,s0 : in std_logic; --Selection bit
+		  d : in std_logic_vector(3 downto 0); --Data bits
+		  y : out std_logic); --Out bit
+end MUX4_1bit;
+
+architecture rtl of MUX4_1bit is
+SIGNAL notS1,notS0:STD_logic;
+begin
+	y <= (s1 AND s0 AND d(3))OR(s1 AND notS0 AND d(2))OR(notS1 AND s0 AND d(1))OR(notS1 AND notS0 AND d(0));
+end rtl;

@@ -1,0 +1,30 @@
+library ieee;
+use ieee.std_logic_1164.all;
+--8x1 Mux
+
+entity MUX8_1bit is
+	port(s  : in std_logic_vector(2 downto 0); --Selection bit
+		  d0 : in std_logic_vector(7 downto 0); --Data bits
+		  d1 : in std_logic_vector(7 downto 0); --Data bits
+		  d2 : in std_logic_vector(7 downto 0); --Data bits
+		  d3 : in std_logic_vector(7 downto 0); --Data bits
+		  d4 : in std_logic_vector(7 downto 0); --Data bits
+		  d5 : in std_logic_vector(7 downto 0); --Data bits
+		  d6 : in std_logic_vector(7 downto 0); --Data bits
+		  d7 : in std_logic_vector(7 downto 0); --Data bits
+		  y : out std_logic_vector(7 downto 0)); --Out bit
+end MUX8_1bit;
+
+architecture rtl of MUX8_1bit is
+SIGNAL muxOuts:STD_logic_vector(1 downto 0);
+
+component MUX8_1bit is
+	port(s2,s1,s0 : in std_logic; --Selection bit
+		  d : in std_logic_vector(3 downto 0); --Data bits
+		  y : out std_logic); --Out bit
+end component;
+
+end component;
+begin
+
+end rtl;

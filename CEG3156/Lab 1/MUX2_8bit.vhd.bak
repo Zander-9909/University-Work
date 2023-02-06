@@ -1,0 +1,24 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+--a parallel 8 bit 2x1 MUX
+ENTITY MUX2_8bit IS
+	PORT(
+		d0,d1	  : IN	STD_LOGIC_VECTOR (7 downto 0);
+		s		  : IN	STD_LOGIC;
+		o_Value : OUT	STD_LOGIC_VECTOR(7 downto 0));
+END threeBitRegister;
+
+ARCHITECTURE rtl OF threeBitRegister IS
+	SIGNAL int_Value, int_notValue : STD_LOGIC_VECTOR(2 downto 0);
+
+	COMPONENT enARdFF_2
+		PORT(
+			i_resetBar	: IN	STD_LOGIC;
+			i_d		: IN	STD_LOGIC;
+			i_enable	: IN	STD_LOGIC;
+			i_clock		: IN	STD_LOGIC;
+			o_q, o_qBar	: OUT	STD_LOGIC);
+	END COMPONENT;
+
+BEGIN
