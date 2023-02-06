@@ -7,6 +7,7 @@ First Year (2019-2020)
 
 Third Year (2021-2022)
 - CEG3155 - Digital Systems II (VHDL)* [Rami Abielmona]
+- CEG3156 - Computer Systems Design (VHDL)* [Rami Abielmona]
 - CEG3136 - Computer Architecture II (C and ARM Assembly)* [Ayman El-Sawah]
 
 *NOTE: Some files used are not owned by me. They belong to various professors at the school. They are uploaded for the labratories, and so are uploaded for functionality in that. Beside each class, I will mention which professor I took it with.
