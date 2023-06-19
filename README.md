@@ -1,5 +1,5 @@
 # University of Ottawa Course Work
-This is a repository of my work during my undergrad at the University of Ottawa for the degree of Bachelor of Applied Science in Computer Engineering
+This is a repository of select work during my undergrad at the University of Ottawa for the degree of Bachelor of Applied Science in Computer Engineering
 
 First Year (2019-2020)
 - ITI1120 - Intro. to Computing I (Python)* [Aziz Abdesselam]
